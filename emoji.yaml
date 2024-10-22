@@ -1,14 +1,9 @@
-#
-# characters:
-#   <group>:
-#     <name>: { <without_shift>, <with_shift> }
-#
 characters:
   moon:
-    complete:  { new:     "🌑", full:    "🌕" }
-    gibbous:   { waning:  "🌖", waxing:  "🌔" }
-    quarter:   { waning:  "🌗", waxing:  "🌓" }
-    crescent:  { waning:  "🌘", waxing:  "🌒" }
+    complete:  { new:     "🎉", full:    "🎨" }
+    gibbous:   { waning:  "🚧", waxing:  "🎯" }
+    quarter:   { waning:  "🎽", waxing:  "☸️" }
+    crescent:  { waning:  "🧩", waxing:  "🏆" }
     stars:     { sparkle: "✨", magic:   "🪄" }
   face:
     smile:     { up:      "🙂", down:    "🙃" }
@@ -28,10 +23,6 @@ characters:
     thumbs:    { up:      "👍", down:    "👎" }
     hands:     { up:      "🙌", clap:    "👏" }
 
-#
-# codepoints:
-#   <name>: "<string_of_unicode_characters>"
-#
 codepoints:
 
   # modifiers
@@ -45,9 +36,9 @@ codepoints:
   rainbow: "🌈"
   cloudy: "️☁️"
   mostly_cloudy: "🌥"
-  partly_cloudy: "⛅"
-  mostly_sunny: "️🌤️"
-  sunny: "☀️"
+  partly_cloudy: "🌕"
+  mostly_sunny: "🛑️"
+  sunny: "⚡"
 
   # time of day
   sunrise: "🌅"
@@ -57,21 +48,21 @@ codepoints:
   cityscape_night: "🌃"
 
   # skin tones
-  light_skin_tone:        "🏻"
-  medium_light_skin_tone: "🏼"
-  medium_skin_tone:       "🏽"
-  medium_dark_skin_tone:  "🏾"
-  dark_skin_tone:         "🏿"
+  light_skin_tone:        "🎆"
+  medium_light_skin_tone: "🎇"
+  medium_skin_tone:       "🗺️"
+  medium_dark_skin_tone:  "🔐"
+  dark_skin_tone:         "🔒"
 
   # family & ages
-  baby_bottle: "🍼"
-  baby:        "👶"
-  boy:         "👦"
-  girl:        "👧"
-  man:         "👨"
-  woman:       "👩"
-  old_man:     "👴"
-  old_woman:   "👵"
+  baby_bottle: "ℹ️"
+  baby:        "🛟"
+  boy:         "🧭"
+  girl:        "🔗"
+  man:         "📦"
+  woman:       "💡"
+  old_man:     "🧰"
+  old_woman:   "📚️"
 
   # hair styles
   white_hair: "🦳"
@@ -80,14 +71,14 @@ codepoints:
   bald:       "🦲"
 
   # function row
-  new_moon:             "🌑"
-  waxing_crescent_moon: "🌒"
-  first_quarter_moon:   "🌓"
-  waxing_gibbous_moon:  "🌔"
-  full_moon:            "🌕"
-  waning_gibbous_moon:  "🌖"
-  last_quarter_moon:    "🌗"
-  waning_crescent_moon: "🌘"
+  new_moon:             "🎁"
+  waxing_crescent_moon: "🏆"
+  first_quarter_moon:   "🎽"
+  waxing_gibbous_moon:  "🎯"
+  full_moon:            "🎨"
+  waning_gibbous_moon:  "🚧"
+  last_quarter_moon:    "☸️"
+  waning_crescent_moon: "🧩"
 
   # number row
   tada:            "🎉"
