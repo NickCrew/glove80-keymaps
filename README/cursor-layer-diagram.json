@@ -124,16 +124,6 @@
     {
       "c": "#ffecb3"
     },
-    "Copy",
-    {
-      "x": 5
-    },
-    "Copy",
-    {
-      "c": "#dcedc8",
-      "f": 9,
-      "n": true
-    },
     "&larr;\n\n\n\nShift",
     "&uarr;\n\n\n\nCtrl",
     "&darr;\n\n\n\nAlt",
@@ -141,14 +131,14 @@
     {
       "c": "#ffcdd2",
       "f": 3
-    },
-    "URL bar"
+    } 
   ],
   [
-    "Down loads",
+"Copy",
     {
-      "c": "#bbdefb",
-      "t": "#00000"
+      "c": "#dcedc8",
+      "f": 9,
+      "n": true
     },
     "Select all",
     {
@@ -162,15 +152,7 @@
     "Find",
     {
       "c": "#ffecb3"
-    },
-    "Paste",
-    {
-      "x": 5
-    },
-    "Paste",
-    {
-      "c": "#dcedc8"
-    },
+    }, 
     "Home",
     "Page up",
     "Page down\n\n\n\nAltGr",
@@ -178,7 +160,10 @@
     {
       "c": "#ffcdd2"
     },
-    "Down loads"
+    "Paste",
+    {
+      "c": "#dcedc8"
+    }
   ],
   [
     {

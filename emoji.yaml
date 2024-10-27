@@ -33,12 +33,12 @@ codepoints:
   left_arrow:  "⬅️"
 
   # weather
-  rainbow: "🌈"
-  cloudy: "️☁️"
-  mostly_cloudy: "🌥"
+  rainbow:       "🌈"
+  cloudy:        "️☁️"
+  mostly_cloudy: "🌟"
   partly_cloudy: "🌕"
-  mostly_sunny: "🛑️"
-  sunny: "⚡"
+  mostly_sunny:  "🛑️"
+  sunny:         "⚡"
 
   # time of day
   sunrise: "🌅"
@@ -56,7 +56,7 @@ codepoints:
 
   # family & ages
   baby_bottle: "ℹ️"
-  baby:        "🛟"
+  baby:        "🛟\n\n\n\nAltGr"
   boy:         "🧭"
   girl:        "🔗"
   man:         "📦"

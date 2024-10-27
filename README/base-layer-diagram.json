@@ -61,33 +61,7 @@
       "a": 7,
       "f": 3
     },
-    "B",
-    {
-      "c": "#BBDEFB",
-      "p": "SPACE"
-    },
-    "Y\n\n\n\nAltGr",
-    {
-      "c": "#cccccc",
-      "p": "CHICKLET"
-    },
-    "O",
-    "U",
-    {
-      "a": 5,
-      "f": 5
-    },
-    "\"\n'",
-    {
-      "x": 5
-    },
-    ":\n;",
-    {
-      "a": 7,
-      "f": 3
-    },
-    "L",
-    "D",
+    "Q",
     {
       "c": "#BBDEFB",
       "p": "SPACE"
@@ -97,87 +71,111 @@
       "c": "#cccccc",
       "p": "CHICKLET"
     },
-    "V",
-    "Z"
+    "E",
+    "R",
+    {
+      "a": 5,
+      "f": 5
+    },
+    "T",
+    {
+      "x": 5
+    },
+    "Y",
+    {
+      "a": 7,
+      "f": 3
+    },
+    "U",
+    "I",
+    {
+      "c": "#BBDEFB",
+      "p": "SPACE"
+    },
+    "O\n\n\n\nAltGr",
+    {
+      "c": "#cccccc",
+      "p": "CHICKLET"
+    },
+    "P",
+    "-\n_"
   ],
   [
     "Caps word",
     {
       "c": "#FFCDD2",
       "p": "SPACE"
-    },
-    "C\n\n\n\nWin",
-    {
+    }, "A\n\n\n\nWin", {
       "c": "#FFCCBC"
     },
-    "I\n\n\n\nAlt",
+    "S\n\n\n\nAlt",
     {
       "c": "#FFECB3"
     },
-    "E\n\n\n\nCtrl",
+    "D\n\n\n\nCtrl",
     {
       "c": "#DCEDC8",
       "n": true
     },
-    "A\n\n\n\nShift",
+    "F\n\n\n\nShift",
     {
       "c": "#cccccc",
       "a": 5,
       "f": 4
     },
-    "<\n,\n\n\nRaw",
+    "G",
     {
       "x": 5
     },
-    ">\n.\n\n\nRaw",
+    "H",
     {
       "c": "#DCEDC8",
       "a": 7,
       "f": 3,
       "n": true
     },
-    "H\n\n\n\nShift",
+    "L\n\n\n\nShift",
     {
       "c": "#FFECB3"
     },
-    "T\n\n\n\nCtrl",
+    "J\n\n\n\nCtrl",
     {
       "c": "#FFCCBC"
     },
-    "S\n\n\n\nAlt",
+    "K\n\n\n\nAlt",
     {
       "c": "#FFCDD2"
     },
-    "N\n\n\n\nWin",
+    "L\n\n\n\nWin",
     {
       "c": "#cccccc",
       "p": "CHICKLET"
     },
-    "Q"
+    ";\n:"
   ],
   [
     "Shift <small>(sticky)</small>",
-    "G",
+    "Z",
     "X",
-    "J",
-    "K",
+    "C",
+    "V",
     {
       "a": 5,
       "f": 4
     },
-    "_\n-",
+    "B",
     {
       "x": 5
     },
-    "?\n/",
+    "N",
     {
       "a": 7,
       "f": 3
     },
-    "R",
     "M",
-    "F",
-    "P",
+    "<\n,",
+    ">\n.",
+    "?\n/",
     "Shift <small>(sticky)</small>"
   ],
   [
