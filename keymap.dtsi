@@ -5,9 +5,7 @@
 //#define SHIFT_FORGIVENESS  // requires 24.08-beta1 or newer firmware
 #define WORLD_USE_COMPOSE    // use native Compose in place of Unicode
 // TIP: Add more setting overrides here instead of editing them below.
-// TIP: Add more setting overrides here instead of editing them below.
 
-#define OPERATING_SYSTEM 'M'
 #define MOUSE_MOTION_ACCELERATION_EXPONENT 1
 #define MOUSE_MOTION_TIME_TO_MAXIMUM_SPEED 275
 #define MOUSE_MOTION_DELAY 0
@@ -112,13 +110,6 @@
 #define _KP_N7 N7
 #define _KP_N8 N8
 #define _KP_N9 N9
-#define _KP_PLUS PLUS
-#define _KP_MINUS MINUS
-#define _KP_ASTERISK ASTERISK
-#define _KP_SLASH SLASH
-#define _KP_COMMA COMMA
-#define _KP_DOT DOT
-#define _KP_EQUAL EQUAL
 #define _KP_ENTER ENTER
 #endif
 
@@ -238,8 +229,8 @@
 #define KEY_RH_C6R5 RSFT
 #define KEY_LH_C6R6 0
 #define KEY_LH_C5R6 HOME
-#define KEY_LH_C4R6 PG_UP
-#define KEY_LH_C3R6 PG_DN
+#define KEY_LH_C4R6 PG_DN
+#define KEY_LH_C3R6 PG_UP
 #define KEY_LH_C2R6 END
 #define KEY_LH_T4 BACKSPACE
 #define KEY_LH_T5 DELETE

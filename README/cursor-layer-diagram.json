@@ -124,21 +124,32 @@
     {
       "c": "#ffecb3"
     },
-    "&larr;\n\n\n\nShift",
-    "&uarr;\n\n\n\nCtrl",
-    "&darr;\n\n\n\nAlt",
-    "&rarr;\n\n\n\nWin",
+    "Copy",
     {
-      "c": "#ffcdd2",
-      "f": 3
-    } 
-  ],
-  [
-"Copy",
-    {
+      "x": 5,
       "c": "#dcedc8",
       "f": 9,
       "n": true
+    },
+    "&larr;\n\n\n\nShift",
+    "&darr;\n\n\n\nCtrl",
+    "&uarr;\n\n\n\nAlt",
+    "&rarr;\n\n\n\nWin",
+    {
+      "c": "#ffecb3",
+      "f": 3
+    },
+    "Copy",
+    {
+      "c": "#ffcdd2"
+    },
+    "URL bar"
+  ],
+  [
+    "Down loads",
+    {
+      "c": "#bbdefb",
+      "t": "#00000"
     },
     "Select all",
     {
@@ -152,18 +163,24 @@
     "Find",
     {
       "c": "#ffecb3"
-    }, 
-    "Home",
-    "Page up",
-    "Page down\n\n\n\nAltGr",
-    "End",
-    {
-      "c": "#ffcdd2"
     },
     "Paste",
     {
+      "x": 5,
       "c": "#dcedc8"
-    }
+    },
+    "Home",
+    "Page down",
+    "Page up\n\n\n\nAltGr",
+    "End",
+    {
+      "c": "#ffecb3"
+    },
+    "Paste",
+    {
+      "c": "#ffcdd2"
+    },
+    "Down loads"
   ],
   [
     {

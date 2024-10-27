@@ -90,18 +90,11 @@
     "\"\n'",
     {
       "x": 5,
-      "c": "#e1bee7",
-      "g": false,
-      "a": 7,
-      "f": 5,
-      "fa": [
-        3
-      ]
+      "a": 7
     },
-    "Middle click",
+    "",
     {
-      "c": "#cccccc",
-      "f": 3
+      "g": false
     },
     "Shift\n\n\n\nShift",
     "Ctrl\n\n\n\nCtrl",
@@ -138,16 +131,24 @@
     "&rarr;",
     {
       "c": "#cccccc",
-      "g": true,
-      "a": 5,
-      "f": 3
+      "f": 5,
+      "fa": [
+        3
+      ]
     },
-    "<\n,",
+    "Mouse button 4",
     {
       "x": 5,
+      "c": "#BBDEFB",
+      "f": 9,
+      "n": true
+    },
+    "&larr;",
+    "&darr;",
+    "&uarr;",
+    "&rarr;",
+    {
       "c": "#ffecb3",
-      "g": false,
-      "a": 7,
       "f": 5,
       "fa": [
         3
@@ -155,22 +156,15 @@
     },
     "Left click",
     {
-      "c": "#BBDEFB",
-      "f": 9,
-      "n": true
+      "c": "#cccccc"
     },
-    "&larr;",
-    "&uarr;",
-    "&darr;",
-    "&rarr;",
+    "MB4"
+  ],
+  [
     {
-      "c": "#cccccc",
       "g": true,
       "f": 3
     },
-    "Q"
-  ],
-  [
     "Shift",
     "Mouse accel 1",
     "Mouse accel 2",
@@ -181,41 +175,36 @@
     "Wheel down",
     "Wheel up",
     {
-      "c": "#cccccc",
-      "g": true,
-      "a": 5
+      "c": "#cccccc"
     },
-    "_\n-",
+    "Mouse button 5",
     {
       "x": 5,
-      "c": "#ffccbc",
-      "g": false,
-      "a": 7,
+      "c": "#dcedc8"
+    },
+    "Wheel left",
+    "Wheel down",
+    "Wheel up",
+    "Wheel right",
+    {
+      "c": "#e1bee7",
       "f": 5,
       "fa": [
         3
       ]
     },
-    "Right click",
+    "Middle click",
     {
-      "c": "#dcedc8",
-      "f": 3
+      "c": "#cccccc"
     },
-    "Wheel left",
-    "Wheel up",
-    "Wheel down",
-    "Wheel right",
-    {
-      "c": "#cccccc",
-      "g": true
-    },
-    "Shift"
+    "MB5"
   ],
   [
     {
       "y": -0.04999999999999982,
       "x": 6.95,
       "c": "#FFFF8D",
+      "g": true,
       "p": "FLAT",
       "f": 2,
       "w": 1.1,
@@ -250,13 +239,13 @@
     },
     "Middle click",
     {
-      "c": "#cccccc",
-      "g": true
+      "c": "#cccccc"
     },
     "Mouse button 4",
     "Mouse button 5",
     {
       "x": 1,
+      "g": true,
       "f": 3,
       "fa": [
         9
@@ -282,11 +271,15 @@
     },
     "}\n]",
     {
+      "c": "#ffccbc",
+      "g": false,
+      "a": 7,
       "f": 3
     },
-    ">\n)",
+    "Right click",
     {
-      "a": 7,
+      "c": "#cccccc",
+      "g": true,
       "f": 3
     },
     "F6"

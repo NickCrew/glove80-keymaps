@@ -83,18 +83,14 @@
     },
     "Back space",
     {
-      "c": "#cccccc",
-      "g": true,
-      "a": 5
+      "c": "#dcedc8"
     },
-    "\"\n'",
+    "F16",
     {
       "x": 5,
-      "c": "#FFECB3",
-      "g": false,
-      "a": 7
+      "c": "#bbdefb"
     },
-    "Calc<small>-ulator</small>",
+    "Vol ➕",
     {
       "c": "#dcedc8",
       "f": 4
@@ -139,19 +135,16 @@
     },
     "Shift\n\n\n\nShift",
     {
-      "g": true,
-      "a": 5,
+      "c": "#dcedc8",
       "f": 3
     },
-    "<\n,",
+    "F17",
     {
       "x": 5,
-      "c": "#FFECB3",
-      "g": false,
-      "a": 7,
+      "c": "#bbdefb",
       "f": 3
     },
-    "Web <small>browser</small>",
+    "Vol ➖",
     {
       "c": "#dcedc8",
       "f": 4,
@@ -196,24 +189,20 @@
     },
     "Select word\n\n\n\nSymbol",
     {
-      "c": "#cccccc",
-      "g": true,
+      "c": "#dcedc8",
       "f": 3
     },
-    "K",
+    "F19",
     {
-      "a": 5,
       "f": 3
     },
-    "_\n-",
+    "F18",
     {
       "x": 5,
-      "c": "#FFECB3",
-      "g": false,
-      "a": 7,
+      "c": "#bbdefb",
       "f": 3
     },
-    "My PC",
+    "Mute",
     {
       "c": "#dcedc8",
       "f": 4
@@ -263,13 +252,11 @@
     "Extend line",
     "Extend word",
     {
-      "c": "#cccccc",
-      "g": true
+      "c": "#dcedc8"
     },
-    "End",
+    "F20",
     {
       "c": "#D1C4E9",
-      "g": false,
       "p": "SPACE",
       "fa": [
         9
@@ -300,26 +287,26 @@
     },
     "Play / pause",
     {
-      "c": "#ffcdd2",
+      "c": "#dcedc8",
       "f": 3
     },
-    "Bright max",
+    "F16",
     {
       "f": 3
     },
-    "Bright ➕",
+    "F17",
     {
       "f": 3
     },
-    "Bright ➖",
+    "F18",
     {
       "f": 3
     },
-    "Bright min",
+    "F19",
     {
       "f": 3
     },
-    "Bright auto"
+    "F20"
   ],
   [
     {
