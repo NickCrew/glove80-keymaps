@@ -1,11 +1,12 @@
 // NOTE: Use the many #define settings below to customize this keymap!
-#define OPERATING_SYSTEM 'M' // choose 'L'inux, 'M'acOS, or 'W'indows
+#define OPERATING_SYSTEM 'L' // choose 'L'inux, 'M'acOS, or 'W'indows
 #define DIFFICULTY_LEVEL  0  // 0:custom, 1:easy -> 5:hard (see below)
 #define ENFORCE_BILATERAL    // cancels single-handed home row mod+tap
 //#define SHIFT_FORGIVENESS  // requires 24.08-beta1 or newer firmware
 #define WORLD_USE_COMPOSE    // use native Compose in place of Unicode
 // TIP: Add more setting overrides here instead of editing them below.
 
+#define OPERATING_SYSTEM 'M'
 #define MOUSE_MOTION_ACCELERATION_EXPONENT 1
 #define MOUSE_MOTION_TIME_TO_MAXIMUM_SPEED 275
 #define MOUSE_MOTION_DELAY 0
@@ -110,6 +111,13 @@
 #define _KP_N7 N7
 #define _KP_N8 N8
 #define _KP_N9 N9
+#define _KP_PLUS PLUS
+#define _KP_MINUS MINUS
+#define _KP_ASTERISK ASTERISK
+#define _KP_SLASH SLASH
+#define _KP_COMMA COMMA
+#define _KP_DOT DOT
+#define _KP_EQUAL EQUAL
 #define _KP_ENTER ENTER
 #endif
 
@@ -216,10 +224,10 @@
 #define KEY_LH_C2R5 V
 #define KEY_LH_C1R5 B
 #define KEY_LH_T1 ESC
-#define KEY_LH_T2 UP
-#define KEY_LH_T3 DOWN
-#define KEY_RH_T3 LEFT
-#define KEY_RH_T2 RIGHT
+#define KEY_LH_T2 PG_DN
+#define KEY_LH_T3 HOME
+#define KEY_RH_T3 END
+#define KEY_RH_T2 PG_UP
 #define KEY_RH_T1 ENTER
 #define KEY_RH_C1R5 N
 #define KEY_RH_C2R5 M
@@ -228,10 +236,10 @@
 #define KEY_RH_C5R5 FSLH
 #define KEY_RH_C6R5 RSFT
 #define KEY_LH_C6R6 0
-#define KEY_LH_C5R6 HOME
-#define KEY_LH_C4R6 PG_DN
-#define KEY_LH_C3R6 PG_UP
-#define KEY_LH_C2R6 END
+#define KEY_LH_C5R6 LEFT
+#define KEY_LH_C4R6 DOWN
+#define KEY_LH_C3R6 UP
+#define KEY_LH_C2R6 RIGHT_ARROW
 #define KEY_LH_T4 BACKSPACE
 #define KEY_LH_T5 DELETE
 #define KEY_LH_T6 0
@@ -8346,13 +8354,13 @@ UNICODE_MORPH_MODS
 #endif
 ))>;
     };
-    UNICODE(emoji_mostly_cloudy_macro, /* 🌟 */
+    UNICODE(emoji_mostly_cloudy_macro, /* 🔥 */
       #if OPERATING_SYSTEM == 'L'
-        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N3 &kp N1 &kp F)
+        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N5 &kp N2 &kp N5)
       #elif OPERATING_SYSTEM == 'M'
-        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp C &kp D &kp F &kp N1 &kp F)
+        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp D &kp D &kp D &kp N2 &kp N5)
       #elif OPERATING_SYSTEM == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N3 &kp N1 &kp F)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N5 &kp N2 &kp N5)
       #endif
     )
     emoji_mostly_cloudy: emoji_mostly_cloudy {
@@ -8388,13 +8396,13 @@ UNICODE_MORPH_MODS
 #endif
 ))>;
     };
-    UNICODE(emoji_mostly_sunny_macro, /* 🛑️ */
+    UNICODE(emoji_mostly_sunny_macro, /* 🌟 */
       #if OPERATING_SYSTEM == 'L'
-        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N6 &kp D &kp N1), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_LINUX(&kp F &kp E &kp N0 &kp F)
+        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N3 &kp N1 &kp F)
       #elif OPERATING_SYSTEM == 'M'
-        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp D &kp D &kp E &kp D &kp N1), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_MACOS(&kp F &kp E &kp N0 &kp F)
+        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp C &kp D &kp F &kp N1 &kp F)
       #elif OPERATING_SYSTEM == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N6 &kp D &kp N1), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_WINDOWS(&kp N0 &kp F &kp E &kp N0 &kp F)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N3 &kp N1 &kp F)
       #endif
     )
     emoji_mostly_sunny: emoji_mostly_sunny {
@@ -8535,13 +8543,13 @@ UNICODE_MORPH_MODS
 #endif
 ))>;
     };
-    UNICODE(emoji_light_skin_tone_macro, /* 🎆 */
+    UNICODE(emoji_light_skin_tone_macro, /* 📜 */
       #if OPERATING_SYSTEM == 'L'
-        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N3 &kp N8 &kp N6)
+        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N4 &kp D &kp C)
       #elif OPERATING_SYSTEM == 'M'
-        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp C &kp D &kp F &kp N8 &kp N6)
+        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp D &kp D &kp C &kp D &kp C)
       #elif OPERATING_SYSTEM == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N3 &kp N8 &kp N6)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N4 &kp D &kp C)
       #endif
     )
     emoji_light_skin_tone: emoji_light_skin_tone {
@@ -8556,13 +8564,13 @@ UNICODE_MORPH_MODS
 #endif
 ))>;
     };
-    UNICODE(emoji_medium_light_skin_tone_macro, /* 🎇 */
+    UNICODE(emoji_medium_light_skin_tone_macro, /* 📋 */
       #if OPERATING_SYSTEM == 'L'
-        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N3 &kp N8 &kp N7)
+        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N4 &kp C &kp B)
       #elif OPERATING_SYSTEM == 'M'
-        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp C &kp D &kp F &kp N8 &kp N7)
+        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp D &kp D &kp C &kp C &kp B)
       #elif OPERATING_SYSTEM == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N3 &kp N8 &kp N7)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N4 &kp C &kp B)
       #endif
     )
     emoji_medium_light_skin_tone: emoji_medium_light_skin_tone {
@@ -8577,13 +8585,13 @@ UNICODE_MORPH_MODS
 #endif
 ))>;
     };
-    UNICODE(emoji_medium_skin_tone_macro, /* 🗺️ */
+    UNICODE(emoji_medium_skin_tone_macro, /* 📄 */
       #if OPERATING_SYSTEM == 'L'
-        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N5 &kp F &kp A), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_LINUX(&kp F &kp E &kp N0 &kp F)
+        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N4 &kp C &kp N4)
       #elif OPERATING_SYSTEM == 'M'
-        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp D &kp D &kp D &kp F &kp A), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_MACOS(&kp F &kp E &kp N0 &kp F)
+        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp D &kp D &kp C &kp C &kp N4)
       #elif OPERATING_SYSTEM == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N5 &kp F &kp A), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_WINDOWS(&kp N0 &kp F &kp E &kp N0 &kp F)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N4 &kp C &kp N4)
       #endif
     )
     emoji_medium_skin_tone: emoji_medium_skin_tone {
@@ -8598,13 +8606,13 @@ UNICODE_MORPH_MODS
 #endif
 ))>;
     };
-    UNICODE(emoji_medium_dark_skin_tone_macro, /* 🔐 */
+    UNICODE(emoji_medium_dark_skin_tone_macro, /* 📝 */
       #if OPERATING_SYSTEM == 'L'
-        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N5 &kp N1 &kp N0)
+        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N4 &kp D &kp D)
       #elif OPERATING_SYSTEM == 'M'
-        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp D &kp D &kp D &kp N1 &kp N0)
+        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp D &kp D &kp C &kp D &kp D)
       #elif OPERATING_SYSTEM == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N5 &kp N1 &kp N0)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N4 &kp D &kp D)
       #endif
     )
     emoji_medium_dark_skin_tone: emoji_medium_dark_skin_tone {
@@ -8619,13 +8627,13 @@ UNICODE_MORPH_MODS
 #endif
 ))>;
     };
-    UNICODE(emoji_dark_skin_tone_macro, /* 🔒 */
+    UNICODE(emoji_dark_skin_tone_macro, /* 📁 */
       #if OPERATING_SYSTEM == 'L'
-        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N5 &kp N1 &kp N2)
+        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N4 &kp C &kp N1)
       #elif OPERATING_SYSTEM == 'M'
-        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp D &kp D &kp D &kp N1 &kp N2)
+        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp D &kp D &kp C &kp C &kp N1)
       #elif OPERATING_SYSTEM == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N5 &kp N1 &kp N2)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N4 &kp C &kp N1)
       #endif
     )
     emoji_dark_skin_tone: emoji_dark_skin_tone {
@@ -8640,13 +8648,13 @@ UNICODE_MORPH_MODS
 #endif
 ))>;
     };
-    UNICODE(emoji_baby_bottle_macro, /* ℹ️ */
+    UNICODE(emoji_baby_bottle_macro, /* 🎇 */
       #if OPERATING_SYSTEM == 'L'
-        UNICODE_SEQ_LINUX(&kp N2 &kp N1 &kp N3 &kp N9), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_LINUX(&kp F &kp E &kp N0 &kp F)
+        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N3 &kp N8 &kp N7)
       #elif OPERATING_SYSTEM == 'M'
-        UNICODE_SEQ_MACOS(&kp N2 &kp N1 &kp N3 &kp N9), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_MACOS(&kp F &kp E &kp N0 &kp F)
+        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp C &kp D &kp F &kp N8 &kp N7)
       #elif OPERATING_SYSTEM == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N0 &kp N2 &kp N1 &kp N3 &kp N9), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_WINDOWS(&kp N0 &kp F &kp E &kp N0 &kp F)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N3 &kp N8 &kp N7)
       #endif
     )
     emoji_baby_bottle: emoji_baby_bottle {
@@ -8661,17 +8669,17 @@ UNICODE_MORPH_MODS
 #endif
 ))>;
     };
-    UNICODE(emoji_baby_macro, /* 🛟
+    UNICODE(emoji_baby_macro, /* 🎆
 
 
 
 AltGr */
       #if OPERATING_SYSTEM == 'L'
-        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N6 &kp D &kp F), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_LINUX(&kp A), UNICODE_SEQ_LINUX(&kp A), UNICODE_SEQ_LINUX(&kp A), UNICODE_SEQ_LINUX(&kp A), UNICODE_SEQ_LINUX(&kp N4 &kp N1), UNICODE_SEQ_LINUX(&kp N6 &kp C), UNICODE_SEQ_LINUX(&kp N7 &kp N4), UNICODE_SEQ_LINUX(&kp N4 &kp N7), UNICODE_SEQ_LINUX(&kp N7 &kp N2)
+        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N3 &kp N8 &kp N6), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_LINUX(&kp A), UNICODE_SEQ_LINUX(&kp A), UNICODE_SEQ_LINUX(&kp A), UNICODE_SEQ_LINUX(&kp A), UNICODE_SEQ_LINUX(&kp N4 &kp N1), UNICODE_SEQ_LINUX(&kp N6 &kp C), UNICODE_SEQ_LINUX(&kp N7 &kp N4), UNICODE_SEQ_LINUX(&kp N4 &kp N7), UNICODE_SEQ_LINUX(&kp N7 &kp N2)
       #elif OPERATING_SYSTEM == 'M'
-        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp D &kp D &kp E &kp D &kp F), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp N0 &kp A), UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp N0 &kp A), UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp N0 &kp A), UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp N0 &kp A), UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp N4 &kp N1), UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp N6 &kp C), UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp N7 &kp N4), UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp N4 &kp N7), UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp N7 &kp N2)
+        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp C &kp D &kp F &kp N8 &kp N6), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp N0 &kp A), UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp N0 &kp A), UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp N0 &kp A), UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp N0 &kp A), UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp N4 &kp N1), UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp N6 &kp C), UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp N7 &kp N4), UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp N4 &kp N7), UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp N7 &kp N2)
       #elif OPERATING_SYSTEM == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N6 &kp D &kp F), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_WINDOWS(&kp N0 &kp A), UNICODE_SEQ_WINDOWS(&kp N0 &kp A), UNICODE_SEQ_WINDOWS(&kp N0 &kp A), UNICODE_SEQ_WINDOWS(&kp N0 &kp A), UNICODE_SEQ_WINDOWS(&kp N0 &kp N4 &kp N1), UNICODE_SEQ_WINDOWS(&kp N0 &kp N6 &kp C), UNICODE_SEQ_WINDOWS(&kp N0 &kp N7 &kp N4), UNICODE_SEQ_WINDOWS(&kp N0 &kp N4 &kp N7), UNICODE_SEQ_WINDOWS(&kp N0 &kp N7 &kp N2)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N3 &kp N8 &kp N6), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_WINDOWS(&kp N0 &kp A), UNICODE_SEQ_WINDOWS(&kp N0 &kp A), UNICODE_SEQ_WINDOWS(&kp N0 &kp A), UNICODE_SEQ_WINDOWS(&kp N0 &kp A), UNICODE_SEQ_WINDOWS(&kp N0 &kp N4 &kp N1), UNICODE_SEQ_WINDOWS(&kp N0 &kp N6 &kp C), UNICODE_SEQ_WINDOWS(&kp N0 &kp N7 &kp N4), UNICODE_SEQ_WINDOWS(&kp N0 &kp N4 &kp N7), UNICODE_SEQ_WINDOWS(&kp N0 &kp N7 &kp N2)
       #endif
     )
     emoji_baby: emoji_baby {
@@ -8686,13 +8694,13 @@ UNICODE_MORPH_MODS
 #endif
 ))>;
     };
-    UNICODE(emoji_boy_macro, /* 🧭 */
+    UNICODE(emoji_boy_macro, /* ⚙️ */
       #if OPERATING_SYSTEM == 'L'
-        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N9 &kp E &kp D)
+        UNICODE_SEQ_LINUX(&kp N2 &kp N6 &kp N9 &kp N9), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_LINUX(&kp F &kp E &kp N0 &kp F)
       #elif OPERATING_SYSTEM == 'M'
-        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp E &kp D &kp D &kp E &kp D)
+        UNICODE_SEQ_MACOS(&kp N2 &kp N6 &kp N9 &kp N9), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_MACOS(&kp F &kp E &kp N0 &kp F)
       #elif OPERATING_SYSTEM == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N9 &kp E &kp D)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N2 &kp N6 &kp N9 &kp N9), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_WINDOWS(&kp N0 &kp F &kp E &kp N0 &kp F)
       #endif
     )
     emoji_boy: emoji_boy {
@@ -8707,13 +8715,13 @@ UNICODE_MORPH_MODS
 #endif
 ))>;
     };
-    UNICODE(emoji_girl_macro, /* 🔗 */
+    UNICODE(emoji_girl_macro, /* 🧪 */
       #if OPERATING_SYSTEM == 'L'
-        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N5 &kp N1 &kp N7)
+        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N9 &kp E &kp A)
       #elif OPERATING_SYSTEM == 'M'
-        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp D &kp D &kp D &kp N1 &kp N7)
+        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp E &kp D &kp D &kp E &kp A)
       #elif OPERATING_SYSTEM == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N5 &kp N1 &kp N7)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N9 &kp E &kp A)
       #endif
     )
     emoji_girl: emoji_girl {
@@ -8749,13 +8757,13 @@ UNICODE_MORPH_MODS
 #endif
 ))>;
     };
-    UNICODE(emoji_woman_macro, /* 💡 */
+    UNICODE(emoji_woman_macro, /* ⌛ */
       #if OPERATING_SYSTEM == 'L'
-        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N4 &kp A &kp N1)
+        UNICODE_SEQ_LINUX(&kp N2 &kp N3 &kp N1 &kp B)
       #elif OPERATING_SYSTEM == 'M'
-        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp D &kp D &kp C &kp A &kp N1)
+        UNICODE_SEQ_MACOS(&kp N2 &kp N3 &kp N1 &kp B)
       #elif OPERATING_SYSTEM == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N4 &kp A &kp N1)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N2 &kp N3 &kp N1 &kp B)
       #endif
     )
     emoji_woman: emoji_woman {
@@ -8791,13 +8799,13 @@ UNICODE_MORPH_MODS
 #endif
 ))>;
     };
-    UNICODE(emoji_old_woman_macro, /* 📚️ */
+    UNICODE(emoji_old_woman_macro, /* 🚧 */
       #if OPERATING_SYSTEM == 'L'
-        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N4 &kp D &kp A), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_LINUX(&kp F &kp E &kp N0 &kp F)
+        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N6 &kp A &kp N7)
       #elif OPERATING_SYSTEM == 'M'
-        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp D &kp D &kp C &kp D &kp A), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_MACOS(&kp F &kp E &kp N0 &kp F)
+        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp D &kp D &kp E &kp A &kp N7)
       #elif OPERATING_SYSTEM == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N4 &kp D &kp A), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_WINDOWS(&kp N0 &kp F &kp E &kp N0 &kp F)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N6 &kp A &kp N7)
       #endif
     )
     emoji_old_woman: emoji_old_woman {
@@ -8812,13 +8820,13 @@ UNICODE_MORPH_MODS
 #endif
 ))>;
     };
-    UNICODE(emoji_white_hair_macro, /* 🦳 */
+    UNICODE(emoji_white_hair_macro, /* 🔴 */
       #if OPERATING_SYSTEM == 'L'
-        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N9 &kp B &kp N3)
+        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N5 &kp N3 &kp N4)
       #elif OPERATING_SYSTEM == 'M'
-        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp E &kp D &kp D &kp B &kp N3)
+        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp D &kp D &kp D &kp N3 &kp N4)
       #elif OPERATING_SYSTEM == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N9 &kp B &kp N3)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N5 &kp N3 &kp N4)
       #endif
     )
     emoji_white_hair: emoji_white_hair {
@@ -8833,13 +8841,13 @@ UNICODE_MORPH_MODS
 #endif
 ))>;
     };
-    UNICODE(emoji_curly_hair_macro, /* 🦱 */
+    UNICODE(emoji_curly_hair_macro, /* ⚪ */
       #if OPERATING_SYSTEM == 'L'
-        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N9 &kp B &kp N1)
+        UNICODE_SEQ_LINUX(&kp N2 &kp N6 &kp A &kp A)
       #elif OPERATING_SYSTEM == 'M'
-        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp E &kp D &kp D &kp B &kp N1)
+        UNICODE_SEQ_MACOS(&kp N2 &kp N6 &kp A &kp A)
       #elif OPERATING_SYSTEM == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N9 &kp B &kp N1)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N2 &kp N6 &kp A &kp A)
       #endif
     )
     emoji_curly_hair: emoji_curly_hair {
@@ -8854,13 +8862,13 @@ UNICODE_MORPH_MODS
 #endif
 ))>;
     };
-    UNICODE(emoji_red_hair_macro, /* 🦰 */
+    UNICODE(emoji_red_hair_macro, /* 🟠 */
       #if OPERATING_SYSTEM == 'L'
-        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N9 &kp B &kp N0)
+        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N7 &kp E &kp N0)
       #elif OPERATING_SYSTEM == 'M'
-        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp E &kp D &kp D &kp B &kp N0)
+        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp D &kp D &kp F &kp E &kp N0)
       #elif OPERATING_SYSTEM == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N9 &kp B &kp N0)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N7 &kp E &kp N0)
       #endif
     )
     emoji_red_hair: emoji_red_hair {
@@ -8875,13 +8883,13 @@ UNICODE_MORPH_MODS
 #endif
 ))>;
     };
-    UNICODE(emoji_bald_macro, /* 🦲 */
+    UNICODE(emoji_bald_macro, /* 🔵 */
       #if OPERATING_SYSTEM == 'L'
-        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N9 &kp B &kp N2)
+        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N5 &kp N3 &kp N5)
       #elif OPERATING_SYSTEM == 'M'
-        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp E &kp D &kp D &kp B &kp N2)
+        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp D &kp D &kp D &kp N3 &kp N5)
       #elif OPERATING_SYSTEM == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N9 &kp B &kp N2)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N5 &kp N3 &kp N5)
       #endif
     )
     emoji_bald: emoji_bald {
@@ -8896,13 +8904,13 @@ UNICODE_MORPH_MODS
 #endif
 ))>;
     };
-    UNICODE(emoji_new_moon_macro, /* 🎁 */
+    UNICODE(emoji_new_moon_macro, /* ‼️ */
       #if OPERATING_SYSTEM == 'L'
-        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N3 &kp N8 &kp N1)
+        UNICODE_SEQ_LINUX(&kp N2 &kp N0 &kp N3 &kp C), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_LINUX(&kp F &kp E &kp N0 &kp F)
       #elif OPERATING_SYSTEM == 'M'
-        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp C &kp D &kp F &kp N8 &kp N1)
+        UNICODE_SEQ_MACOS(&kp N2 &kp N0 &kp N3 &kp C), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_MACOS(&kp F &kp E &kp N0 &kp F)
       #elif OPERATING_SYSTEM == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N3 &kp N8 &kp N1)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N2 &kp N0 &kp N3 &kp C), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_WINDOWS(&kp N0 &kp F &kp E &kp N0 &kp F)
       #endif
     )
     emoji_new_moon: emoji_new_moon {
@@ -8917,13 +8925,13 @@ UNICODE_MORPH_MODS
 #endif
 ))>;
     };
-    UNICODE(emoji_waxing_crescent_moon_macro, /* 🏆 */
+    UNICODE(emoji_waxing_crescent_moon_macro, /* 🔒 */
       #if OPERATING_SYSTEM == 'L'
-        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N3 &kp C &kp N6)
+        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N5 &kp N1 &kp N2)
       #elif OPERATING_SYSTEM == 'M'
-        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp C &kp D &kp F &kp C &kp N6)
+        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp D &kp D &kp D &kp N1 &kp N2)
       #elif OPERATING_SYSTEM == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N3 &kp C &kp N6)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N5 &kp N1 &kp N2)
       #endif
     )
     emoji_waxing_crescent_moon: emoji_waxing_crescent_moon {
@@ -8938,13 +8946,13 @@ UNICODE_MORPH_MODS
 #endif
 ))>;
     };
-    UNICODE(emoji_first_quarter_moon_macro, /* 🎽 */
+    UNICODE(emoji_first_quarter_moon_macro, /* 📘 */
       #if OPERATING_SYSTEM == 'L'
-        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N3 &kp B &kp D)
+        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N4 &kp D &kp N8)
       #elif OPERATING_SYSTEM == 'M'
-        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp C &kp D &kp F &kp B &kp D)
+        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp D &kp D &kp C &kp D &kp N8)
       #elif OPERATING_SYSTEM == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N3 &kp B &kp D)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N4 &kp D &kp N8)
       #endif
     )
     emoji_first_quarter_moon: emoji_first_quarter_moon {
@@ -8959,13 +8967,13 @@ UNICODE_MORPH_MODS
 #endif
 ))>;
     };
-    UNICODE(emoji_waxing_gibbous_moon_macro, /* 🎯 */
+    UNICODE(emoji_waxing_gibbous_moon_macro, /* 📥 */
       #if OPERATING_SYSTEM == 'L'
-        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N3 &kp A &kp F)
+        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N4 &kp E &kp N5)
       #elif OPERATING_SYSTEM == 'M'
-        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp C &kp D &kp F &kp A &kp F)
+        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp D &kp D &kp C &kp E &kp N5)
       #elif OPERATING_SYSTEM == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N3 &kp A &kp F)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N4 &kp E &kp N5)
       #endif
     )
     emoji_waxing_gibbous_moon: emoji_waxing_gibbous_moon {
@@ -8980,13 +8988,13 @@ UNICODE_MORPH_MODS
 #endif
 ))>;
     };
-    UNICODE(emoji_full_moon_macro, /* 🎨 */
+    UNICODE(emoji_full_moon_macro, /* ‼ */
       #if OPERATING_SYSTEM == 'L'
-        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N3 &kp A &kp N8)
+        UNICODE_SEQ_LINUX(&kp N2 &kp N0 &kp N3 &kp C)
       #elif OPERATING_SYSTEM == 'M'
-        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp C &kp D &kp F &kp A &kp N8)
+        UNICODE_SEQ_MACOS(&kp N2 &kp N0 &kp N3 &kp C)
       #elif OPERATING_SYSTEM == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N3 &kp A &kp N8)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N2 &kp N0 &kp N3 &kp C)
       #endif
     )
     emoji_full_moon: emoji_full_moon {
@@ -9001,13 +9009,13 @@ UNICODE_MORPH_MODS
 #endif
 ))>;
     };
-    UNICODE(emoji_waning_gibbous_moon_macro, /* 🚧 */
+    UNICODE(emoji_waning_gibbous_moon_macro, /* 📤 */
       #if OPERATING_SYSTEM == 'L'
-        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N6 &kp A &kp N7)
+        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N4 &kp E &kp N4)
       #elif OPERATING_SYSTEM == 'M'
-        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp D &kp D &kp E &kp A &kp N7)
+        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp D &kp D &kp C &kp E &kp N4)
       #elif OPERATING_SYSTEM == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N6 &kp A &kp N7)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N4 &kp E &kp N4)
       #endif
     )
     emoji_waning_gibbous_moon: emoji_waning_gibbous_moon {
@@ -9022,13 +9030,13 @@ UNICODE_MORPH_MODS
 #endif
 ))>;
     };
-    UNICODE(emoji_last_quarter_moon_macro, /* ☸️ */
+    UNICODE(emoji_last_quarter_moon_macro, /* 📖 */
       #if OPERATING_SYSTEM == 'L'
-        UNICODE_SEQ_LINUX(&kp N2 &kp N6 &kp N3 &kp N8), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_LINUX(&kp F &kp E &kp N0 &kp F)
+        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N4 &kp D &kp N6)
       #elif OPERATING_SYSTEM == 'M'
-        UNICODE_SEQ_MACOS(&kp N2 &kp N6 &kp N3 &kp N8), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_MACOS(&kp F &kp E &kp N0 &kp F)
+        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp D &kp D &kp C &kp D &kp N6)
       #elif OPERATING_SYSTEM == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N0 &kp N2 &kp N6 &kp N3 &kp N8), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_WINDOWS(&kp N0 &kp F &kp E &kp N0 &kp F)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N4 &kp D &kp N6)
       #endif
     )
     emoji_last_quarter_moon: emoji_last_quarter_moon {
@@ -9043,13 +9051,13 @@ UNICODE_MORPH_MODS
 #endif
 ))>;
     };
-    UNICODE(emoji_waning_crescent_moon_macro, /* 🧩 */
+    UNICODE(emoji_waning_crescent_moon_macro, /* 🔐 */
       #if OPERATING_SYSTEM == 'L'
-        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N9 &kp E &kp N9)
+        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N5 &kp N1 &kp N0)
       #elif OPERATING_SYSTEM == 'M'
-        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp E &kp D &kp D &kp E &kp N9)
+        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp D &kp D &kp D &kp N1 &kp N0)
       #elif OPERATING_SYSTEM == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N9 &kp E &kp N9)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N5 &kp N1 &kp N0)
       #endif
     )
     emoji_waning_crescent_moon: emoji_waning_crescent_moon {
@@ -9106,13 +9114,13 @@ UNICODE_MORPH_MODS
 #endif
 ))>;
     };
-    UNICODE(emoji_fire_macro, /* 🔥 */
+    UNICODE(emoji_fire_macro, /* 🎯 */
       #if OPERATING_SYSTEM == 'L'
-        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N5 &kp N2 &kp N5)
+        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N3 &kp A &kp F)
       #elif OPERATING_SYSTEM == 'M'
-        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp D &kp D &kp D &kp N2 &kp N5)
+        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp C &kp D &kp F &kp A &kp F)
       #elif OPERATING_SYSTEM == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N5 &kp N2 &kp N5)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N3 &kp A &kp F)
       #endif
     )
     emoji_fire: emoji_fire {
@@ -9148,13 +9156,13 @@ UNICODE_MORPH_MODS
 #endif
 ))>;
     };
-    UNICODE(emoji_person_climbing_macro, /* 🧗 */
+    UNICODE(emoji_person_climbing_macro, /* 🖊️ */
       #if OPERATING_SYSTEM == 'L'
-        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N9 &kp D &kp N7)
+        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N5 &kp N8 &kp A), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_LINUX(&kp F &kp E &kp N0 &kp F)
       #elif OPERATING_SYSTEM == 'M'
-        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp E &kp D &kp D &kp D &kp N7)
+        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp D &kp D &kp D &kp N8 &kp A), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_MACOS(&kp F &kp E &kp N0 &kp F)
       #elif OPERATING_SYSTEM == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N9 &kp D &kp N7)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N5 &kp N8 &kp A), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_WINDOWS(&kp N0 &kp F &kp E &kp N0 &kp F)
       #endif
     )
     emoji_person_climbing: emoji_person_climbing {
@@ -9169,13 +9177,13 @@ UNICODE_MORPH_MODS
 #endif
 ))>;
     };
-    UNICODE(emoji_lab_coat_macro, /* 🥼 */
+    UNICODE(emoji_lab_coat_macro, /* 🎽 */
       #if OPERATING_SYSTEM == 'L'
-        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N9 &kp N7 &kp C)
+        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N3 &kp B &kp D)
       #elif OPERATING_SYSTEM == 'M'
-        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp E &kp D &kp D &kp N7 &kp C)
+        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp C &kp D &kp F &kp B &kp D)
       #elif OPERATING_SYSTEM == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N9 &kp N7 &kp C)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N3 &kp B &kp D)
       #endif
     )
     emoji_lab_coat: emoji_lab_coat {
@@ -9505,13 +9513,13 @@ UNICODE_MORPH_MODS
 #endif
 ))>;
     };
-    UNICODE(emoji_person_tipping_hand_macro, /* 💁 */
+    UNICODE(emoji_person_tipping_hand_macro, /* 📌 */
       #if OPERATING_SYSTEM == 'L'
-        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N4 &kp N8 &kp N1)
+        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N4 &kp C &kp C)
       #elif OPERATING_SYSTEM == 'M'
-        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp D &kp D &kp C &kp N8 &kp N1)
+        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp D &kp D &kp C &kp C &kp C)
       #elif OPERATING_SYSTEM == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N4 &kp N8 &kp N1)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N4 &kp C &kp C)
       #endif
     )
     emoji_person_tipping_hand: emoji_person_tipping_hand {
@@ -9526,13 +9534,13 @@ UNICODE_MORPH_MODS
 #endif
 ))>;
     };
-    UNICODE(emoji_person_gesturing_ok_macro, /* 🙆 */
+    UNICODE(emoji_person_gesturing_ok_macro, /* ℹ️ */
       #if OPERATING_SYSTEM == 'L'
-        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N6 &kp N4 &kp N6)
+        UNICODE_SEQ_LINUX(&kp N2 &kp N1 &kp N3 &kp N9), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_LINUX(&kp F &kp E &kp N0 &kp F)
       #elif OPERATING_SYSTEM == 'M'
-        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp D &kp D &kp E &kp N4 &kp N6)
+        UNICODE_SEQ_MACOS(&kp N2 &kp N1 &kp N3 &kp N9), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_MACOS(&kp F &kp E &kp N0 &kp F)
       #elif OPERATING_SYSTEM == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N6 &kp N4 &kp N6)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N2 &kp N1 &kp N3 &kp N9), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_WINDOWS(&kp N0 &kp F &kp E &kp N0 &kp F)
       #endif
     )
     emoji_person_gesturing_ok: emoji_person_gesturing_ok {
@@ -9547,13 +9555,13 @@ UNICODE_MORPH_MODS
 #endif
 ))>;
     };
-    UNICODE(emoji_person_bowing_macro, /* 🙇 */
+    UNICODE(emoji_person_bowing_macro, /* 🔗 */
       #if OPERATING_SYSTEM == 'L'
-        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N6 &kp N4 &kp N7)
+        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N5 &kp N1 &kp N7)
       #elif OPERATING_SYSTEM == 'M'
-        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp D &kp D &kp E &kp N4 &kp N7)
+        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp D &kp D &kp D &kp N1 &kp N7)
       #elif OPERATING_SYSTEM == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N6 &kp N4 &kp N7)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N5 &kp N1 &kp N7)
       #endif
     )
     emoji_person_bowing: emoji_person_bowing {
@@ -9568,13 +9576,13 @@ UNICODE_MORPH_MODS
 #endif
 ))>;
     };
-    UNICODE(emoji_person_raising_hand_macro, /* 🙋 */
+    UNICODE(emoji_person_raising_hand_macro, /* 🧭 */
       #if OPERATING_SYSTEM == 'L'
-        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N6 &kp N4 &kp B)
+        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N9 &kp E &kp D)
       #elif OPERATING_SYSTEM == 'M'
-        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp D &kp D &kp E &kp N4 &kp B)
+        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp E &kp D &kp D &kp E &kp D)
       #elif OPERATING_SYSTEM == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N6 &kp N4 &kp B)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N9 &kp E &kp D)
       #endif
     )
     emoji_person_raising_hand: emoji_person_raising_hand {
@@ -9589,13 +9597,13 @@ UNICODE_MORPH_MODS
 #endif
 ))>;
     };
-    UNICODE(emoji_person_gesturing_no_macro, /* 🙅 */
+    UNICODE(emoji_person_gesturing_no_macro, /* 🛟 */
       #if OPERATING_SYSTEM == 'L'
-        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N6 &kp N4 &kp N5)
+        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N6 &kp D &kp F)
       #elif OPERATING_SYSTEM == 'M'
-        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp D &kp D &kp E &kp N4 &kp N5)
+        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp D &kp D &kp E &kp D &kp F)
       #elif OPERATING_SYSTEM == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N6 &kp N4 &kp N5)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N6 &kp D &kp F)
       #endif
     )
     emoji_person_gesturing_no: emoji_person_gesturing_no {
@@ -9610,13 +9618,13 @@ UNICODE_MORPH_MODS
 #endif
 ))>;
     };
-    UNICODE(emoji_person_shrugging_macro, /* 🤷 */
+    UNICODE(emoji_person_shrugging_macro, /* 📚 */
       #if OPERATING_SYSTEM == 'L'
-        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N9 &kp N3 &kp N7)
+        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N4 &kp D &kp A)
       #elif OPERATING_SYSTEM == 'M'
-        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp E &kp D &kp D &kp N3 &kp N7)
+        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp D &kp D &kp C &kp D &kp A)
       #elif OPERATING_SYSTEM == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N9 &kp N3 &kp N7)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N4 &kp D &kp A)
       #endif
     )
     emoji_person_shrugging: emoji_person_shrugging {
@@ -9869,7 +9877,7 @@ UNICODE_MORPH_MODS
     emoji_moon_complete: emoji_moon_complete {
         compatible = "zmk,behavior-mod-morph";
         #binding-cells = <0>;
-        bindings = <&emoji_tada>, <&emoji_full_moon>;
+        bindings = <&emoji_new_moon>, <&emoji_full_moon>;
         mods = <MOD_LSFT>;
     };
     emoji_moon_gibbous: emoji_moon_gibbous {

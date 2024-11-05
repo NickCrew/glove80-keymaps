@@ -30,14 +30,14 @@
     "F10"
   ],
   [
-    {
-      "c": "#ffccbc",
-      "g": false
-    },
     "Escape",
     "Enter",
     "Space",
     "Tab",
+    {
+      "c": "#ffccbc",
+      "g": false
+    },
     "Delete",
     "Insert",
     {
@@ -73,25 +73,13 @@
   ],
   [
     {
-      "c": "#cccccc",
-      "g": true,
-      "a": 5,
+      "c": "#ffccbc",
       "f": 3
     },
-    "<\n,",
-    {
-      "g": false,
-      "a": 7
-    },
-    "Shift <small>(sticky)</small>",
-    {
-      "c": "#e1bee7"
-    },
-    "Redo",
-    "Undo",
-    {
-      "c": "#ffccbc"
-    },
+    "Escape",
+    "Enter",
+    "Space",
+    "Tab",
     "Back space",
     {
       "c": "#dcedc8",
@@ -124,16 +112,13 @@
   ],
   [
     {
-      "c": "#e1bee7",
+      "c": "#cccccc",
       "f": 3
     },
-    "Num lock",
-    {
-      "c": "#cccccc"
-    },
-    "Win\n\n\n\nWin",
+    "AltGr",
+    "Ctrl\n\n\n\nWin",
     "Alt\n\n\n\nAlt",
-    "Ctrl\n\n\n\nCtrl",
+    "Cmd\n\n\n\nCtrl",
     {
       "n": true
     },
@@ -175,16 +160,16 @@
     },
     "Caps word",
     {
-      "c": "#bbdefb",
       "t": "#00000",
       "g": false
     },
-    "Select all",
+    "Shift (sticky)",
     {
+      "c": "#e1bee7",
       "t": "#000000"
     },
-    "Select line\n\n\n\nMouse",
-    "Select word\n\n\n\nSymbol",
+    "Redo\n\n\n\nMouse",
+    "Undo\n\n\n\nSymbol",
     {
       "c": "#ffcdd2",
       "f": 6
@@ -243,17 +228,20 @@
       ]
     },
     "&uArr;",
-    "&dArr;",
     {
-      "c": "#bbdefb",
+      "c": "#ffccbc",
       "g": false,
-      "f": 3
+      "a": 5,
+      "f": 5
     },
-    "Extend line",
+    "\"\n'",
     {
+      "c": "#e1bee7",
+      "a": 7,
       "f": 3
     },
-    "Extend word",
+    "Copy",
+    "Paste",
     {
       "c": "#ffcdd2",
       "f": 7

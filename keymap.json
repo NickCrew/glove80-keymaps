@@ -541,7 +541,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "UP",
+            "value": "PG_DN",
             "params": []
           }
         ]
@@ -550,7 +550,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "DOWN",
+            "value": "HOME",
             "params": []
           }
         ]
@@ -559,7 +559,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "LEFT",
+            "value": "END",
             "params": []
           }
         ]
@@ -568,7 +568,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "RIGHT",
+            "value": "PG_UP",
             "params": []
           }
         ]
@@ -644,7 +644,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "HOME",
+            "value": "LEFT",
             "params": []
           }
         ]
@@ -653,7 +653,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "PG_DN",
+            "value": "DOWN",
             "params": []
           }
         ]
@@ -662,7 +662,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "PG_UP",
+            "value": "UP",
             "params": []
           }
         ]
@@ -671,7 +671,7 @@
         "value": "Custom",
         "params": [
           {
-            "value": "&thumb LAYER_Emoji END",
+            "value": "&thumb LAYER_Emoji RIGHT_ARROW",
             "params": []
           }
         ]
@@ -724,7 +724,7 @@
         "value": "Custom",
         "params": [
           {
-            "value": "&thumb_parang_left LAYER_World 0",
+            "value": "&thumb_parang_left LAYER_Emoji 0",
             "params": []
           }
         ]
@@ -12543,40 +12543,20 @@
         "params": []
       },
       {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "ESC",
-            "params": []
-          }
-        ]
+        "value": "&none",
+        "params": []
       },
       {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "RET",
-            "params": []
-          }
-        ]
+        "value": "&none",
+        "params": []
       },
       {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "SPACE",
-            "params": []
-          }
-        ]
+        "value": "&none",
+        "params": []
       },
       {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "TAB",
-            "params": []
-          }
-        ]
+        "value": "&none",
+        "params": []
       },
       {
         "value": "&kp",
@@ -12591,7 +12571,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "INS",
+            "value": "A",
             "params": []
           }
         ]
@@ -12651,32 +12631,37 @@
         ]
       },
       {
-        "value": "&none",
-        "params": []
-      },
-      {
-        "value": "&sk",
+        "value": "&kp",
         "params": [
           {
-            "value": "LSHFT",
+            "value": "ESC",
             "params": []
           }
         ]
       },
       {
-        "value": "Custom",
+        "value": "&kp",
         "params": [
           {
-            "value": "&kp _REDO",
+            "value": "RET",
             "params": []
           }
         ]
       },
       {
-        "value": "Custom",
+        "value": "&kp",
         "params": [
           {
-            "value": "&kp _UNDO",
+            "value": "SPACE",
+            "params": []
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "TAB",
             "params": []
           }
         ]
@@ -12694,7 +12679,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "A",
+            "value": "B",
             "params": []
           }
         ]
@@ -12802,7 +12787,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "B",
+            "value": "C",
             "params": []
           }
         ]
@@ -12862,10 +12847,14 @@
         ]
       },
       {
-        "value": "&sl",
+        "value": "&none",
+        "params": []
+      },
+      {
+        "value": "&sk",
         "params": [
           {
-            "value": "22",
+            "value": "LSHFT",
             "params": []
           }
         ]
@@ -12874,7 +12863,7 @@
         "value": "Custom",
         "params": [
           {
-            "value": "&kp _C(A)",
+            "value": "&kp _REDO",
             "params": []
           }
         ]
@@ -12883,16 +12872,7 @@
         "value": "Custom",
         "params": [
           {
-            "value": "&select_line",
-            "params": []
-          }
-        ]
-      },
-      {
-        "value": "Custom",
-        "params": [
-          {
-            "value": "&select_word",
+            "value": "&kp _UNDO",
             "params": []
           }
         ]
@@ -12902,15 +12882,6 @@
         "params": [
           {
             "value": "UNDER",
-            "params": []
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "C",
             "params": []
           }
         ]
@@ -12938,6 +12909,15 @@
         "params": [
           {
             "value": "F",
+            "params": []
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "G",
             "params": []
           }
         ]
@@ -13045,7 +13025,7 @@
         "value": "Custom",
         "params": [
           {
-            "value": "&extend_line",
+            "value": "&kp _COPY",
             "params": []
           }
         ]
@@ -13054,7 +13034,7 @@
         "value": "Custom",
         "params": [
           {
-            "value": "&extend_word",
+            "value": "&kp _PASTE",
             "params": []
           }
         ]
@@ -13069,8 +13049,13 @@
         ]
       },
       {
-        "value": "&none",
-        "params": []
+        "value": "Custom",
+        "params": [
+          {
+            "value": "&tog LAYER_Number",
+            "params": []
+          }
+        ]
       },
       {
         "value": "&none",
@@ -13328,10 +13313,10 @@
         ]
       },
       {
-        "value": "&kp",
+        "value": "Custom",
         "params": [
           {
-            "value": "F16",
+            "value": "&kp _CUT",
             "params": []
           }
         ]
@@ -13436,10 +13421,10 @@
         ]
       },
       {
-        "value": "&kp",
+        "value": "Custom",
         "params": [
           {
-            "value": "F17",
+            "value": "&kp _COPY",
             "params": []
           }
         ]
@@ -13530,19 +13515,19 @@
         ]
       },
       {
-        "value": "&kp",
+        "value": "Custom",
         "params": [
           {
-            "value": "F19",
+            "value": "&kp _FIND",
             "params": []
           }
         ]
       },
       {
-        "value": "&kp",
+        "value": "Custom",
         "params": [
           {
-            "value": "F18",
+            "value": "&kp _PASTE",
             "params": []
           }
         ]
@@ -13645,8 +13630,13 @@
         "params": []
       },
       {
-        "value": "&none",
-        "params": []
+        "value": "Custom",
+        "params": [
+          {
+            "value": "&kp _FIND_PREV",
+            "params": []
+          }
+        ]
       },
       {
         "value": "Custom",
@@ -13667,10 +13657,10 @@
         ]
       },
       {
-        "value": "&kp",
+        "value": "Custom",
         "params": [
           {
-            "value": "F20",
+            "value": "&kp _FIND_PREV",
             "params": []
           }
         ]

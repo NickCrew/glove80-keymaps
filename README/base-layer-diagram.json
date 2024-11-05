@@ -41,7 +41,7 @@
       "h": 4,
       "d": true
     },
-    "<center><h2>Base Layer</h2><p>MoErgo Glove80 keyboard</p><ul><li><a href='https://github.com/manna-harbour/miryoku'>Miryoku</a> layers & home row mods</li><li><a href='https://engram.dev'>Engram</a><a href='https://github.com/sunaku/engrammer'><em>&middot;mer</em></a> keyboard layout</li><li>See <a href='https://is.gd/sunaku_glove80'>is.gd/sunaku_glove80</a></li></ul></center>",
+    "<center><h2>Base Layer</h2><p>MoErgo Glove80 keyboard</p><ul><li><a href='https://github.com/manna-harbour/miryoku'>Miryoku</a> layers & home row mods</li><li><a href='https://engram.dev'>Engram</a><a href='https://github.com/sunaku/engrammer'><em>&middot;mer</em></a> keyboard layout</li><li>See <a href='https://is.gd/sunaku_glove80'>is.gd/sunaku_glove80</a></li></ul></center>\n\n\n\n\n\n\n\n\n\nCustom",
     {
       "a": 5
     },
@@ -98,39 +98,39 @@
       "p": "CHICKLET"
     },
     "P",
-    "-\n_"
+    "-"
   ],
   [
     "Caps word",
     {
       "c": "#FFCDD2",
       "p": "SPACE"
-    }, "A\n\n\n\nWin", {
+    },
+    "A\n\n\n\nCtrl",
+    {
       "c": "#FFCCBC"
     },
-    "S\n\n\n\nAlt",
+    "S\n\n\n\nOpt",
     {
       "c": "#FFECB3"
     },
-    "D\n\n\n\nCtrl",
+    "D\n\n\n\nCmd",
     {
       "c": "#DCEDC8",
       "n": true
     },
     "F\n\n\n\nShift",
     {
-      "c": "#cccccc",
-      "a": 5,
+      "c": "#D1C4E9",
       "f": 4
     },
-    "G",
+    "G\n\n\n\nLower",
     {
       "x": 5
     },
-    "H",
+    "H\n\n\n\nLower",
     {
       "c": "#DCEDC8",
-      "a": 7,
       "f": 3,
       "n": true
     },
@@ -138,20 +138,20 @@
     {
       "c": "#FFECB3"
     },
-    "J\n\n\n\nCtrl",
+    "J\n\n\n\nCmd",
     {
       "c": "#FFCCBC"
     },
-    "K\n\n\n\nAlt",
+    "K\n\n\n\nOpt",
     {
       "c": "#FFCDD2"
     },
-    "L\n\n\n\nWin",
+    ";\n\n\n\nCtrl",
     {
       "c": "#cccccc",
       "p": "CHICKLET"
     },
-    ";\n:"
+    "'"
   ],
   [
     "Shift <small>(sticky)</small>",
@@ -160,7 +160,6 @@
     "C",
     "V",
     {
-      "a": 5,
       "f": 4
     },
     "B",
@@ -169,13 +168,12 @@
     },
     "N",
     {
-      "a": 7,
       "f": 3
     },
     "M",
-    "<\n,",
-    ">\n.",
-    "?\n/",
+    "<",
+    ">",
+    "?",
     "Shift <small>(sticky)</small>"
   ],
   [
@@ -216,48 +214,61 @@
     },
     "Magic",
     {
-      "c": "#cccccc",
+      "c": "#CCCCCC",
       "t": "#000000",
-      "p": "CHICKLET"
-    },
-    "Home",
-    "Page up",
-    "Page down",
-    {
-      "c": "#d1c4e9",
-      "p": "SPACE"
-    },
-    "End\n\n\n\nEmoji",
-    {
-      "c": "#D1C4E9"
-    },
-    "Escape\n\n\n\nFunction",
-    {
-      "c": "#cccccc",
       "p": "CHICKLET",
       "fa": [
         9
       ]
     },
-    "&uarr;",
-    "&darr;",
+    "&larr;\n\n\n\nLower",
     {
-      "x": 1
+      "c": "#cccccc"
     },
-    "&larr;",
-    "&rarr;",
+    "&darr;",
+    "&uarr;",
+    {
+      "c": "#d1c4e9",
+      "p": "SPACE"
+    },
+    "&rarr;\n\n\n\nEmoji",
+    {
+      "c": "#D1C4E9",
+      "f": 3
+    },
+    "Esc\n\n\n\nFunction",
+    {
+      "c": "#cccccc",
+      "p": "CHICKLET",
+      "f": 3
+    },
+    "Page Down",
+    {
+      "f": 3
+    },
+    "Home",
+    {
+      "x": 1,
+      "f": 3
+    },
+    "End",
+    {
+      "c": "#CCCCCC",
+      "f": 3
+    },
+    "Page Up\n\n\n\nSystem",
     {
       "c": "#D1C4E9",
       "p": "SPACE",
       "f": 3
     },
-    "Enter\n\n\n\nSystem",
+    "Return\n\n\n\nSystem",
     {
       "c": "#d1c4e9",
       "a": 5,
       "f": 4
     },
-    "<\n(\n\n\nWorld",
+    "<\n(\n\n\nEmoji",
     {
       "c": "#cccccc",
       "p": "CHICKLET",
@@ -266,9 +277,10 @@
     "{\n[",
     "}\n]",
     {
+      "c": "#CCCCCC",
       "f": 4
     },
-    ">\n)",
+    ">\n)\n\n\nLower",
     {
       "c": "#757575",
       "t": "#EEEEEE",

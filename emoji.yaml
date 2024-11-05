@@ -1,9 +1,9 @@
 characters:
   moon:
-    complete:  { new:     "🎉", full:    "🎨" }
-    gibbous:   { waning:  "🚧", waxing:  "🎯" }
-    quarter:   { waning:  "🎽", waxing:  "☸️" }
-    crescent:  { waning:  "🧩", waxing:  "🏆" }
+    complete:  { new:     "‼️", full:    "‼" }
+    gibbous:   { waning:  "📤", waxing:  "📥" }
+    quarter:   { waning:  "📘", waxing:  "📖" }
+    crescent:  { waning:  "🔐", waxing:  "🔒" }
     stars:     { sparkle: "✨", magic:   "🪄" }
   face:
     smile:     { up:      "🙂", down:    "🙃" }
@@ -35,9 +35,9 @@ codepoints:
   # weather
   rainbow:       "🌈"
   cloudy:        "️☁️"
-  mostly_cloudy: "🌟"
+  mostly_cloudy: "🔥"
   partly_cloudy: "🌕"
-  mostly_sunny:  "🛑️"
+  mostly_sunny:  "🌟"
   sunny:         "⚡"
 
   # time of day
@@ -48,45 +48,45 @@ codepoints:
   cityscape_night: "🌃"
 
   # skin tones
-  light_skin_tone:        "🎆"
-  medium_light_skin_tone: "🎇"
-  medium_skin_tone:       "🗺️"
-  medium_dark_skin_tone:  "🔐"
-  dark_skin_tone:         "🔒"
+  light_skin_tone:        "📜"
+  medium_light_skin_tone: "📋"
+  medium_skin_tone:       "📄"
+  medium_dark_skin_tone:  "📝"
+  dark_skin_tone:         "📁"
 
   # family & ages
-  baby_bottle: "ℹ️"
-  baby:        "🛟\n\n\n\nAltGr"
-  boy:         "🧭"
-  girl:        "🔗"
+  baby_bottle: "🎇"
+  baby:        "🎆\n\n\n\nAltGr"
+  boy:         "⚙️"
+  girl:        "🧪"
   man:         "📦"
-  woman:       "💡"
+  woman:       "⌛"
   old_man:     "🧰"
-  old_woman:   "📚️"
+  old_woman:   "🚧"
 
   # hair styles
-  white_hair: "🦳"
-  curly_hair: "🦱"
-  red_hair:   "🦰"
-  bald:       "🦲"
+  white_hair: "🔴"
+  curly_hair: "⚪"
+  red_hair:   "🟠"
+  bald:       "🔵"
 
   # function row
-  new_moon:             "🎁"
-  waxing_crescent_moon: "🏆"
-  first_quarter_moon:   "🎽"
-  waxing_gibbous_moon:  "🎯"
-  full_moon:            "🎨"
-  waning_gibbous_moon:  "🚧"
-  last_quarter_moon:    "☸️"
-  waning_crescent_moon: "🧩"
+  new_moon:             "‼️"
+  waxing_crescent_moon: "🔒"
+  first_quarter_moon:   "📘"
+  waxing_gibbous_moon:  "📥"
+  full_moon:            "‼"
+  waning_gibbous_moon:  "📤"
+  last_quarter_moon:    "📖"
+  waning_crescent_moon: "🔐"
 
   # number row
   tada:            "🎉"
   heart:           "️❤️"
-  fire:            "🔥"
+  fire:            "🎯"
   muscle:          "💪"
-  person_climbing: "🧗"
-  lab_coat:        "🥼"
+  person_climbing: "🖊️"
+  lab_coat:        "🎽"
   rocket:          "🚀"
 
   # upper row
@@ -108,12 +108,12 @@ codepoints:
   thinking:     "🤔"
 
   # lower row
-  person_tipping_hand: "💁"
-  person_gesturing_ok: "🙆"
-  person_bowing:       "🙇"
-  person_raising_hand: "🙋"
-  person_gesturing_no: "🙅"
-  person_shrugging:    "🤷"
+  person_tipping_hand: "📌"
+  person_gesturing_ok: "ℹ️"
+  person_bowing:       "🔗"
+  person_raising_hand: "🧭"
+  person_gesturing_no: "🛟"
+  person_shrugging:    "📚"
 
   # bottom row
   checkoff: "✅"

@@ -32,12 +32,12 @@
   ],
   [
     {
+      "g": true,
       "a": 5,
       "f": 5
     },
     "+\n=",
     {
-      "g": true,
       "f": 3
     },
     "!\n1",
@@ -64,24 +64,30 @@
     {
       "f": 3
     },
-    "Num lock",
+    "Back space",
     {
       "a": 5
     },
-    "Num pad\n=",
-    "Num pad\n/",
-    "Num pad\n*",
+    "NP\n=",
+    "NP\n/",
+    "NP\n*",
     {
       "a": 7
     },
     "Print screen"
   ],
   [
+    {
+      "a": 5
+    },
+    "+\n=",
+    {
+      "a": 7
+    },
     "Tab",
     {
       "g": true
     },
-    "B",
     "Y\n\n\n\nAltGr",
     {
       "g": false,
@@ -103,26 +109,24 @@
     },
     ")",
     {
-      "a": 5,
       "f": 3
     },
-    "Num pad\n7",
-    "Num pad\n8\n\n\nAltGr",
-    "Num pad\n9",
-    "Num pad\n-",
+    "7",
+    "8\n\n\n\nAltGr",
+    "9",
+    {
+      "a": 5
+    },
+    "NP\n-",
     {
       "a": 7
     },
     "Scroll lock"
   ],
   [
-    "Escape",
+    "Caps lock",
+    "Escape\n\n\n\nWin",
     {
-      "g": true
-    },
-    "C\n\n\n\nWin",
-    {
-      "g": false,
       "f": 9
     },
     "&larr;",
@@ -141,41 +145,37 @@
     },
     "%",
     {
-      "a": 5,
       "f": 3,
       "n": true
     },
-    "Num pad\n4\n\n\nShift",
-    "Num pad\n5\n\n\nCtrl",
-    "Num pad\n6\n\n\nAlt",
-    "Num pad\n+\n\n\nWin",
+    "4\n\n\n\nShift",
+    "5\n\n\n\nCtrl",
+    "6\n\n\n\nAlt",
     {
-      "c": "#FFCDD2",
+      "a": 5
+    },
+    "NP\n+\n\n\nWin",
+    {
+      "c": "#FFCCBC",
       "a": 7
     },
-    "Num lock"
+    "RAlt"
   ],
   [
     {
-      "c": "#cccccc",
-      "a": 5,
-      "f": 5
-    },
-    "~\n`",
-    {
-      "a": 7,
-      "f": 3
+      "c": "#cccccc"
     },
     "<small>Context</small> menu",
     {
-      "g": true
+      "a": 5
     },
-    "X",
+    "~\n`",
     {
-      "g": false
+      "a": 7
     },
     "F11",
-    "F12",
+    "Ctrl+D",
+    "Ctrl+U",
     "Page down\n\n\n\nAltGr",
     {
       "x": 5,
@@ -184,17 +184,21 @@
     },
     "<\n,",
     {
+      "a": 7,
       "f": 3
     },
-    "Num pad\n1",
-    "Num pad\n2",
-    "Num pad\n3",
-    "Num pad\nEnter",
+    "1",
+    "2",
+    "3",
+    {
+      "a": 5
+    },
+    "NP\nEnter",
     {
       "c": "#FFCCBC",
       "a": 7
     },
-    "Alt"
+    "LAlt"
   ],
   [
     {
@@ -223,13 +227,21 @@
     {
       "c": "#cccccc",
       "t": "#000000",
+      "g": true,
       "p": "CHICKLET"
     },
     "Caps lock",
-    "Insert",
+    {
+      "g": false
+    },
+    "F12",
+    {
+      "g": true
+    },
     "F11",
     {
-      "c": "#D1C4E9"
+      "c": "#D1C4E9",
+      "g": false
     },
     "Emoji layer lock",
     "<small>Function</small> layer lock",
@@ -253,14 +265,16 @@
       "c": "#D1C4E9"
     },
     "System layer lock",
-    "World layer lock",
+    "Emoji layer lock",
     {
-      "c": "#cccccc",
+      "c": "#cccccc"
+    },
+    "0",
+    {
       "a": 5
     },
-    "Num pad\n0",
-    "Num pad\n.",
-    "Num pad\nEnter",
+    "NP\n.",
+    "NP\nEnter",
     {
       "c": "#757575",
       "t": "#EEEEEE",

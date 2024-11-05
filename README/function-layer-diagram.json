@@ -83,9 +83,9 @@
     },
     "Back space",
     {
-      "c": "#dcedc8"
+      "c": "#ffecb3"
     },
-    "F16",
+    "Cut",
     {
       "x": 5,
       "c": "#bbdefb"
@@ -98,11 +98,9 @@
     "F7",
     "F8",
     "F9",
-    {
-      "c": "#ffccbc"
-    },
     "F10",
     {
+      "c": "#ffccbc",
       "f": 3,
       "fa": [
         4
@@ -120,7 +118,7 @@
       "c": "#cccccc",
       "f": 3
     },
-    "Win\n\n\n\nWin",
+    "Ctrl\n\n\n\nWin",
     {
       "f": 3
     },
@@ -128,17 +126,17 @@
     {
       "f": 3
     },
-    "Ctrl\n\n\n\nCtrl",
+    "Cmd\n\n\n\nCtrl",
     {
       "f": 3,
       "n": true
     },
     "Shift\n\n\n\nShift",
     {
-      "c": "#dcedc8",
+      "c": "#ffecb3",
       "f": 3
     },
-    "F17",
+    "Copy",
     {
       "x": 5,
       "c": "#bbdefb",
@@ -153,11 +151,9 @@
     "F4\n\n\n\nShift",
     "F5\n\n\n\nCtrl",
     "F6\n\n\n\nAlt",
-    {
-      "c": "#ffccbc"
-    },
     "F11\n\n\n\nWin",
     {
+      "c": "#ffccbc",
       "f": 3,
       "fa": [
         4
@@ -189,14 +185,15 @@
     },
     "Select word\n\n\n\nSymbol",
     {
-      "c": "#dcedc8",
+      "c": "#e1bee7",
       "f": 3
     },
-    "F19",
+    "Find",
     {
+      "c": "#ffecb3",
       "f": 3
     },
-    "F18",
+    "Paste",
     {
       "x": 5,
       "c": "#bbdefb",
@@ -210,11 +207,9 @@
     "F1",
     "F2",
     "F3\n\n\n\nAltGr",
-    {
-      "c": "#ffccbc"
-    },
     "F12",
     {
+      "c": "#ffccbc",
       "f": 3,
       "fa": [
         4
@@ -244,17 +239,20 @@
       "f": 3
     },
     "F5",
-    "Home",
     {
-      "c": "#bbdefb",
+      "c": "#e1bee7",
       "g": false
+    },
+    "Find Prev",
+    {
+      "c": "#bbdefb"
     },
     "Extend line",
     "Extend word",
     {
-      "c": "#dcedc8"
+      "c": "#e1bee7"
     },
-    "F20",
+    "Find Next",
     {
       "c": "#D1C4E9",
       "p": "SPACE",
@@ -287,7 +285,7 @@
     },
     "Play / pause",
     {
-      "c": "#dcedc8",
+      "c": "#ffccbc",
       "f": 3
     },
     "F16",

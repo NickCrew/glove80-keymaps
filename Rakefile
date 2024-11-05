@@ -82,19 +82,14 @@ task :pdf => layers_pdf
 layers_pdf_sequence = %w[
   base
   lower
-  magic
   cursor
   number
-  function
   emoji
   symbol
   mouse
   system
-  world
-  typing
-  gaming
-  factory
-  template
+  function
+  magic
 ]
 
 layer_pngs = Dir["README/{#{layers_pdf_sequence.join(",")}}-layer-diagram.png"]
