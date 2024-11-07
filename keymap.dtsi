@@ -8,9 +8,9 @@
 
 #define OPERATING_SYSTEM 'M'
 #define MOUSE_MOTION_ACCELERATION_EXPONENT 1
-#define MOUSE_MOTION_TIME_TO_MAXIMUM_SPEED 275
+#define MOUSE_MOTION_TIME_TO_MAXIMUM_SPEED 300
 #define MOUSE_MOTION_DELAY 0
-#define MOUSE_MOTION_MAXIMUM_SPEED 750
+#define MOUSE_MOTION_MAXIMUM_SPEED 800
 
 //////////////////////////////////////////////////////////////////////////////
 //

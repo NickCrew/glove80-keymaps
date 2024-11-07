@@ -54,7 +54,7 @@
     },
     "<center><h2>Cursor Layer</h2><p>MoErgo Glove80 keyboard</p><ul><li><a href='https://github.com/manna-harbour/miryoku'>Miryoku</a> layers & home row mods</li><li><a href='https://engram.dev'>Engram</a><a href='https://github.com/sunaku/engrammer'><em>&middot;mer</em></a> keyboard layout</li><li>See <a href='https://is.gd/sunaku_glove80'>is.gd/sunaku_glove80</a></li></ul></center>",
     {
-      "c": "#ffccbc",
+      "g": true,
       "a": 7,
       "f": 3
     },
@@ -67,7 +67,8 @@
   ],
   [
     {
-      "c": "#ffcdd2"
+      "c": "#ffcdd2",
+      "g": false
     },
     "Search bar\n\n\n\nSymbol",
     {
@@ -90,16 +91,16 @@
     {
       "x": 5
     },
-    "Cut",
+    "Ctrl+A",
     {
-      "c": "#ffccbc"
+      "c": "#dcedc8"
     },
-    "Back space",
+    "Ctrl+D",
+    "Ctrl+U",
     {
-      "c": "#e1bee7"
+      "c": "#ffecb3"
     },
-    "Undo",
-    "Redo",
+    "Ctrl+S",
     {
       "c": "#cccccc"
     },
@@ -139,7 +140,7 @@
       "c": "#ffecb3",
       "f": 3
     },
-    "Copy",
+    "Ctrl+C",
     {
       "c": "#ffcdd2"
     },
@@ -176,7 +177,7 @@
     {
       "c": "#ffecb3"
     },
-    "Paste",
+    "Ctrl+Z",
     {
       "c": "#ffcdd2"
     },

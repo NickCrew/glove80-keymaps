@@ -67,8 +67,20 @@
       "f": 3
     },
     "^\n6",
-    "&\n7",
-    "*\n8",
+    {
+      "c": "#bbdefb",
+      "g": false,
+      "a": 7,
+      "f": 6
+    },
+    "{",
+    "}",
+    {
+      "c": "#cccccc",
+      "g": true,
+      "a": 5,
+      "f": 3
+    },
     "(\n9",
     ")\n0",
     "+\n="
@@ -100,25 +112,30 @@
     "?",
     {
       "x": 5,
-      "c": "#BDBDBD"
+      "c": "#e1bee7"
     },
-    "`",
+    "~",
+    {
+      "c": "#bbdefb"
+    },
+    "(\n\n\n\nShift",
+    ")\n\n\n\nCtrl",
+    {
+      "c": "#ffecb3"
+    },
+    ";\n\n\n\nAlt",
+    ",\n\n\n\nWin",
     {
       "c": "#cccccc",
+      "g": true,
       "f": 3
-    },
-    "Shift\n\n\n\nShift",
-    "Ctrl\n\n\n\nCtrl",
-    "Alt\n\n\n\nAlt",
-    "Win\n\n\n\nWin",
-    {
-      "c": "#a5d6a7"
     },
     "Shift-Enter"
   ],
   [
     {
       "c": "#ffecb3",
+      "g": false,
       "f": 7
     },
     "#",
@@ -143,8 +160,7 @@
     },
     "*",
     {
-      "x": 5,
-      "c": "#BDBDBD"
+      "x": 5
     },
     ".",
     {
@@ -156,11 +172,16 @@
     "Tab",
     "Space\n\n\n\nAltGr",
     "Enter",
-    "Escape"
+    {
+      "c": "#cccccc",
+      "p": ""
+    },
+    "Escape\n\n\n\nCtrl"
   ],
   [
     {
       "c": "#e1bee7",
+      "p": "CHICKLET",
       "f": 8
     },
     "~",
@@ -183,8 +204,7 @@
     },
     "/",
     {
-      "x": 5,
-      "c": "#BDBDBD"
+      "x": 5
     },
     "/",
     {
@@ -194,12 +214,14 @@
     "Delete",
     "Shift-Tab",
     {
-      "c": "#bdbdbd"
+      "c": "#ffcdd2"
     },
-    ",",
-    ";",
+    "`",
     {
-      "c": "#cccccc",
+      "c": "#cccccc"
+    },
+    "Shift (sticky)",
+    {
       "g": true
     },
     "Shift"
@@ -268,22 +290,23 @@
     },
     "Enter\n\n\n\nSystem",
     {
-      "c": "#BDBDBD",
       "g": false,
-      "f": 7
+      "f": 3
     },
-    "(",
+    "Shift",
     {
-      "f": 6
+      "f": 3
     },
-    "{",
-    "}",
+    "Cmd",
     {
-      "f": 7
+      "f": 3
     },
-    ")",
+    "Opt",
     {
-      "c": "#cccccc",
+      "f": 3
+    },
+    "Ctrl",
+    {
       "g": true,
       "f": 3
     },
