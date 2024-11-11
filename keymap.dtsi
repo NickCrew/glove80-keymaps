@@ -6,12 +6,6 @@
 #define WORLD_USE_COMPOSE    // use native Compose in place of Unicode
 // TIP: Add more setting overrides here instead of editing them below.
 
-#define OPERATING_SYSTEM 'M'
-#define MOUSE_MOTION_ACCELERATION_EXPONENT 1
-#define MOUSE_MOTION_TIME_TO_MAXIMUM_SPEED 300
-#define MOUSE_MOTION_DELAY 0
-#define MOUSE_MOTION_MAXIMUM_SPEED 800
-
 //////////////////////////////////////////////////////////////////////////////
 //
 // Sunaku's Keymap v38 -- "Glorious Engrammer"

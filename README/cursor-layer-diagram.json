@@ -89,18 +89,16 @@
     },
     "Cut",
     {
-      "x": 5
+      "x": 5,
+      "c": "#cccccc"
     },
-    "Ctrl+A",
-    {
-      "c": "#dcedc8"
-    },
-    "Ctrl+D",
-    "Ctrl+U",
+    "Cmd (sticky)",
     {
       "c": "#ffecb3"
     },
-    "Ctrl+S",
+    "Ctrl+Z",
+    "Ctrl+C",
+    "Ctrl+V",
     {
       "c": "#cccccc"
     },
@@ -140,7 +138,7 @@
       "c": "#ffecb3",
       "f": 3
     },
-    "Ctrl+C",
+    "Copy  mode",
     {
       "c": "#ffcdd2"
     },
@@ -177,7 +175,7 @@
     {
       "c": "#ffecb3"
     },
-    "Ctrl+Z",
+    "Quick select",
     {
       "c": "#ffcdd2"
     },

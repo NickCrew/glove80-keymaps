@@ -30,10 +30,6 @@
     "F10"
   ],
   [
-    {
-      "c": "#ffccbc",
-      "g": false
-    },
     "Escape",
     "Enter",
     "Space",
@@ -41,7 +37,7 @@
     "Delete",
     "Insert",
     {
-      "c": "#cccccc",
+      "g": false,
       "a": 4,
       "f": 4,
       "w": 5,
@@ -50,7 +46,7 @@
     },
     "<center><h2>Function Layer</h2><p>MoErgo Glove80 keyboard</p><ul><li><a href='https://github.com/manna-harbour/miryoku'>Miryoku</a> layers & home row mods</li><li><a href='https://engram.dev'>Engram</a><a href='https://github.com/sunaku/engrammer'><em>&middot;mer</em></a> keyboard layout</li><li>See <a href='https://is.gd/sunaku_glove80'>is.gd/sunaku_glove80</a></li></ul></center>",
     {
-      "c": "#bbdefb",
+      "g": true,
       "a": 7,
       "f": 3
     },
@@ -63,8 +59,6 @@
   ],
   [
     {
-      "c": "#cccccc",
-      "g": true,
       "a": 5
     },
     "~\n`",
@@ -74,25 +68,25 @@
     },
     "Shift <small>(sticky)</small>",
     {
-      "c": "#e1bee7"
+      "c": "#bbdefb",
+      "f": 5
     },
-    "Redo",
-    "Undo",
+    "⏮︎",
+    "⏯︎",
+    "⏭︎",
     {
-      "c": "#ffccbc"
+      "f": 3
     },
-    "Back space",
-    {
-      "c": "#ffecb3"
-    },
-    "Cut",
+    "Mute",
     {
       "x": 5,
-      "c": "#bbdefb"
+      "c": "#cccccc",
+      "g": true
     },
     "Vol ➕",
     {
       "c": "#dcedc8",
+      "g": false,
       "f": 4
     },
     "F7",
@@ -100,7 +94,8 @@
     "F9",
     "F10",
     {
-      "c": "#ffccbc",
+      "c": "#cccccc",
+      "g": true,
       "f": 3,
       "fa": [
         4
@@ -111,6 +106,7 @@
   [
     {
       "c": "#e1bee7",
+      "g": false,
       "f": 3
     },
     "Caps lock",
@@ -133,19 +129,18 @@
     },
     "Shift\n\n\n\nShift",
     {
-      "c": "#ffecb3",
-      "f": 3
-    },
-    "Copy",
-    {
-      "x": 5,
       "c": "#bbdefb",
       "f": 3
     },
-    "Vol ➖",
+    "Vol ➕",
+    {
+      "x": 5,
+      "c": "#ffccbc",
+      "f": 4
+    },
+    "F16",
     {
       "c": "#dcedc8",
-      "f": 4,
       "n": true
     },
     "F4\n\n\n\nShift",
@@ -169,9 +164,7 @@
     },
     "Shift",
     {
-      "c": "#bbdefb",
       "t": "#00000",
-      "g": false,
       "f": 3
     },
     "Select all",
@@ -185,24 +178,23 @@
     },
     "Select word\n\n\n\nSymbol",
     {
-      "c": "#e1bee7",
       "f": 3
     },
     "Find",
     {
-      "c": "#ffecb3",
+      "c": "#bbdefb",
+      "g": false,
       "f": 3
     },
-    "Paste",
+    "Vol ➖",
     {
       "x": 5,
-      "c": "#bbdefb",
-      "f": 3
-    },
-    "Mute",
-    {
-      "c": "#dcedc8",
+      "c": "#ffccbc",
       "f": 4
+    },
+    "F17",
+    {
+      "c": "#dcedc8"
     },
     "F1",
     "F2",
@@ -239,22 +231,13 @@
       "f": 3
     },
     "F5",
-    {
-      "c": "#e1bee7",
-      "g": false
-    },
     "Find Prev",
-    {
-      "c": "#bbdefb"
-    },
     "Extend line",
     "Extend word",
-    {
-      "c": "#e1bee7"
-    },
     "Find Next",
     {
       "c": "#D1C4E9",
+      "g": false,
       "p": "SPACE",
       "fa": [
         9
@@ -273,34 +256,19 @@
       "x": 1,
       "c": "#bbdefb",
       "g": false,
-      "f": 3
+      "f": 5
     },
-    "Prev track",
-    {
-      "f": 3
-    },
-    "Next track",
-    {
-      "f": 3
-    },
-    "Play / pause",
+    "⏮︎",
+    "⏭︎",
+    "⏯︎",
     {
       "c": "#ffccbc",
-      "f": 3
-    },
-    "F16",
-    {
-      "f": 3
-    },
-    "F17",
-    {
-      "f": 3
+      "f": 4
     },
     "F18",
-    {
-      "f": 3
-    },
     "F19",
+    "F20",
+    "F13",
     {
       "f": 3
     },
@@ -311,34 +279,24 @@
       "x": 5,
       "c": "#cccccc",
       "g": true,
-      "f": 3,
       "n": true
     },
     "Back space\n\n\n\nCursor",
-    {
-      "f": 3
-    },
     "Delete\n\n\n\nNumber",
     {
       "c": "#757575",
       "t": "#EEEEEE",
-      "g": false,
-      "f": 3
+      "g": false
     },
     "Unlock layer",
     {
       "x": 1,
       "c": "#bbdefb",
-      "t": "#000000",
-      "f": 3
+      "t": "#000000"
     },
     "Mute\n\n\n\nSymbol",
-    {
-      "f": 3
-    },
     "Vol ➖\n\n\n\nLight",
     {
-      "f": 3,
       "n": true
     },
     "Vol ➕\n\n\n\nMouse"
