@@ -1,0 +1,571 @@
+[
+  {
+    "name": "photoshop-main-layer",
+    "author": "Nick Ferguson",
+    "css": "/* front legend */\n.keylabel10 div { \n    font-size: xx-small;\n    font-style: italic;\n    text-shadow: 1px 1px 2px #FFD600;\n}\n/* description */\ncenter h2 {\n    margin-top: 1em;\n    font-weight: bold;\n}\ncenter ul {\n    padding-left: 0;\n    margin-top: 1em;\n    padding-top: 1em;\n    font-size: smaller;\n}\ncenter ul li {\n    margin-top: 1ex;\n    list-style-type: none;\n}\ncenter ul li a {\n    font-weight: bold;\n}\ncenter .permalink {\n    font-size: x-small;\n}\ncenter em {\n    font-weight: normal;\n    font-style: normal;\n}\nspan.left {\n    display: block;\n    text-align: center;\n    transform: rotate(-90deg);\n    padding-left: 8em;\n    padding-bottom: 11em;\n}\nspan.right {\n    display: block;\n    text-align: center;\n    transform: rotate(90deg);\n    margin-left: -1.25em;\n    padding-right: 9.5em;\n    padding-bottom: 12em;\n}"
+  },
+  [
+    {
+      "c": "#b3ddff",
+      "p": "CHICKLET",
+      "a": 5,
+      "fa": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        7
+      ]
+    },
+    "\nDoc\n\n\n\n\n↩",
+    "\nDoc\n\n\n\n\n↪",
+    {
+      "c": "#cccccc",
+      "a": 4,
+      "fa": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        7,
+        0,
+        0,
+        0,
+        2
+      ]
+    },
+    "F5\n\n\n\n\n\n\n\n\n\nBrushes",
+    {
+      "c": "#Ccccccc",
+      "f": 2,
+      "fa": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        7,
+        0,
+        0,
+        0,
+        3
+      ]
+    },
+    "F6\n\n\n\n\n\n\n\n\n\nColors",
+    {
+      "c": "#Cccccc",
+      "f": 3
+    },
+    "F7\n\n\n\n\n\n\n\n\n\nLayers",
+    {
+      "x": 7,
+      "c": "#cccccc",
+      "g": true,
+      "a": 7
+    },
+    "F6",
+    "F7",
+    "F8",
+    "F9",
+    "F10"
+  ],
+  [
+    {
+      "c": "#b3ddff",
+      "g": false,
+      "a": 4,
+      "f": 4,
+      "fa": [
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
+      ]
+    },
+    "⌘⇧S\n\n\n\n\n\n\n\n\n\nSave Copy",
+    {
+      "f": 3,
+      "fa": [
+        2
+      ]
+    },
+    "⌘S\n\n\n\n\n\n\n\n\n\nSave",
+    {
+      "c": "#ffff9c"
+    },
+    "⏎\n\n\n\n\n\n\n\n\n\nRET",
+    {
+      "a": 5
+    },
+    "\nSPC",
+    {
+      "a": 4,
+      "f": 3
+    },
+    "⌦\n\n\n\n\n\n\n\n\n\nDEL",
+    {
+      "c": "#cccccc",
+      "f": 4,
+      "fa": [
+        2
+      ]
+    },
+    "F8\n\n\n\n\n\n\n\n\n\nInfo",
+    {
+      "c": "#ffff9c",
+      "f": 4,
+      "w": 5,
+      "h": 4,
+      "d": true
+    },
+    "<center><h2>Photoshop</h2><h3>Main Layer</h3><p>MoErgo Glove80 keyboard</p>",
+    {
+      "c": "#cccccc",
+      "g": true,
+      "a": 5,
+      "f": 4
+    },
+    "^\n6",
+    {
+      "f": 4
+    },
+    "&\n7",
+    {
+      "f": 4
+    },
+    "*\n8",
+    {
+      "f": 4
+    },
+    "(\n9",
+    {
+      "f": 4
+    },
+    ")\n0",
+    {
+      "f": 4
+    },
+    "|\n\\"
+  ],
+  [
+    {
+      "c": "#ffd1d1",
+      "g": false,
+      "a": 4,
+      "f": 5,
+      "fa": [
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
+      ]
+    },
+    "D\n\n\n\n\n\n\n\n\n\nDefault FG/BG",
+    {
+      "f": 3,
+      "fa": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
+      ]
+    },
+    "X\n\n\n\n\n\n\n\n\n\nSwap FG/BG",
+    {
+      "c": "#b3ddff",
+      "fa": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        2
+      ]
+    },
+    "⌘Z\n\n\n\n\n\n\n\n\n↻\nRedo",
+    {
+      "fa": [
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        2
+      ]
+    },
+    "⌘Y\n\n\n\n\n\n\n\n\n↺\nUndo",
+    {
+      "fa": [
+        2
+      ]
+    },
+    "⌥⌘Z\n\n\n\n\n\n\n\n\n\nLast statex",
+    {
+      "c": "#F8D28C"
+    },
+    "⌘X\n\n\n\n\n\n\n\n\n\nCut",
+    {
+      "x": 5,
+      "c": "#cccccc",
+      "g": true,
+      "a": 7,
+      "f": 5
+    },
+    "",
+    {
+      "f": 3
+    },
+    "",
+    "",
+    {
+      "c": "#CCCCCC"
+    },
+    "\n\n\n\nAltGr",
+    {
+      "c": "#cccccc"
+    },
+    "",
+    ""
+  ],
+  [
+    {
+      "c": "#ffff9c",
+      "g": false,
+      "a": 5
+    },
+    "\nESC",
+    {
+      "c": "#C5F4CD",
+      "a": 4,
+      "fa": [
+        2
+      ]
+    },
+    "⌘D\n\n\n\nWin\n\n\n\n\n\nSelect none",
+    {
+      "fa": [
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
+      ]
+    },
+    "⌘E\n\n\n\nAlt\n\n\n\n\n\nMerge Layer ↓",
+    "⌘⇧N\n\n\n\nCtrl\n\n\n\n\n\nNew Layer",
+    {
+      "fa": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      "n": true
+    },
+    "⌘J\n\n\n\nShift\n\n\n\n\n\nCopy Layer",
+    {
+      "c": "#F8D28C",
+      "f": 4,
+      "fa": [
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        3
+      ]
+    },
+    "⌘C\n\n\n\nRaw\n\n\n\n\n\nCopy",
+    {
+      "x": 5,
+      "c": "#cccccc",
+      "g": true,
+      "a": 7
+    },
+    "\n\n\n\nRaw",
+    {
+      "f": 3,
+      "n": true
+    },
+    "\n\n\n\nShift",
+    "\n\n\n\nCtrl",
+    "\n\n\n\nAlt",
+    "\n\n\n\nWin",
+    ""
+  ],
+  [
+    {
+      "c": "#ffff9c",
+      "g": false,
+      "a": 4
+    },
+    "⇥\n\n\n\n\n\n\n\n\n\nTAB",
+    {
+      "c": "#cccccc",
+      "a": 7,
+      "f": 9
+    },
+    "↑",
+    {
+      "c": "#D1C4E9",
+      "a": 4,
+      "f": 3,
+      "fa": [
+        2
+      ]
+    },
+    "0\n\n\n\n\n\n\n\n\n\nFit on screen",
+    "⌘-\n\n\n\n\n\n\n\n\n\nZoom ➖",
+    "⌘+\n\n\n\n\n\n\n\n\n\nZoom ➖",
+    {
+      "c": "#F8D28C",
+      "f": 4,
+      "fa": [
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        3
+      ]
+    },
+    "⌘P\n\n\n\n\n\n\n\n\n\nPaste",
+    {
+      "x": 5,
+      "c": "#cccccc",
+      "g": true,
+      "a": 7
+    },
+    "",
+    {
+      "f": 3
+    },
+    "",
+    "",
+    "",
+    "",
+    "Shift <small>(sticky)</small>"
+  ],
+  [
+    {
+      "y": -0.04999999999999982,
+      "x": 4.95,
+      "c": "#CCCCCC",
+      "p": "FLAT",
+      "a": 5,
+      "f": 2,
+      "w": 1.1,
+      "h": 2.7
+    },
+    "\nAlt+Tab <small>cursor layer</small>",
+    {
+      "x": 0.9000000000000004,
+      "w": 1.1,
+      "h": 2.7
+    },
+    "\nToggle <small>game layer</small>",
+    {
+      "x": 2.9000000000000004,
+      "c": "#cccccc",
+      "w": 1.1,
+      "h": 2.7
+    },
+    "\nHyper <small>(sticky)</small>"
+  ],
+  [
+    {
+      "y": -0.9500000000000002,
+      "g": false,
+      "p": "CHICKLET",
+      "a": 7,
+      "f": 9
+    },
+    "←",
+    "↓",
+    "→",
+    {
+      "c": "#D1C4E9",
+      "a": 4,
+      "f": 3,
+      "fa": [
+        2
+      ]
+    },
+    "[\n\n\n\n\n\n\n\n\n\nBrush ➕",
+    "]\n\n\n\nEmoji\n\n\n\n\n\nBrush ➖",
+    {
+      "c": "#cccccc",
+      "a": 7,
+      "fa": [
+        7
+      ]
+    },
+    "⌘\n\n\n\nFunction",
+    "⌥",
+    {
+      "c": "#757575",
+      "t": "#ffffff",
+      "f": 3
+    },
+    "Toggle layer",
+    {
+      "x": 1,
+      "c": "#cccccc",
+      "t": "#000000",
+      "g": true,
+      "f": 3
+    },
+    "&larr;",
+    {
+      "f": 3
+    },
+    "&rarr;",
+    {
+      "p": "SPACE",
+      "f": 3
+    },
+    "Enter\n\n\n\nSystem",
+    {
+      "a": 5,
+      "f": 4
+    },
+    "<\n(\n\n\nWorld",
+    {
+      "p": "CHICKLET",
+      "f": 3
+    },
+    "{\n[",
+    "}\n]",
+    {
+      "f": 4
+    },
+    ">\n)",
+    {
+      "t": "#EEEEEE",
+      "p": "SPACE",
+      "a": 7,
+      "f": 3
+    },
+    "Magic"
+  ],
+  [
+    {
+      "y": -0.040000000000000036,
+      "x": 4.45,
+      "c": "#CCCCCC",
+      "t": "#000000",
+      "p": "FLAT",
+      "f": 2,
+      "w": 2.625,
+      "h": 1.11
+    },
+    "<span class=\"left\">Ctrl+Tab<small><br>cursor layer</small></span>",
+    {
+      "x": 2.874999999999999,
+      "w": 2.625,
+      "h": 1.11
+    },
+    "<span class=\"right\">Meh<small><br>(sticky)</small></span>"
+  ],
+  [
+    {
+      "y": -0.96,
+      "x": 5,
+      "c": "#cccccc",
+      "g": false,
+      "p": "CHICKLET",
+      "f": 3,
+      "fa": [
+        7
+      ],
+      "n": true
+    },
+    "⇧",
+    {
+      "c": "#757575",
+      "t": "#ffffff"
+    },
+    "Tools",
+    {
+      "t": "#EEEEEE",
+      "p": "SPACE"
+    },
+    "Lower",
+    {
+      "x": 1,
+      "c": "#cccccc",
+      "g": true,
+      "fa": [
+        7
+      ]
+    },
+    "Lower",
+    {
+      "t": "#000000"
+    },
+    "Tab\n\n\n\nMouse",
+    {
+      "n": true
+    },
+    "Space\n\n\n\nSymbol"
+  ]
+]

@@ -1,49 +1,40 @@
-# "Glorious Engrammer" keymap for MoErgo Glove80
+# MoErgo Glove80 Firmware and Keymap
 
-This is [my Glove80] keymap featuring the [Engram] and [Engrammer] layouts with
-[Miryoku]-style layers and [home row mods].  Other layouts (**QWERTY**, Dvorak,
-Colemak/DH, etc.) and familiar keys (arrows, pinky shifts, function row) are
-also provided as "training wheels" to aid your transition to the full glory.
+This is my keymap for the [Glove80 keyboard][glove80]. 
 
-[my Glove80]:    https://sunaku.github.io/moergo-glove80-keyboard.html
-[Engram]:        https://sunaku.github.io/engram-keyboard-layout.html
-[Engrammer]:     https://sunaku.github.io/engrammer-keyboard-layout.html
-[Miryoku]:       https://github.com/manna-harbour/miryoku
-[home row mods]: https://sunaku.github.io/home-row-mods.html
+Originally based on [Sanuku's Glove80 keymap][sanuku_glove80], featuring [home row mods](https://sunaku.github.io/home-row-mods.html) and enhanced [Miryoku layers][miryoku] (cursor, symbol, function, number, and more). 
+
+
+[sanuku_glove80]: https://sunaku.github.io/moergo-glove80-keyboard.html
+[glove80]: https://glove80.com
+[miryoku]: https://github.com/manna-harbour/miryoku
+
 
 ## Keymap
 
-Version 38 (2024-10-05)
-- Changes: https://github.com/sunaku/glove80-keymaps/releases/v38
-- Release: https://my.glove80.com/#/layout/user/56b3ddfa-0299-4983-b66d-5101c8958452
+Version 1.1 (2024-12-29)
+- Changes:
+   - Applied initial customizations
+   - Forked from [version 38][rel_v38] of  [Sanuku's Glove80 keymap][sanuku_glove80]
+- [Layout][layout_v1.1]
 
-### Legend
+[rel_v38]: https://github.com/sunaku/glove80-keymaps/releases/v38
+[layout_v1.1]: https://my.glove80.com/#/layout/user/35fd93d3-4c46-4001-8b16-388b9aaede27
 
-See [interactive layer map][map] for overview and documentation.
->NOTE: This is also available as a [printable PDF document][pdf].
 
-See [release notes][rel] for a visual overview of recent updates.
-
-[map]: https://sunaku.github.io/moergo-glove80-keyboard.html#layers
-[pdf]: https://sunaku.github.io/moergo-glove80-keyboard-layers.pdf
-[rel]: https://github.com/sunaku/glove80-keymaps/releases
-
-### Contents
+## Contents
 
 <!-- vim-markdown-toc GFM -->
 
+* [Layers](#layers)
 * [Guide](#guide)
     * [Factory layout](#factory-layout)
     * [Operating system](#operating-system)
     * [Home row mods](#home-row-mods)
         * [Difficulty level](#difficulty-level)
-        * [One-shot shifts](#one-shot-shifts)
-        * [Shift forgiveness](#shift-forgiveness)
         * [Bilateral combinations](#bilateral-combinations)
     * [Layer access keys](#layer-access-keys)
-    * [Key auto-repeat](#key-auto-repeat)
-    * [Alpha layouts](#alpha-layouts)
-    * [Unicode and Emoji](#unicode-and-emoji)
+    * [Emoji](#emoji)
         * [OS-native compose](#os-native-compose)
 * [Installing](#installing)
     * [Enabling mouse emulation](#enabling-mouse-emulation)
@@ -54,10 +45,7 @@ See [release notes][rel] for a visual overview of recent updates.
         * [Reordering home row mods](#reordering-home-row-mods)
         * [Fine-tuning the timing](#fine-tuning-the-timing)
     * [Compiling from source](#compiling-from-source)
-        * [World and Emoji characters](#world-and-emoji-characters)
-            * [Adding a new World character](#adding-a-new-world-character)
-            * [Shift key for World characters](#shift-key-for-world-characters)
-            * [Modifiers for World characters](#modifiers-for-world-characters)
+        * [Emoji characters](#emoji-characters)
             * [Adding a new Emoji character](#adding-a-new-emoji-character)
             * [Shift key for Emoji characters](#shift-key-for-emoji-characters)
         * [Editing layer map diagrams](#editing-layer-map-diagrams)
@@ -65,12 +53,43 @@ See [release notes][rel] for a visual overview of recent updates.
             * [Mirroring horizontally](#mirroring-horizontally)
 * [Discussion](#discussion)
 * [License](#license)
+* [Acknowledgements](#acknowledgements)
 
 <!-- vim-markdown-toc -->
 
+## Layers
+
+### Base
+![base](./README/base.png)
+
+### Symbol
+![symbol](./README/symbol.png)
+
+### Number
+![number](./README/number.png)
+
+### Cursor
+![cursor](./README/cursor.png)
+
+### Function
+![function](./README/function.png)
+
+### Mouse emulation
+![mouse](./README/mouse.png)
+
+### Additional layers
+- [System](./README/system.png)
+- [Emoji](./README/emoji.png)
+- [Photoshop](./README/psmain.png)
+- [Photoshop Tools](./README/pstools.png)
+- [Lower](./README/lower.png)
+- [Magic](./README/magic.png)
+- [Typing](./README/typing.png)
+- [Factory](./README/factory.png)
+
 ## Guide
 
-Welcome to the *Glorious Engrammer* keymap! 🧑‍🚀🚀✨  This introductory
+Welcome to the *Glorious Wombat* keymap! 🧑‍🚀🚀✨  This introductory
 guide will orient you to the world of custom layouts, keymaps, and firmware. 💁
 
 ### Factory layout
@@ -155,56 +174,6 @@ removing the `#define DIFFICULTY_LEVEL` line or by setting its value to zero.
 Then, you can experience the default values of all settings (representing my
 personal fine-tuned configuration) or directly override them per your taste.
 
-#### One-shot shifts
-
-The traditional pinky shift keys on the base layer are one-shot sticky shifts,
-whereby tapping them temporarily activates a sticky Shift that applies itself
-to the next key you tap.  This can be useful for single letter capitalization,
-such as for the frequent "I" in English or when typing camel/PascalCase names.
-
-Similarly, the combination of thumb T4 and the home row index finger key also
-provides the same one-shot sticky shifting for single letter capitalization.
-
-#### Shift forgiveness
-
-What should happen when a home row shift is held and released without any other
-key having been pressed in the meantime?  I've often found myself in that exact
-scenario for having lingered too long (slow tap) while tapping a home row shift
-key: instead of typing the underlying letter (per my intention), the tap would
-not produce any output (to my surprise) since it would hold and release shift.
-
-Thanks to the `hold-while-undecided` feature in a newer ZMK release that MoErgo
-has made available in the `v24.08-beta1` firmware, I finally tamed this nuance:
-
-```h
-#define SHIFT_FORGIVENESS
-```
-
-This setting will tap when home row shift is merely held and released,
-without any other key having been tapped while the shift was held down.
-For example, suppose you hold a home row shift key and, before pressing
-another key, suddenly decide that you don't want to use shift after all:
-
-1.  If this setting is enabled, the underlying tap behavior is triggered
-    to type a single character when you release that home row shift key.
-
-2.  Otherwise, nothing happens when you release that home row shift key.
-
-This requires the "hold-while-undecided" ZMK feature in a beta firmware:
-please select "v24.08-beta1" or newer from the drop-down menu located at
-Glove80 Layout Editor > Settings > Advanced Settings > Firmware Version.
-
->CAUTION: This can interfere with mod-click mouse usage where you hold a
-home row shift key and perform mouse actions (move, click, drag & drop):
-when you release that home row shift key, its underlying character would
-be typed, potentially triggering an unexpected action on your selection!
-To prevent the underlying character from being typed, press another key
-(such as a dedicated shift key, a neighboring home row mod key, or even
-a layer access key) before you release the original home row shift key.
-
->NOTE: You may potentially encounter "flashing mods" where an application
-or operating system action is triggered by a standalone tap of a shift,
-but this is unlikely as people regularly tap shift without consequence.
 
 #### Bilateral combinations
 
@@ -252,50 +221,7 @@ layer access key (which your thumb is holding down) to modify keystrokes on
 that respective layer.  This way, you don't need to lift your hands off the
 keyboard or your fingers away from their home position to execute shortcuts.
 
-### Key auto-repeat
-
-Since dual-function keys (such as home row mods and layer access keys) have a
-special effect when held, they won't auto-repeat when held like a normal key.
-Instead, you have two options for engaging auto-repeat on dual-function keys:
-
-1. Use the "Tap then hold" method: first tap (press and release) and then hold
-   (press and don't release until the desired amount of repetition is reached).
-
-2. Using repetition access keys: first hold a `&plain` layer access key and
-   then hold the key you want to repeat for the desired amount of repetition.
-
-![Using repetition access keys](https://github.com/sunaku/glove80-keymaps/assets/9863/de0078c5-eeda-40fc-8c5b-39b7c0338cdc)
-
-### Alpha layouts
-
-This keymap lets you dynamically switch to alpha layouts (such as QWERTY and
-Dvorak) other than the one you chose for your base layer during installation,
-by holding the Magic key and tapping the respective number key for that layer.
-
-| Shortcut  | Layer number | Alpha layout                        |
-| --------- | ------------ | ----------------------------------- |
-| Magic+`=` | 0            | Engrammer (base layer; your choice) |
-| Magic+`1` | 1            | Engram                              |
-| Magic+`2` | 2            | Dvorak                              |
-| Magic+`3` | 3            | ColemakDHm                          |
-| Magic+`4` | 4            | Colemak                             |
-| Magic+`5` | 5            | QWERTY                              |
-| Magic+`6` | 6            | Norman                              |
-| Magic+`7` | 7            | Workman                             |
-| Magic+`8` | 8            | Halmak                              |
-
-For the first 5 alpha layouts, the respective number key for each layout will
-illuminate when you tap the Magic key.  For example, suppose that we activate
-the QWERTY layout by typing Magic+`5` and that we've forgotten about it after
-some time... 😅 how can we know which alpha layout is currently active?  Well,
-by simply tapping the Magic key, we'll see that number 5 illuminates in pink 🚨
-thereby indicating that the QWERTY alpha layout (at layer number 5) is active.
-
-However, note that number row illumination isn't available for layer 6 onwards.
-That's just how the Glove80's firmware is currently implemented today; you have
-the option of implementing such enhancements by editing its ZMK code if desired.
-
-### Unicode and Emoji
+### Emoji
 
 Unicode characters (including Emoji 🔥) are typed through ZMK macros (sequences
 of multiple keystrokes) generated from the `world.yaml` and `emoji.yaml` files
@@ -333,14 +259,14 @@ Open the [keymap link above](#keymap) and follow these instructions:
 4. Customize the keymap behavior in this text box.
 5. Build the firmware and download the `*.uf2` file.
 
-![instructions](https://github.com/sunaku/glove80-keymaps/assets/9863/4eeafe4c-0ab3-4900-b241-f62b0467a394)
+![instructions](./README/firmware.png)
 
 ### Enabling mouse emulation
 
 Before building the firmware (step 5 above), change the version to PR23:
 open the "Settings" tab, choose PR23, and then go back to the "Edit" tab.
 
-![beta firmware](https://github.com/sunaku/glove80-keymaps/assets/26071571/25c66c06-93fe-4318-bb54-7a85e510e1fd)
+![beta firmware](./README/mouse-emulation.png)
 
 Without this change, the mouse control keys on the Mouse layer won't work.
 
@@ -379,7 +305,6 @@ adding them above the snippet in the "Custom Defined Behaviors" text box:
 ```h
 // add your overrides here, up at the very top:
 #define OPERATING_SYSTEM 'W' // windows
-#define EMOJI_HAIR_STYLE_PRESET 'C' // curly_hair
 
 // ... rest of snippet goes here, unchanged ...
 ```
@@ -410,7 +335,7 @@ also make them different through the following additional settings if you want:
 ```h
 #define  LEFT_PINKY_MOD RALT
 #define RIGHT_PINKY_MOD LCTL
-```
+```                            l
 
 For completeness, here are all finger-mod settings available for customization:
 
@@ -419,8 +344,6 @@ For completeness, here are all finger-mod settings available for customization:
 #define RIGHT_PINKY_MOD ...
 #define  LEFT_RING1_MOD ...
 #define RIGHT_RING1_MOD ...
-#define  LEFT_RING2_MOD ...
-#define RIGHT_RING2_MOD ...
 #define  LEFT_MIDDY_MOD ...
 #define RIGHT_MIDDY_MOD ...
 #define  LEFT_INDEX_MOD ...
@@ -451,243 +374,12 @@ adjust the `#define` time thresholds in the "Custom Defined Behaviors" snippet.
 
 [Ubuntu in WSL]: https://ubuntu.com/desktop/wsl
 
-#### World and Emoji characters
+#### Emoji characters
 
-You can customize the predefined characters in the Emoji and World layers by
+You can customize the predefined characters in the Emoji layer by
 editing their respective YAML source files in this repository.  Afterwards,
 run the `rake` command and then copy the new `keymap.dtsi` contents back into
 the "Custom Defined Behaviors" text box in the Layout Editor for your keymap.
-
-##### Adding a new World character
-
-Suppose you wanted to add a key for the copyright sign © character in your keymap.
-
-First, open the `world.yaml` file and add a new entry under the `codepoints` section:
-
-```yaml
-#
-# codepoints:
-#   <name>: "<string_of_unicode_characters>"
-#
-codepoints:
-  copyright_sign: "️©"
-```
-
-Note that you can directly paste Unicode characters into the file, as illustrated above!
-
-Next, [compile from source](#compiling-from-source) to generate the `&world_copyright_sign` behavior for ZMK:
-
-```h
-UNICODE(world_copyright_sign_macro, /* ️© */
-  #if OPERATING_SYSTEM == 'L'
-    UNICODE_SEQ_LINUX(&kp F &kp E &kp N0 &kp F), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_LINUX(&kp A &kp N9)
-  #elif OPERATING_SYSTEM == 'M'
-    UNICODE_SEQ_MACOS(&kp F &kp E &kp N0 &kp F), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp A &kp N9)
-  #elif OPERATING_SYSTEM == 'W'
-    UNICODE_SEQ_WINDOWS(&kp N0 &kp F &kp E &kp N0 &kp F), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_WINDOWS(&kp N0 &kp A &kp N9)
-  #endif
-)
-world_copyright_sign: world_copyright_sign {
-  compatible = "zmk,behavior-mod-morph";
-  #binding-cells = <0>;
-  bindings = <&world_copyright_sign_macro>, <&world_copyright_sign_macro>;
-  mods = <(~(
-    #ifdef WORLD_USE_COMPOSE_FOR_world_copyright_sign
-      COMPOSE_MORPH_MODS
-    #else
-      UNICODE_MORPH_MODS
-    #endif
-  ))>;
-};
-```
-
-Finally, assign `&world_copyright_sign` to a "Custom" key in the Glove80 Layout Editor.
-
-##### Shift key for World characters
-
-Suppose you wanted a World character that changed when you press the shift key, like lowercase and uppercase letters in English.  For example, consider the copyright sign © character from the previous section: let's change it into a registered sign ® character when typed with the shift key.
-
-First, open the `world.yaml` file and add a new entry under the `characters` section:
-
-```yaml
-#
-# characters:
-#   <group>:
-#     <name>: { <without_shift>, <with_shift> }
-#
-characters:
-  sign:
-    copyright: { regular: "©", shifted: "®" }
-```
-
-Note that you can directly paste Unicode characters into the file, as illustrated above!
-
-Next, [compile from source](#compiling-from-source) to generate the `&world_sign_copyright` behavior for ZMK:
-* The `&world_sign_copyright_regular` behavior will type the regular character: ©
-* The `&world_sign_copyright_shifted` behavior will type the shifted character: ®
-* The `&world_sign_copyright` behavior will choose one of the above based on shift
-
-```h
-UNICODE(world_sign_copyright_regular_macro, /* © */
-  #if OPERATING_SYSTEM == 'L'
-    UNICODE_SEQ_LINUX(&kp A &kp N9)
-  #elif OPERATING_SYSTEM == 'M'
-    UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp A &kp N9)
-  #elif OPERATING_SYSTEM == 'W'
-    UNICODE_SEQ_WINDOWS(&kp N0 &kp A &kp N9)
-  #endif
-)
-world_sign_copyright_regular: world_sign_copyright_regular {
-  compatible = "zmk,behavior-mod-morph";
-  #binding-cells = <0>;
-  bindings = <&world_sign_copyright_regular_macro>, <&world_sign_copyright_regular_macro>;
-  mods = <(~(
-    #ifdef WORLD_USE_COMPOSE_FOR_world_sign_copyright_regular
-      COMPOSE_MORPH_MODS
-    #else
-      UNICODE_MORPH_MODS
-    #endif
-  ))>;
-};
-UNICODE(world_sign_copyright_shifted_macro, /* ® */
-  #if OPERATING_SYSTEM == 'L'
-    UNICODE_SEQ_LINUX(&kp A &kp E)
-  #elif OPERATING_SYSTEM == 'M'
-    UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp A &kp E)
-  #elif OPERATING_SYSTEM == 'W'
-    UNICODE_SEQ_WINDOWS(&kp N0 &kp A &kp E)
-  #endif
-)
-world_sign_copyright_shifted: world_sign_copyright_shifted {
-    compatible = "zmk,behavior-mod-morph";
-    #binding-cells = <0>;
-    bindings = <&world_sign_copyright_shifted_macro>, <&world_sign_copyright_shifted_macro>;
-    mods = <(~(
-    #ifdef WORLD_USE_COMPOSE_FOR_world_sign_copyright_shifted
-      COMPOSE_MORPH_MODS
-    #else
-      UNICODE_MORPH_MODS
-    #endif
-  ))>;
-};
-world_sign_copyright: world_sign_copyright {
-  compatible = "zmk,behavior-mod-morph";
-  #binding-cells = <0>;
-  bindings = <&world_sign_copyright_regular>, <&world_sign_copyright_shifted>;
-  mods = <MOD_LSFT>;
-};
-```
-
-Finally, assign `&world_sign_copyright` to a "Custom" key in the Glove80 Layout Editor.
-
-##### Modifiers for World characters
-
-Suppose you wanted to enhance the copyright/registered World character from the previous section so that it changes when you press the control key.  For example, let's change it into a trademark sign ™ character when typed with the control key, and into a service mark sign ℠ character when typed with the control and shift keys together.
-
-First, open the `world.yaml` file and add a new entry under the `characters` section:
-
-```yaml
-#
-# characters:
-#   <group>:
-#     <name>: { <without_shift>, <with_shift> }
-#
-characters:
-  sign:
-    copyright: { regular: "©", shifted: "®" }
-    trademark: { regular: "™", shifted: "℠" }
-```
-
-Note that you can directly paste Unicode characters into the file, as illustrated above!
-
-Next, add a new entry under the `transforms` section to specify what goes with control:
-
-```yaml
-#
-# transforms:
-#   <group>:
-#     base: <name>
-#     <modifier>: <name>
-#
-# Where <modifier> is either LALT, RALT, LCTL, RCTL, or RSFT.
-#
-transforms:
-  sign:
-    base: copyright
-    LCTL: trademark
-```
-
-Next, [compile from source](#compiling-from-source) to generate the `&world_sign_trademark` behavior for ZMK:
-* The `&world_sign_trademark_regular` behavior will type the regular character: ™
-* The `&world_sign_trademark_shifted` behavior will type the shifted character: ℠
-* The `&world_sign_trademark` behavior will choose one of the above based on shift
-
-```h
-UNICODE(world_sign_trademark_regular_macro, /* ™ */
-  #if OPERATING_SYSTEM == 'L'
-    UNICODE_SEQ_LINUX(&kp N2 &kp N1 &kp N2 &kp N2)
-  #elif OPERATING_SYSTEM == 'M'
-    UNICODE_SEQ_MACOS(&kp N2 &kp N1 &kp N2 &kp N2)
-  #elif OPERATING_SYSTEM == 'W'
-    UNICODE_SEQ_WINDOWS(&kp N0 &kp N2 &kp N1 &kp N2 &kp N2)
-  #endif
-)
-world_sign_trademark_regular: world_sign_trademark_regular {
-  compatible = "zmk,behavior-mod-morph";
-  #binding-cells = <0>;
-  bindings = <&world_sign_trademark_regular_macro>, <&world_sign_trademark_regular_macro>;
-  mods = <(~(
-    #ifdef WORLD_USE_COMPOSE_FOR_world_sign_trademark_regular
-      COMPOSE_MORPH_MODS
-    #else
-      UNICODE_MORPH_MODS
-    #endif
-  ))>;
-};
-UNICODE(world_sign_trademark_shifted_macro, /* ℠ */
-  #if OPERATING_SYSTEM == 'L'
-    UNICODE_SEQ_LINUX(&kp N2 &kp N1 &kp N2 &kp N0)
-  #elif OPERATING_SYSTEM == 'M'
-    UNICODE_SEQ_MACOS(&kp N2 &kp N1 &kp N2 &kp N0)
-  #elif OPERATING_SYSTEM == 'W'
-    UNICODE_SEQ_WINDOWS(&kp N0 &kp N2 &kp N1 &kp N2 &kp N0)
-  #endif
-)
-world_sign_trademark_shifted: world_sign_trademark_shifted {
-  compatible = "zmk,behavior-mod-morph";
-  #binding-cells = <0>;
-  bindings = <&world_sign_trademark_shifted_macro>, <&world_sign_trademark_shifted_macro>;
-  mods = <(~(
-    #ifdef WORLD_USE_COMPOSE_FOR_world_sign_trademark_shifted
-      COMPOSE_MORPH_MODS
-    #else
-      UNICODE_MORPH_MODS
-    #endif
-  ))>;
-};
-world_sign_trademark: world_sign_trademark {
-  compatible = "zmk,behavior-mod-morph";
-  #binding-cells = <0>;
-  bindings = <&world_sign_trademark_regular>, <&world_sign_trademark_shifted>;
-  mods = <MOD_LSFT>;
-};
-```
-
-Also, notice the new `&world_sign_base` behavior that chooses between the other two:
-* The `&world_sign_copyright` behavior will type the copyright/registered sign
-* The `&world_sign_trademark` behavior will type the trade/service mark sign
-* The `&world_sign_base` behavior will choose one of the above based on control
-
-```h
-world_sign_base: world_sign_base {
-  compatible = "zmk,behavior-mod-morph";
-  #binding-cells = <0>;
-  bindings = <&world_sign_copyright>, <&world_sign_trademark>;
-  mods = <(MOD_LCTL)>;
-};
-```
-
-Finally, assign `&world_sign_base` to a "Custom" key in the Glove80 Layout Editor.
 
 ##### Adding a new Emoji character
 
@@ -731,7 +423,7 @@ emoji_unamused_face: emoji_unamused_face {
   ))>;
 };
 ```
-
+                            
 Finally, assign `&emoji_unamused_face` to a "Custom" key in the Glove80 Layout Editor.
 
 ##### Shift key for Emoji characters
@@ -834,10 +526,10 @@ convert each of them into PDF documents and then stitch them together into one.
 
 If you rearrange the base layer (say, for a custom or alternative layout) then:
 
-1. Export your keymap as a JSON file (via "Advanced Settings" > "Enable local
+1. Export your keymap as a aJSON file (via "Advanced Settings" > "Enable local
    config" then go back to "Edit" and click "Download") in the Layout Editor.
-   ![Enable local config](https://github.com/sunaku/glove80-keymaps/assets/9863/5bf7ff67-94bc-4d8e-9673-271863966dd2)
-   ![Download JSON export](https://github.com/sunaku/glove80-keymaps/assets/9863/a7ad7155-e0e6-47e1-ad4c-c89b4d8521b9)
+   ![Enable local config](./README/layer-editor-1.png)
+   ![Download JSON export](./README/local-config.png)
 
 2. Overwrite the `keymap.json` file in this repository with your exported file.
 
@@ -923,7 +615,8 @@ Join the [`#glorious-engrammer`][ch] channel on [MoErgo's discord server][sv].
 
 (the ISC license)
 
-Copyright 2023 Suraj N. Kurapati <https://github.com/sunaku>
+Copyright 2023 Suraj N. Kurapati <https://github.com/sunaku>  
+Portions Copyright 2024 Nick Ferguson
 
 Permission to use, copy, modify, and/or distribute this software for any
 purpose with or without fee is hereby granted, provided that the above
@@ -936,3 +629,9 @@ ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
 WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
 ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+## Acknowledgements
+
+- Special thanks to [Sanuku](https://github.com/sunaku) for his [contributions to the Glove80 community](https://sunaku.github.io/moergo-glove80-keyboard.html)
+- [Miryoku layers](https://github.com/manna-harbour/miryoku)
+

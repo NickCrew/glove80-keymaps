@@ -1,0 +1,530 @@
+[
+  {
+    "name": "system",
+    "css": "li {\n    font-weight: normal;\n    text-align: left\n    margin: 1px;\n    padding: 1px;\n}\n\na {\n    font-weight: bold;\n    font-style: italic;\n    \n}\n\np {\n    font-weight: bold;\n    font-size: larger;\n    text-align: center;\n}\n\nh2 { \n    font-weight: bold;\n}\n\nul {\n    text-align: left\n}"
+  },
+  [
+    {
+      "c": "#26755b",
+      "t": "#ffffff",
+      "p": "CHICKLET",
+      "a": 7,
+      "f": 4
+    },
+    "Hue ▼",
+    "Hue ▲",
+    {
+      "c": "#cccccc",
+      "g": true
+    },
+    "BT 1",
+    "BT 2",
+    "BT 3",
+    {
+      "x": 7,
+      "c": "#757575",
+      "f": 3
+    },
+    "Print screen",
+    "Pause break",
+    "Scroll lock",
+    {
+      "a": 4,
+      "fa": [
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
+      ]
+    },
+    "⌘,\n\n\n\n\n\n\n\n\n\nSettings",
+    "⌘⌥⎋\n\n\n\n\n\n\n\n\n\nForce quit"
+  ],
+  [
+    {
+      "c": "#0284a6",
+      "g": false,
+      "a": 7,
+      "f": 4
+    },
+    "Bri. ▼",
+    "Bri. ▲",
+    {
+      "c": "#cccccc",
+      "t": "#000000",
+      "g": true
+    },
+    "<small>Context</small> menu",
+    "",
+    {
+      "f": 5,
+      "fa": [
+        3
+      ]
+    },
+    "Print screen",
+    {
+      "c": "#757575",
+      "t": "#ffffff",
+      "f": 3
+    },
+    "Scroll lock",
+    {
+      "c": "#cccccc",
+      "t": "#000000",
+      "g": false,
+      "a": 4,
+      "f": 4,
+      "w": 5,
+      "h": 4,
+      "d": true
+    },
+    "<center><h2>System Layer</h2><p></p></center>\n\n\n\n\n\n\n\n\n<p>Glove80 Keyboard</p>\n<a href=\"https://github.com/NickCrew/zmk-config>NickCrew/zmk-config</a/>",
+    {
+      "c": "#0284a6",
+      "t": "#ffffff",
+      "fa": [
+        2
+      ]
+    },
+    "^⇧⌥\"\n\n\n\n\n\n\n\n\n\nVSplit",
+    {
+      "t": "#FFFFFF"
+    },
+    "^⇧⌥\"\n\n\n\n\n\n\n\n\n\nHSplit",
+    {
+      "f": 8,
+      "fa": [
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        3
+      ]
+    },
+    "⌘-\n\n\n\n\n\n\n\n\n\nZoom Out",
+    {
+      "f": 3,
+      "fa": [
+        2
+      ]
+    },
+    "⌘=\n\n\n\n\n\n\n\n\n\nZoom In",
+    "⌘0\n\n\n\n\n\n\n\n\n\nReset Zoom",
+    {
+      "c": "#757575",
+      "t": "#ffffff",
+      "f": 3
+    },
+    "⌥1\n\n\n\n\n\n\n\n\n\nFav 1"
+  ],
+  [
+    {
+      "c": "#c26006",
+      "a": 7,
+      "f": 4
+    },
+    "Sat. ▼",
+    "Sat. ▲",
+    {
+      "c": "#cccccc",
+      "t": "#000000",
+      "g": true,
+      "a": 5,
+      "f": 7,
+      "f2": 3
+    },
+    "⇧\nsticky",
+    {
+      "t": "#ffffff",
+      "a": 7,
+      "f": 4
+    },
+    "F19",
+    "F20",
+    {
+      "c": "#757575",
+      "f": 3
+    },
+    "Print screen",
+    {
+      "x": 5,
+      "c": "#0284a6",
+      "g": false,
+      "a": 4,
+      "fa": [
+        2
+      ]
+    },
+    "⇧^P\n\n\n\n\n\n\n\n\n\nLaunch",
+    {
+      "f": 3
+    },
+    "⇧^X\n\n\n\nShift\n\n\n\n\n\nCopy",
+    {
+      "f": 3
+    },
+    "⇧^_\n\n\n\nCtrl\n\n\n\n\n\nSelect",
+    {
+      "c": "#a565a5",
+      "f": 3
+    },
+    "^B\n\n\n\nAlt\n\n\n\n\n\nPush line",
+    {
+      "c": "#0284a6",
+      "f": 3
+    },
+    "⇧↑\n\n\n\nWin\n\n\n\n\n\nScroll Prompt",
+    {
+      "c": "#757575",
+      "f": 3
+    },
+    "⌥2\n\n\n\n\n\n\n\n\n\nFav 2"
+  ],
+  [
+    {
+      "c": "#a565a5",
+      "a": 7,
+      "f": 4
+    },
+    "Spd. ▼",
+    "Spd. ▲",
+    {
+      "c": "#cccccc",
+      "g": true
+    },
+    "F16",
+    "F17",
+    "F18",
+    {
+      "c": "#757575",
+      "f": 3
+    },
+    "Caps lock",
+    {
+      "x": 5,
+      "c": "#a565a5",
+      "g": false,
+      "a": 4,
+      "f": 4,
+      "fa": [
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        3
+      ]
+    },
+    "^G\n\n\n\n\n\n\n\n\n\nMarks",
+    {
+      "c": "#a84646",
+      "fa": [
+        2
+      ],
+      "n": true
+    },
+    "^C\n\n\n\n\n\n\n\n\n\nKILL",
+    {
+      "c": "#c26006"
+    },
+    "^Z\n\n\n\n\n\n\n\n\n\nSTOP",
+    {
+      "c": "#a565a5",
+      "f": 3,
+      "fa": [
+        2
+      ]
+    },
+    "^F\n\n\n\n\n\n\n\n\n\nJump Char",
+    {
+      "c": "#b58d18"
+    },
+    "^L\n\n\n\n\n\n\n\n\n\nClear",
+    {
+      "c": "#757575",
+      "fa": [
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        4
+      ]
+    },
+    "⌥3\n\n\n\n\n\n\n\n\n\nFav 3"
+  ],
+  [
+    {
+      "c": "#80653b",
+      "a": 7,
+      "f": 4
+    },
+    "Effect  ▼",
+    "Effect ▲",
+    {
+      "c": "#757575",
+      "g": true
+    },
+    "USB",
+    {
+      "f": 3,
+      "fa": [
+        4
+      ]
+    },
+    "BT 0",
+    "BT 1",
+    {
+      "f": 3
+    },
+    "App menu",
+    {
+      "x": 5,
+      "c": "#a565a5",
+      "g": false,
+      "a": 4,
+      "f": 4,
+      "fa": [
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        3
+      ]
+    },
+    "^O\n\n\n\n\n\n\n\n\n\nCopy buffer",
+    {
+      "f": 3,
+      "fa": [
+        2
+      ]
+    },
+    "^R\n\n\n\n\n\n\n\n\n\nSearch history",
+    "^T\n\n\n\n\n\n\n\n\n\nSearch Dirs",
+    "⌥C\n\n\n\n\n\n\n\n\n\nSearch files",
+    {
+      "c": "#0284a6"
+    },
+    "⇧↓\n\n\n\n\n\n\n\n\n\nScroll Prompt",
+    {
+      "c": "#757575",
+      "fa": [
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        4
+      ]
+    },
+    "⌥4\n\n\n\n\n\n\n\n\n\nFav 4"
+  ],
+  [
+    {
+      "y": -0.04999999999999982,
+      "x": 6.95,
+      "c": "#ffecb3",
+      "t": "#000000",
+      "g": true,
+      "p": "FLAT",
+      "a": 7,
+      "f": 2,
+      "w": 1.1,
+      "h": 2.7,
+      "d": true
+    },
+    ""
+  ],
+  [
+    {
+      "y": -0.9500000000000002,
+      "c": "#757575",
+      "t": "#ffffff",
+      "g": false,
+      "p": "",
+      "f": 3
+    },
+    "Magic",
+    {
+      "c": "#0284a6",
+      "p": "CHICKLET",
+      "a": 5,
+      "f": 4,
+      "fa": [
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2
+      ]
+    },
+    "\non/off\n\n\n\n\nRGB",
+    {
+      "c": "#cccccc",
+      "t": "#000000",
+      "g": true,
+      "a": 7,
+      "f": 3
+    },
+    "Display ➖",
+    {
+      "c": "#757575",
+      "t": "#ffffff",
+      "f": 4
+    },
+    "BT 2",
+    "BT 3\n\n\n\nSAVE",
+    {
+      "c": "#a84646",
+      "g": false,
+      "f": 6,
+      "fa": [
+        3
+      ]
+    },
+    "Power",
+    {
+      "c": "#c26006"
+    },
+    "Sleep\n\n\n\n^L",
+    {
+      "c": "#26755b"
+    },
+    "Lock",
+    {
+      "x": 1,
+      "c": "#cccccc",
+      "t": "#000000",
+      "g": true,
+      "f": 3,
+      "fa": [
+        9
+      ]
+    },
+    "&lArr;",
+    "&rArr;",
+    {
+      "c": "#D1C4E9",
+      "g": false,
+      "p": "SPACE",
+      "n": true
+    },
+    "<img src=\"https://openclipart.org/download/278214/fingerprint.svg\" width=\"36\" height=\"36\" />",
+    {
+      "c": "#cccccc",
+      "g": true,
+      "p": "CHICKLET",
+      "f": 3
+    },
+    "Effect ➕",
+    {
+      "f": 3
+    },
+    "Bright ➕",
+    {
+      "f": 3
+    },
+    "Bright ➖",
+    {
+      "t": "#ffffff",
+      "a": 5,
+      "fa": [
+        6,
+        2
+      ]
+    },
+    "⇪\nCaps",
+    {
+      "c": "#757575",
+      "g": false,
+      "a": 4,
+      "fa": [
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        4
+      ]
+    },
+    "⌥5\n\n\n\n\n\n\n\n\n\nFav 5"
+  ],
+  [
+    {
+      "x": 5,
+      "a": 7,
+      "f": 6,
+      "fa": [
+        3
+      ]
+    },
+    "Caps lock\n\n\n\nSIGINT",
+    {
+      "f": 3
+    },
+    "Scroll lock\n\n\n\nSIGSTP",
+    "Menu\n\n\n\nCTL+V",
+    {
+      "x": 1,
+      "t": "#EEEEEE"
+    },
+    "Unlock layer",
+    {
+      "c": "#cccccc",
+      "t": "#000000",
+      "g": true
+    },
+    "Tab\n\n\n\nMouse",
+    "End"
+  ],
+  [
+    {
+      "y": -0.75,
+      "g": false,
+      "d": true
+    },
+    ""
+  ]
+]

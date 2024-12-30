@@ -61,7 +61,7 @@ end
 # printable layer map diagrams
 #-----------------------------------------------------------------------------
 
-layers_pdf = 'README/all-layer-diagrams.pdf'
+layers_pdf = 'README/all-layers.pdf'
 task :pdf => layers_pdf
 
 layers_pdf_sequence = %w[
@@ -75,14 +75,10 @@ layers_pdf_sequence = %w[
   symbol
   mouse
   system
-  world
   typing
-  gaming
-  factory
-  template
 ]
 
-layer_pngs = Dir["README/{#{layers_pdf_sequence.join(",")}}-layer-diagram.png"]
+layer_pngs = Dir["README/{#{layers_pdf_sequence.join(",")}}.png"]
 
 layer_pdfs = layer_pngs.map do |png|
   pdf = png.ext('pdf')

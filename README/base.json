@@ -1,0 +1,405 @@
+[
+  {
+    "name": "base",
+    "author": "Nick Ferguson",
+    "css": "/* front legend */\n.keylabel10 div { \n    font-size: xx-small;\n    font-style: italic;\n    text-shadow: 1px 1px 2px #FFD600;\n}\n/* description */\ncenter h2 {\n    margin-top: 1em;\n}\ncenter ul {\n    padding-left: 0;\n    margin-top: 1em;\n    padding-top: 1em;\n    font-size: smaller;\n}\ncenter ul li {\n    margin-top: 1ex;\n    list-style-type: none;\n}\ncenter ul li a {\n    font-weight: bold;\n}\ncenter .permalink {\n    font-size: x-small;\n}\ncenter em {\n    font-weight: normal;\n    font-style: normal;\n}\nspan.left {\n    display: block;\n    text-align: center;\n    transform: rotate(-90deg);\n    padding-left: 8em;\n    padding-bottom: 11em;\n}\nspan.right {\n    display: block;\n    text-align: center;\n    transform: rotate(90deg);\n    margin-left: -1.25em;\n    padding-right: 9.5em;\n    padding-bottom: 12em;\n}"
+  },
+  [
+    {
+      "c": "#f1de9a",
+      "p": "CHICKLET",
+      "a": 7,
+      "f": 8
+    },
+    "↓",
+    {
+      "f": 9
+    },
+    "↑",
+    {
+      "c": "#94ebff",
+      "f": 3
+    },
+    "Mute",
+    "Vol ➖",
+    "Vol ➕",
+    {
+      "x": 7,
+      "f": 7
+    },
+    "⏮︎",
+    "⏯︎",
+    "⏭︎",
+    {
+      "c": "#f1de9a",
+      "f": 9
+    },
+    "←",
+    "→"
+  ],
+  [
+    {
+      "c": "#ccccccc",
+      "f": 5
+    },
+    "=",
+    {
+      "c": "#cccccc",
+      "a": 5,
+      "f": 4
+    },
+    "!\n1",
+    "@\n2",
+    "#\n3",
+    "$\n4",
+    "%\n5",
+    {
+      "w": 5,
+      "h": 4,
+      "d": true
+    },
+    "<h1>Base Layer</h2>\n<i>Credit & Special Thanks: <a href=\"https://sunaku.github.io/moergo-glove80-keyboard.html\">Sanuku</a></i>\n\n\n\n\n<h4><a href=\"https://github.com/NickCrew/zmk-config\">NickCrew/zmk-config</a></h4>",
+    "^\n6",
+    "&\n7",
+    "*\n8",
+    "(\n9",
+    ")\n0",
+    {
+      "c": "#ccccccc",
+      "a": 7,
+      "f": 7
+    },
+    "-"
+  ],
+  [
+    "`",
+    {
+      "c": "#cccccc",
+      "f": 3
+    },
+    "Q",
+    {
+      "c": "#ccccccc"
+    },
+    "W\n\n\n\nOpt (R)",
+    {
+      "c": "#cccccc"
+    },
+    "E",
+    "R",
+    "T",
+    {
+      "x": 5
+    },
+    "Y",
+    "U",
+    "I",
+    {
+      "c": "#ccccccc"
+    },
+    "O\n\n\n\nOpt (R)",
+    {
+      "c": "#cccccc"
+    },
+    "P",
+    {
+      "c": "#ccccccc",
+      "f": 7
+    },
+    "\\"
+  ],
+  [
+    {
+      "f": 3
+    },
+    "Caps word",
+    {
+      "c": "#FFCDD2",
+      "p": "SPACE",
+      "a": 4,
+      "fa": [
+        5
+      ]
+    },
+    "^\n\n\n\nCtrl\n\n\n\n\nA",
+    {
+      "c": "#FFCCBC",
+      "f": 2,
+      "fa": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        3
+      ]
+    },
+    "⌥\n\n\n\nOpt\n\n\n\n\nS",
+    {
+      "c": "#FFECB3"
+    },
+    "⌘\n\n\n\nCmd\n\n\n\n\nD",
+    {
+      "c": "#DCEDC8",
+      "n": true
+    },
+    "⇧\n\n\n\nShift\n\n\n\n\nF",
+    {
+      "c": "#ccccccc",
+      "p": "CHICKLET",
+      "a": 7,
+      "f": 3
+    },
+    "G\n\n\n\nNumber",
+    {
+      "x": 5
+    },
+    "H\n\n\n\nMouse",
+    {
+      "c": "#DCEDC8",
+      "p": "SPACE",
+      "a": 4,
+      "n": true
+    },
+    "⇧\n\n\n\nShift\n\n\n\n\nL",
+    {
+      "c": "#FFECB3"
+    },
+    "⌘\n\n\n\nCmd\n\n\n\n\nJ",
+    {
+      "c": "#FFCCBC"
+    },
+    "⌥\n\n\n\nOpt\n\n\n\n\nK",
+    {
+      "c": "#FFCDD2",
+      "fa": [
+        4
+      ]
+    },
+    "^\n\n\n\nCtrl\n\n\n\n\n;",
+    {
+      "c": "#cccccc",
+      "p": "CHICKLET",
+      "a": 5,
+      "f": 4
+    },
+    "\"\n'"
+  ],
+  [
+    {
+      "c": "#ccccccc",
+      "a": 7,
+      "f": 7
+    },
+    "⇪",
+    {
+      "c": "#cccccc",
+      "f": 3
+    },
+    "Z",
+    "X",
+    "C",
+    "V",
+    {
+      "f": 4
+    },
+    "B",
+    {
+      "x": 5
+    },
+    "N",
+    {
+      "f": 3
+    },
+    "M",
+    {
+      "a": 5,
+      "f": 5,
+      "fa": [
+        3
+      ]
+    },
+    "<\n,",
+    ">\n.",
+    {
+      "f": 4
+    },
+    "?\n/",
+    {
+      "c": "#f1de9a",
+      "a": 7,
+      "f": 7
+    },
+    "⇞"
+  ],
+  [
+    {
+      "y": -0.04999999999999982,
+      "x": 4.95,
+      "c": "#FFD180",
+      "p": "FLAT",
+      "a": 5,
+      "f": 2,
+      "w": 1.1,
+      "h": 2.7
+    },
+    "\nAlt+Tab <small>cursor layer</small>",
+    {
+      "x": 0.9000000000000004,
+      "c": "#FFFF8D",
+      "f2": 1,
+      "w": 1.1,
+      "h": 2.7
+    },
+    "\nToggle <small>photoshop layer</small>",
+    {
+      "x": 2.9000000000000004,
+      "c": "#FFD180",
+      "f": 2,
+      "w": 1.1,
+      "h": 2.7
+    },
+    "\nHyper <small>(sticky)</small>"
+  ],
+  [
+    {
+      "y": -0.9500000000000002,
+      "c": "#93cde6",
+      "p": "",
+      "a": 7,
+      "f": 3
+    },
+    "Magic",
+    {
+      "c": "#ccccccc",
+      "p": "CHICKLET",
+      "f": 5
+    },
+    "{\n\n\n\nLower",
+    "[",
+    "]",
+    {
+      "c": "#d1c4e9",
+      "p": "SPACE",
+      "f": 4
+    },
+    "}\n\n\n\nEmoji",
+    {
+      "c": "#D1C4E9",
+      "f": 3,
+      "fa": [
+        6
+      ]
+    },
+    "⎋\n\n\n\nNumber",
+    {
+      "c": "#cccccc",
+      "t": "#040404",
+      "p": "CHICKLET",
+      "f": 3
+    },
+    "Caps word",
+    {
+      "c": "#ccccccc",
+      "t": "#000000",
+      "f": 8
+    },
+    "⇤",
+    {
+      "x": 1,
+      "c": "#cccccc"
+    },
+    "⇥",
+    {
+      "c": "#ccccccc",
+      "f": 3
+    },
+    "Caps word",
+    {
+      "c": "#D1C4E9",
+      "p": "SPACE",
+      "fa": [
+        5
+      ]
+    },
+    "⏎\n\n\n\nSystem",
+    {
+      "c": "#ccccccc",
+      "p": "CHICKLET",
+      "f": 4
+    },
+    "<\n\n\n\nEmoji",
+    {
+      "c": "#cccccc"
+    },
+    "(",
+    ")",
+    {
+      "c": "#CCCCCC"
+    },
+    ">\n\n\n\nLower",
+    {
+      "c": "#f1de9a",
+      "f": 8
+    },
+    "⇟"
+  ],
+  [
+    {
+      "y": -0.040000000000000036,
+      "x": 4.45,
+      "c": "#B9F6CA",
+      "p": "FLAT",
+      "f": 2,
+      "w": 2.625,
+      "h": 1.11
+    },
+    "<span class=\"left\">Ctrl+Tab<small><br>cursor layer</small></span>",
+    {
+      "x": 2.874999999999999,
+      "w": 2.625,
+      "h": 1.11
+    },
+    "<span class=\"right\">Meh<small><br>(sticky)</small></span>"
+  ],
+  [
+    {
+      "y": -0.96,
+      "x": 5,
+      "c": "#D1C4E9",
+      "p": "SPACE",
+      "f": 3,
+      "fa": [
+        7
+      ],
+      "n": true
+    },
+    "⌫\n\n\n\nCursor",
+    "⌦\n\n\n\nFunction",
+    {
+      "c": "#757575",
+      "t": "#ffffff"
+    },
+    "Lower",
+    {
+      "x": 1
+    },
+    "Lower",
+    {
+      "c": "#D1C4E9",
+      "t": "#000000",
+      "fa": [
+        9
+      ]
+    },
+    "↹\n\n\n\nMouse",
+    {
+      "f": 7
+    },
+    "␣\n\n\n\nSymbol"
+  ]
+]
