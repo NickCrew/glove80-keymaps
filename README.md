@@ -20,7 +20,7 @@ Version 38.1.3 (2024-12-29)
 - [Release notes][rel]
 
 [rel]: https://github.com/NickCrew/glove80-keymaps/releases/tag/v38.1.3
-[keymap]: https://my.glove80.com/#/layout/user/aa5fc6a3-e41b-43ca-abd1-af1d3917a6e6
+[keymap]: https://dev.glove80.com/#/layout/user/285f4fda-e5e8-4d47-8f0a-ab4e84e9f98f
 
 
 Originally forked from [version 38][v38] of  [Sanuku's Glove80 keymap][sanuku_glove80]
