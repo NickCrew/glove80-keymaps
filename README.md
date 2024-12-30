@@ -8,20 +8,23 @@ Originally based on [Sanuku's Glove80 keymap][sanuku_glove80], featuring [home r
 [sanuku_glove80]: https://sunaku.github.io/moergo-glove80-keyboard.html
 [glove80]: https://glove80.com
 [miryoku]: https://github.com/manna-harbour/miryoku
+[v38]: https://github.com/sunaku/glove80-keymaps/releases/v38
 
 
 ## Keymap
 
-Version 38.1.1 (2024-12-29)
+Version 38.1.3 (2024-12-29)
 - Changes:
-   - Applied initial customizations
-   - Forked from [version 38][v38] of  [Sanuku's Glove80 keymap][sanuku_glove80]
+   - Customized emoji layer
 - [Keymap][keymap]
 - [Release notes][rel]
 
-[rel]: https://github.com/NickCrew/glove80-keymaps/releases/tag/v38.1.1
-[v38]: https://github.com/sunaku/glove80-keymaps/releases/v38
-[keymap]: https://my.glove80.com/#/layout/user/35fd93d3-4c46-4001-8b16-388b9aaede27
+[rel]: https://github.com/NickCrew/glove80-keymaps/releases/tag/v38.1.3
+[keymap]: https://my.glove80.com/#/layout/user/aa5fc6a3-e41b-43ca-abd1-af1d3917a6e6
+
+
+Originally forked from [version 38][v38] of  [Sanuku's Glove80 keymap][sanuku_glove80]
+
 
 
 ## Contents

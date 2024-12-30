@@ -32,7 +32,10 @@ characters:
     horizontal: { left:    "←", right:    "→" }
     direction:  { forward: "↪", backward: "↩" }
     edit:       { undo:    "↺", redo:     "↻" } 
-
+  legal:
+    copyright:  { normal: "©️", super: "©" }
+    trademark:  { normal: "™️", super: "™" }
+    registered: { normal: "®️", super: "®" }
 
 
 #
@@ -116,8 +119,9 @@ codepoints:
   wheel:    "☸️"
   zap:      "⚡"
 
-  # Copyright/trademark
+  # Legal
   copyright:   "©️"
+  copyright2:  "©"
   trademark:   "™️"
   trademark2:  "™"
   registered:  "®️"

@@ -1,5 +1,6 @@
 [
   {
+    "name": "emoji",
     "css": "/* front legend */\n.keylabel10 div { \n    font-size: xx-small;\n    font-style: italic;\n    text-shadow: 1px 1px 2px #FFD600;\n}\n/* description */\ncenter h2 {\n    margin-top: 1em;\n}\ncenter ul {\n    padding-left: 0;\n    margin-top: 1em;\n    padding-top: 1em;\n    font-size: smaller;\n}\ncenter ul li {\n    margin-top: 1ex;\n    list-style-type: none;\n}\ncenter ul li a {\n    font-weight: bold;\n}\ncenter .permalink {\n    font-size: x-small;\n}\ncenter em {\n    font-weight: normal;\n    font-style: normal;\n}"
   },
   [
@@ -8,46 +9,54 @@
       "a": 7,
       "f": 9
     },
-    "️☁️",
-    "🔥",
-    "🌕\n\n\n\nWin",
-    "🌟",
-    "⚡",
-    {
-      "x": 7,
-      "f": 3,
-      "fa": [
-        9
-      ]
-    },
-    "‼️",
+    "️",
+    "",
     {
       "a": 5,
       "f": 5
     },
-    "🔒\n🔐",
-    "📘\n📖",
-    "📤\n📥",
+    "®\n®️\n\n\nWin",
+    "™\n™️",
+    "©\n©️",
     {
+      "x": 7,
       "a": 7,
       "f": 3,
       "fa": [
         9
       ]
     },
-    "‼"
+    "⏎",
+    {
+      "f": 5,
+      "fa": [
+        9
+      ]
+    },
+    "⇧",
+    {
+      "f": 9
+    },
+    "⌘",
+    "⌥",
+    {
+      "f": 3,
+      "fa": [
+        9
+      ]
+    },
+    "^"
   ],
   [
     {
       "f": 9
     },
-    "🌈",
-"📜",
-"📋",
-"📄",
-"📝",
-"📁",
-
+    "🔥",
+    "✅",
+    "❓",
+    "❌",
+    "⚠️",
+    "💯",
     {
       "a": 4,
       "f": 4,
@@ -55,68 +64,57 @@
       "h": 4,
       "d": true
     },
-    "<center><h2>Emoji Layer</h2><p>MoErgo Glove80 keyboard</p><ul><li><a href='https://github.com/manna-harbour/miryoku'>Miryoku</a> layers & home row mods</li><li><a href='https://engram.dev'>Engram</a><a href='https://github.com/sunaku/engrammer'><em>&middot;mer</em></a> keyboard layout</li><li>See <a href='https://is.gd/sunaku_glove80'>is.gd/sunaku_glove80</a></li></ul></center>",
+    "<center><h2>Emoji Layer</h2><p>MoErgo Glove80 keyboard</p><ul><li><a href=\"https://github.com/NickCrew/glove80-keymaps\">NickCrew/glove80-keymaps</a></li></ul></center>",
     {
       "a": 7,
       "f": 9
     },
     "🎉",
     "️❤️",
+    "🏅",
+    "🏆",
     "🎯",
-    "💪",
-    "🖊️",
     "🎽"
   ],
   [
-    "⬅️",
-"🔴",
-"⚪",
-"🟠",
-"🔵",
-    "️➡️",
+    "🟠",
+    "⚪",
+    "🔴",
+    "🟢",
+    "🔵",
+    "️🟣",
     {
-      "x": 5,
-      "a": 5,
-      "f": 5
+      "x": 5
     },
-    "🤣\n😂",
-    "🙃\n🙂",
-    "😍\n🤩\n\n\nCtrl",
-    "😜\n😉",
-    "😱\n😨",
-    "😵\n🤯"
+    "🔒",
+    "🏷️",
+    "🔖\n\n\n\nCtrl",
+    "🔎",
+    "⚡",
+    "ℹ️"
   ],
   [
+    "💎\n\n\n\nAlt",
+    "☁️",
     {
-      "a": 7,
-      "f": 9
+      "a": 5,
+      "f": 8
     },
-    "♀️\n\n\n\nAlt",
+    "↻\n↺\n\n\nWin",
     {
-      "c": "#FFCCBC",
-      "f": 3
+      "f": 5
     },
-    "Skin tone <small>preset</small>",
+    "↩\n↪\n\n\nShift",
     {
-      "c": "#ffecb3"
+      "f": 6
     },
-    "ZWJ\n\n\n\nWin",
+    "↓\n↑",
     {
-      "c": "#dcedc8"
+      "f": 7
     },
-    "Gender sign <small>preset</small>\n\n\n\nShift",
-    {
-      "c": "#BBDEFB"
-    },
-    "Hair style <small>preset</small>",
-    {
-      "c": "#cccccc",
-      "f": 9
-    },
-    "♂️\n\n\n\nCtrl",
+    "→\n←\n\n\nCtrl",
     {
       "x": 5,
-      "a": 5,
       "f": 5
     },
     "👋\n🫰",
@@ -143,12 +141,12 @@
     {
       "x": 5
     },
+    "📍",
     "📌",
-    "ℹ️",
-    "🔗",
-    "🧭",
-    "🛟\n\n\n\nWin",
-    "📚\n\n\n\nAltGr"
+    "📁",
+    "📄",
+    "📤\n\n\n\nWin",
+    "📥\n\n\n\nAltGr"
   ],
   [
     {
@@ -170,10 +168,10 @@
       "p": "CHICKLET",
       "f": 9
     },
-    "🌄",
-    "🌅",
-"🎆",
-"🎇" ,
+    "🧩",
+    "🎨",
+    "🛟",
+    "🧭",
     {
       "c": "#D1C4E9",
       "p": "SPACE",
@@ -184,28 +182,20 @@
       "c": "#cccccc",
       "p": "CHICKLET"
     },
-    "🏙\n\n\n\nFunction",
-    "🌆",
-    "🌃",
+    "\n\n\n\nFunction",
+    "",
+    "",
     {
       "x": 1
     },
-    "🧑‍🚀",
-    "🚀",
-    {
-      "a": 5,
-      "f": 5
-    },
-    "✨\n🪄\n\n\nSystem",
-    {
-      "a": 7,
-      "f": 9
-    },
-    "✅",
-    "️💯",
-    "⚠️",
-    "❌",
-    "❓"
+    "✨",
+    "🌟",
+    "🚀\n\n\n\nSystem",
+    "📝",
+    "️📒",
+    "📖",
+    "📚",
+    "🖊️"
   ],
   [
     {

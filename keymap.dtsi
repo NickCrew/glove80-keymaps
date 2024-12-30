@@ -5433,6 +5433,27 @@ UNICODE_MORPH_MODS
 #endif
 ))>;
     };
+    UNICODE(emoji_copyright2_macro, /* © */
+      #if OPERATING_SYSTEM == 'M'
+        UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp A &kp N9)
+      #elif OPERATING_SYSTEM == 'L'
+        UNICODE_SEQ_LINUX(&kp A &kp N9)
+      #elif OPERATING_SYSTEM == 'W'
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp A &kp N9)
+      #endif
+    )
+    emoji_copyright2: emoji_copyright2 {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&emoji_copyright2_macro>, <&emoji_copyright2_macro>;
+        mods = <(~(
+#ifdef WORLD_USE_COMPOSE_FOR_emoji_copyright2
+COMPOSE_MORPH_MODS
+#else
+UNICODE_MORPH_MODS
+#endif
+))>;
+    };
     UNICODE(emoji_trademark_macro, /* ™️ */
       #if OPERATING_SYSTEM == 'M'
         UNICODE_SEQ_MACOS(&kp N2 &kp N1 &kp N2 &kp N2), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_MACOS(&kp F &kp E &kp N0 &kp F)
@@ -6164,6 +6185,24 @@ UNICODE_MORPH_MODS
         compatible = "zmk,behavior-mod-morph";
         #binding-cells = <0>;
         bindings = <&emoji_undo_arrow>, <&emoji_redo_arrow>;
+        mods = <MOD_LSFT>;
+    };
+    emoji_legal_copyright: emoji_legal_copyright {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&emoji_copyright>, <&emoji_copyright2>;
+        mods = <MOD_LSFT>;
+    };
+    emoji_legal_trademark: emoji_legal_trademark {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&emoji_trademark>, <&emoji_trademark2>;
+        mods = <MOD_LSFT>;
+    };
+    emoji_legal_registered: emoji_legal_registered {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&emoji_registered>, <&emoji_registered2>;
         mods = <MOD_LSFT>;
     };
 };
