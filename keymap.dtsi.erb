@@ -1,6 +1,6 @@
 // NOTE: Use the many #define settings below to customize this keymap!
 #define OPERATING_SYSTEM 'M' // choose 'L'inux, 'M'acOS, or 'W'indows
-#define DIFFICULTY_LEVEL  4  // 0:custom, 1:easy -> 5:hard (see below)
+// #define DIFFICULTY_LEVEL  0  // 0:custom, 1:easy -> 5:hard (see below)
 #define ENFORCE_BILATERAL    // cancels single-handed home row mod+tap
 //#define SHIFT_FORGIVENESS  // requires 24.08-beta1 or newer firmware
 //#define WORLD_USE_COMPOSE    // use native Compose in place of Unicode
@@ -332,7 +332,7 @@ behaviors {
     // when you raise this value, you should be able to type normally again.
     //
     <%
-      TAPPING_RESOLUTION = 150 # my personal threshold on Kailh Choc v1 Reds
+      TAPPING_RESOLUTION = 150 # my personal threshold on Kailh Choc v1 Pro reds
       emit_setting_ifndef.(:TAPPING_RESOLUTION, TAPPING_RESOLUTION)
 
       resolve_tap_timing = lambda do |milliseconds|
@@ -580,7 +580,7 @@ behaviors {
     // for the thumbs (which are assigned to 6 layers in the Miryoku system).
     //
     <%
-      emit_setting_ifndef.(:THUMB_HOLDING_TYPE, '"tap-preferred"')
+      emit_setting_ifndef.(:THUMB_HOLDING_TYPE, '"balanced"')
     %>
 
     //
@@ -612,7 +612,7 @@ behaviors {
     // the space thumb key to activate.  Shorter holds are treated as taps.
     //
     <%
-      emit_setting_ifndef.(:SPACE_HOLDING_TIME, resolve_tap_timing.(20))
+      emit_setting_ifndef.(:SPACE_HOLDING_TIME, resolve_tap_timing.(170))
     %>
 
     //

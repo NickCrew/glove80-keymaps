@@ -1,6 +1,6 @@
 // NOTE: Use the many #define settings below to customize this keymap!
 #define OPERATING_SYSTEM 'M' // choose 'L'inux, 'M'acOS, or 'W'indows
-#define DIFFICULTY_LEVEL  4  // 0:custom, 1:easy -> 5:hard (see below)
+// #define DIFFICULTY_LEVEL  0  // 0:custom, 1:easy -> 5:hard (see below)
 #define ENFORCE_BILATERAL    // cancels single-handed home row mod+tap
 //#define SHIFT_FORGIVENESS  // requires 24.08-beta1 or newer firmware
 //#define WORLD_USE_COMPOSE    // use native Compose in place of Unicode
@@ -187,7 +187,7 @@
 #define KEY_RH_C4R2 N9
 #define KEY_RH_C5R2 N0
 #define KEY_RH_C6R2 MINUS
-#define KEY_LH_C6R3 GRAVE
+#define KEY_LH_C6R3 FSLH
 #define KEY_LH_C5R3 Q
 #define KEY_LH_C4R3 W
 #define KEY_LH_C3R3 E
@@ -211,17 +211,17 @@
 #define KEY_RH_C4R4 L
 #define KEY_RH_C5R4 SEMI
 #define KEY_RH_C6R4 SQT
-#define KEY_LH_C6R5 TAB
+#define KEY_LH_C6R5 GRAVE
 #define KEY_LH_C5R5 Z
 #define KEY_LH_C4R5 X
 #define KEY_LH_C3R5 C
 #define KEY_LH_C2R5 V
 #define KEY_LH_C1R5 B
 #define KEY_LH_T1 ESC
-#define KEY_LH_T2 RC(Z)
-#define KEY_LH_T3 CAPS
-#define KEY_RH_T3 GLOBE
-#define KEY_RH_T2 0
+#define KEY_LH_T2 F17
+#define KEY_LH_T3 F18
+#define KEY_RH_T3 F19
+#define KEY_RH_T2 F20
 #define KEY_RH_T1 ENTER
 #define KEY_RH_C1R5 N
 #define KEY_RH_C2R5 M
@@ -240,7 +240,7 @@
 #define KEY_RH_T6 0
 #define KEY_RH_T5 TAB
 #define KEY_RH_T4 SPACE
-#define KEY_RH_C2R6 LT
+#define KEY_RH_C2R6 LESS_THAN
 #define KEY_RH_C3R6 LPAR
 #define KEY_RH_C4R6 RPAR
 #define KEY_RH_C5R6 GT
@@ -684,7 +684,7 @@ behaviors {
     // for the thumbs (which are assigned to 6 layers in the Miryoku system).
     //
     #ifndef THUMB_HOLDING_TYPE
-    #define THUMB_HOLDING_TYPE "tap-preferred"
+    #define THUMB_HOLDING_TYPE "balanced"
     #endif
 
     //
@@ -716,7 +716,7 @@ behaviors {
     // the space thumb key to activate.  Shorter holds are treated as taps.
     //
     #ifndef SPACE_HOLDING_TIME
-    #define SPACE_HOLDING_TIME (TAPPING_RESOLUTION - 130)
+    #define SPACE_HOLDING_TIME (TAPPING_RESOLUTION + 20)
     #endif
 
     //

@@ -29,18 +29,23 @@
     {
       "x": 7,
       "c": "#cccccc",
+      "g": false,
       "f": 9
     },
     "🔌",
     "💤",
     "🔒",
-    "🔅",
-    "🔆"
+    {
+      "c": "#b9defb",
+      "f": 4
+    },
+    "Bright ➖",
+    "Bright ➕"
   ],
   [
     {
       "c": "#CCCCCC",
-      "f": 4
+      "g": true
     },
     "ESC",
     {
@@ -66,13 +71,13 @@
     },
     "<center><h2>Function Layer</h2></center>",
     {
-      "g": true,
-      "a": 7
+      "c": "#ccccccc",
+      "a": 7,
+      "f": 9
     },
-    "F16",
+    "⚙️",
     {
       "c": "#D1C4E9",
-      "g": false,
       "a": 4,
       "f": 7,
       "fa": [
@@ -90,16 +95,16 @@
     },
     "sk\n\n\n\n\n\n\n\n\n^",
     {
-      "c": "#cccccc",
-      "g": true,
+      "c": "#ccccccc",
       "a": 7,
-      "f": 8
+      "f": 9
     },
     "🌐"
   ],
   [
     {
       "c": "#CCCCCC",
+      "g": true,
       "f": 4
     },
     "F14",
@@ -109,16 +114,20 @@
     },
     "F13",
     {
+      "c": "#b9defb",
+      "g": false,
+      "f": 9
+    },
+    "⏮︎",
+    "⏭︎",
+    "⏯︎",
+    {
+      "c": "#ffccbc",
       "f": 4
     },
-    "F17",
-    "F18",
-    "F19",
-    "F18",
+    "F16",
     {
-      "x": 5,
-      "c": "#ffccbc",
-      "g": false
+      "x": 5
     },
     "F16",
     {
@@ -163,18 +172,15 @@
     },
     "⇧\n\n\n\nShift",
     {
-      "c": "#cccccc",
-      "g": true,
+      "c": "#ffccbc",
       "f": 9,
       "fa": [
         4
       ]
     },
-    "F20",
+    "F17",
     {
       "x": 5,
-      "c": "#ffccbc",
-      "g": false,
       "f": 4
     },
     "F17",
@@ -199,20 +205,25 @@
     "F16",
     {
       "c": "#cccccc",
-      "t": "#00000"
+      "t": "#00000",
+      "g": false,
+      "f": 9
     },
-    "Esc",
+    "⋯",
     {
-      "t": "#000000"
+      "c": "#b9defb",
+      "t": "#000000",
+      "f": 4
     },
-    "F14\n\n\n\nMouse",
-    "F15\n\n\n\nSymbol",
-    "F16",
-    "F20",
+    "Mute\n\n\n\nMouse",
+    "Vol ➖\n\n\n\nSymbol",
+    "Vol ➕",
     {
-      "x": 5,
-      "c": "#ffccbc",
-      "g": false
+      "c": "#ffccbc"
+    },
+    "F18",
+    {
+      "x": 5
     },
     "F18",
     {
@@ -255,16 +266,21 @@
     },
     "Magic",
     {
-      "t": "#000000"
+      "t": "#000000",
+      "g": false,
+      "f": 9
     },
-    "Find Prev",
+    "⇪",
+    "🖨️",
     {
+      "c": "#ffccbc",
       "f": 4
     },
-    "Mute",
-    "Vol ➖",
-    "Vol ➕",
+    "F20",
+    "F19",
     {
+      "c": "#cccccc",
+      "g": true,
       "f": 3,
       "n": true
     },
@@ -275,26 +291,18 @@
       ]
     },
     "&uArr;",
-    {
-      "c": "#757575",
-      "t": "#ffffff",
-      "g": false,
-      "p": ""
-    },
     "Magic",
     {
       "x": 1,
       "c": "#b9defb",
-      "t": "#000000",
-      "p": "CHICKLET",
-      "f": 5
-    },
-    "⏮︎",
-    "⏭︎",
-    "⏯︎",
-    {
-      "c": "#ffccbc",
+      "g": false,
       "f": 4
+    },
+    "Reset zoom",
+    "Zoom ➖",
+    "Zoom ➕",
+    {
+      "c": "#ffccbc"
     },
     "F19",
     "F20",
@@ -340,17 +348,43 @@
       "x": 1,
       "c": "#b9defb",
       "t": "#000000",
-      "f": 3
+      "a": 4,
+      "f": 7,
+      "fa": [
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        8
+      ]
     },
-    "Mute\n\n\n\nSymbol",
+    "^L\n\n\n\nSymbol\n\n\n\n\n\n🧹",
     {
-      "f": 3
+      "f": 6,
+      "fa": [
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        8
+      ]
     },
-    "Vol ➖\n\n\n\nLight",
+    "^C\n\n\n\nLight\n\n\n\n\n\n💀",
     {
-      "f": 3,
       "n": true
     },
-    "Vol ➕\n\n\n\nMouse"
+    "^Z\n\n\n\nMouse\n\n\n\n\n\n🛑"
   ]
 ]
