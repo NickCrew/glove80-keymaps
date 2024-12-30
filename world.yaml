@@ -104,7 +104,6 @@ codepoints:
   currency_crypto: "₿"
   currency_cent:   "¢"
   currency_sign:   "¤"
-  currency_crypto: "₿"
   micro_sign: "µ"
 
 localizing:

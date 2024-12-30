@@ -377,13 +377,6 @@ combos {
         layers = <0 1>;
     };
 
-    combo_caps_word {
-        timeout-ms = <COMBO_FIRING_DECAY>;
-        key-positions = <POS_RH_T1 POS_LH_T1>;
-        bindings = <&caps_word>;
-        layers = <0 1>;
-    };
-
 };
 
 behaviors {
@@ -6147,6 +6140,30 @@ UNICODE_MORPH_MODS
         compatible = "zmk,behavior-mod-morph";
         #binding-cells = <0>;
         bindings = <&emoji_raised_hands>, <&emoji_gesture_hands_clap>;
+        mods = <MOD_LSFT>;
+    };
+    emoji_arrow_vertical: emoji_arrow_vertical {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&emoji_up_pointing_arrow>, <&emoji_down_pointing_arrow>;
+        mods = <MOD_LSFT>;
+    };
+    emoji_arrow_horizontal: emoji_arrow_horizontal {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&emoji_left_pointing_arrow>, <&emoji_right_pointing_arrow>;
+        mods = <MOD_LSFT>;
+    };
+    emoji_arrow_direction: emoji_arrow_direction {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&emoji_forward_arrow>, <&emoji_back_arrow>;
+        mods = <MOD_LSFT>;
+    };
+    emoji_arrow_edit: emoji_arrow_edit {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&emoji_undo_arrow>, <&emoji_redo_arrow>;
         mods = <MOD_LSFT>;
     };
 };

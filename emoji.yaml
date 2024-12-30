@@ -27,6 +27,13 @@ characters:
     point:     { up:      "☝️", you:     "🫵" }
     thumbs:    { up:      "👍", down:    "👎" }
     hands:     { up:      "🙌", clap:    "👏" }
+  arrow:
+    vertical:   { up:      "↑", down:     "↓" }
+    horizontal: { left:    "←", right:    "→" }
+    direction:  { forward: "↪", backward: "↩" }
+    edit:       { undo:    "↺", redo:     "↻" } 
+
+
 
 #
 # codepoints:
@@ -40,16 +47,17 @@ codepoints:
   orange_dot: "🟠"
   red_dot:    "🔴"
 
+  # Arrows
   right_pointing_arrow: "→"
   left_pointing_arrow:  "←"
   up_pointing_arrow:    "↑"
   down_pointing_arrow:  "↓"
-
   back_arrow:    "↩"
   forward_arrow: "↪"
   undo_arrow:    "↺"
   redo_arrow:    "↻"
 
+  # macOS Symbols
   cmd:       "⌘"
   opt:       "⌥"
   ctrl:      "^"
