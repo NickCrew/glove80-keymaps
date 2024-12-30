@@ -1,9 +1,9 @@
 // NOTE: Use the many #define settings below to customize this keymap!
-#define OPERATING_SYSTEM 'L' // choose 'L'inux, 'M'acOS, or 'W'indows
-#define DIFFICULTY_LEVEL  0  // 0:custom, 1:easy -> 5:hard (see below)
+#define OPERATING_SYSTEM 'M' // choose 'L'inux, 'M'acOS, or 'W'indows
+#define DIFFICULTY_LEVEL  4  // 0:custom, 1:easy -> 5:hard (see below)
 #define ENFORCE_BILATERAL    // cancels single-handed home row mod+tap
 //#define SHIFT_FORGIVENESS  // requires 24.08-beta1 or newer firmware
-#define WORLD_USE_COMPOSE    // use native Compose in place of Unicode
+//#define WORLD_USE_COMPOSE    // use native Compose in place of Unicode
 // TIP: Add more setting overrides here instead of editing them below.
 
 //////////////////////////////////////////////////////////////////////////////
@@ -44,8 +44,8 @@
 #ifndef OPERATING_SYSTEM
 <%
   OPERATING_SYSTEMS = {
-    linux:   "'L'",
     macos:   "'M'",
+    linux:   "'L'",
     windows: "'W'"
   }.each_with_index do |(os, char), index|
 %>
@@ -287,30 +287,9 @@ combos {
         layers = <<%= (0...ALPHA_LAYERS_COUNT).to_a.join(" ") %>>;
     };
 
-    combo_sticky_1shot_shift_left {
+    combo_caps_word {
         timeout-ms = <COMBO_FIRING_DECAY>;
-        key-positions = <POS_LH_T4 POS_LH_C2R4>;
-        bindings = <&sticky_key_oneshot LSFT>;
-        layers = <<%= (0...ALPHA_LAYERS_COUNT).to_a.join(" ") %>>;
-    };
-
-    combo_sticky_1shot_shift_right {
-        timeout-ms = <COMBO_FIRING_DECAY>;
-        key-positions = <POS_RH_T4 POS_RH_C2R4>;
-        bindings = <&sticky_key_oneshot LSFT>;
-        layers = <<%= (0...ALPHA_LAYERS_COUNT).to_a.join(" ") %>>;
-    };
-
-    combo_caps_word_left {
-        timeout-ms = <COMBO_FIRING_DECAY>;
-        key-positions = <POS_LH_T1 POS_LH_C2R4>;
-        bindings = <&caps_word>;
-        layers = <<%= (0...ALPHA_LAYERS_COUNT).to_a.join(" ") %>>;
-    };
-
-    combo_caps_word_right {
-        timeout-ms = <COMBO_FIRING_DECAY>;
-        key-positions = <POS_RH_T1 POS_RH_C2R4>;
+        key-positions = <POS_RH_T1 POS_LH_T1>;
         bindings = <&caps_word>;
         layers = <<%= (0...ALPHA_LAYERS_COUNT).to_a.join(" ") %>>;
     };
@@ -640,7 +619,7 @@ behaviors {
     // the space thumb key to activate.  Shorter holds are treated as taps.
     //
     <%
-      emit_setting_ifndef.(:SPACE_HOLDING_TIME, :THUMB_HOLDING_TIME)
+      emit_setting_ifndef.(:SPACE_HOLDING_TIME, resolve_tap_timing.(20))
     %>
 
     //
@@ -1642,87 +1621,11 @@ macros {
       end
     %>
 
-    //
-    // codepoints
-    //
-    <%
-      emit_unicode_codepoints.(world["codepoints"], :world)
-    %>
-
-    //
-    // characters
-    //
-    <%
-      emit_unicode_characters.(world["characters"], :world)
-    %>
-
-    //
-    // transforms
-    //
-    <%
-      world["transforms"].each do |letter, transforms|
-        id_prefix = letter_id_prefix(:world, letter)
-        remaining_precedence = world["precedence"] & transforms.keys
-        available_precedence = ["base"] + remaining_precedence
-
-        available_precedence.each_cons(2) do |modifier, next_modifier|
-          id        = id_prefix + modifier
-          accent_id = id_prefix + transforms[modifier]
-          next_id   = id_prefix + if remaining_precedence.length > 1
-                                    next_modifier
-                                  else
-                                    transforms[next_modifier]
-                                  end
-
-          next_modifiers = "(#{
-            remaining_precedence.map{ |m| "MOD_#{m}" }.join("|")
-          })"
-          emit_zmk_mod_morph.(id, accent_id, next_id, next_modifiers)
-          remaining_precedence.shift
-        end
-      end
-    %>
-
-    //////////////////////////////////////////////////////////////////////////
+        //////////////////////////////////////////////////////////////////////////
     //
     // Emoji layer - modern age pictograms
     //
     //////////////////////////////////////////////////////////////////////////
-
-    //
-    // EMOJI_GENDER_SIGN_PRESET defines an Emoji gender sign for use as a
-    // convenient inward-rolling shortcut on the home row of the layer.
-    //
-    #ifndef EMOJI_GENDER_SIGN_PRESET
-    #define EMOJI_GENDER_SIGN_PRESET 'N' // neutral
-    //#define EMOJI_GENDER_SIGN_PRESET 'M' // male
-    //#define EMOJI_GENDER_SIGN_PRESET 'F' // female
-    #endif
-
-    //
-    // EMOJI_SKIN_TONE_PRESET defines an Emoji skin tone for use as a
-    // convenient inward-rolling shortcut on the home row of the layer.
-    //
-    #ifndef EMOJI_SKIN_TONE_PRESET
-    #define EMOJI_SKIN_TONE_PRESET 'N' // neutral
-    //#define EMOJI_SKIN_TONE_PRESET 'L' // light_skin_tone
-    //#define EMOJI_SKIN_TONE_PRESET 'l' // medium_light_skin_tone
-    //#define EMOJI_SKIN_TONE_PRESET 'M' // medium_skin_tone
-    //#define EMOJI_SKIN_TONE_PRESET 'd' // medium_dark_skin_tone
-    //#define EMOJI_SKIN_TONE_PRESET 'D' // dark_skin_tone
-    #endif
-
-    //
-    // EMOJI_HAIR_STYLE_PRESET defines an Emoji hair style for use as a
-    // convenient inward-rolling shortcut on the home row of the layer.
-    //
-    #ifndef EMOJI_HAIR_STYLE_PRESET
-    #define EMOJI_HAIR_STYLE_PRESET 'N' // neutral
-    //#define EMOJI_HAIR_STYLE_PRESET 'B' // bald
-    //#define EMOJI_HAIR_STYLE_PRESET 'R' // red_hair
-    //#define EMOJI_HAIR_STYLE_PRESET 'C' // curly_hair
-    //#define EMOJI_HAIR_STYLE_PRESET 'W' // white_hair
-    #endif
 
     //
     // NOTE: edit the emoji.yaml file and run `rake` to generate this:
@@ -1746,46 +1649,6 @@ macros {
       emit_unicode_characters.(emoji["characters"], :emoji)
     %>
 };
-
-<%
-  emit_at_root_level.() do
-%>
-#if EMOJI_GENDER_SIGN_PRESET == 'N'
-    emoji_gender_sign_preset: &none {};
-#elif EMOJI_GENDER_SIGN_PRESET == 'M'
-    emoji_gender_sign_preset: &emoji_male_sign {};
-#elif EMOJI_GENDER_SIGN_PRESET == 'F'
-    emoji_gender_sign_preset: &emoji_female_sign {};
-#endif
-
-#if EMOJI_SKIN_TONE_PRESET == 'N'
-    emoji_skin_tone_preset: &none {};
-#elif EMOJI_SKIN_TONE_PRESET == 'L'
-    emoji_skin_tone_preset: &emoji_light_skin_tone {};
-#elif EMOJI_SKIN_TONE_PRESET == 'l'
-    emoji_skin_tone_preset: &emoji_medium_light_skin_tone {};
-#elif EMOJI_SKIN_TONE_PRESET == 'M'
-    emoji_skin_tone_preset: &emoji_medium_skin_tone {};
-#elif EMOJI_SKIN_TONE_PRESET == 'd'
-    emoji_skin_tone_preset: &emoji_medium_dark_skin_tone {};
-#elif EMOJI_SKIN_TONE_PRESET == 'D'
-    emoji_skin_tone_preset: &emoji_dark_skin_tone {};
-#endif
-
-#if EMOJI_HAIR_STYLE_PRESET == 'N'
-    emoji_hair_style_preset: &none {};
-#elif EMOJI_HAIR_STYLE_PRESET == 'B'
-    emoji_hair_style_preset: &emoji_bald {};
-#elif EMOJI_HAIR_STYLE_PRESET == 'R'
-    emoji_hair_style_preset: &emoji_red_hair {};
-#elif EMOJI_HAIR_STYLE_PRESET == 'C'
-    emoji_hair_style_preset: &emoji_curly_hair {};
-#elif EMOJI_HAIR_STYLE_PRESET == 'W'
-    emoji_hair_style_preset: &emoji_white_hair {};
-#endif
-<%
-  end
-%>
 
 //////////////////////////////////////////////////////////////////////////
 //
@@ -1830,7 +1693,7 @@ macros {
 // MOUSE_MOTION_MAXIMUM_SPEED defines how quickly the mouse pointer can move.
 //
 <%
-  emit_setting_ifndef.(:MOUSE_MOTION_MAXIMUM_SPEED, 600)
+  emit_setting_ifndef.(:MOUSE_MOTION_MAXIMUM_SPEED, 800)
 %>
 
 //

@@ -1,2 +1,5 @@
 *.tmp
 *.min
+/.bundle
+README/*.pdf
+!README/all-layers.pdf

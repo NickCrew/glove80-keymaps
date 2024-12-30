@@ -3,7 +3,7 @@ digraph settings {
 
   subgraph defaults {
 
-    OPERATING_SYSTEM -> "'L'"
+    OPERATING_SYSTEM -> "'M'"
 
     COMBO_FIRING_DECAY -> NUMBER_50
 
@@ -83,7 +83,7 @@ digraph settings {
 
     SPACE_HOLDING_TYPE -> THUMB_HOLDING_TYPE
 
-    SPACE_HOLDING_TIME -> THUMB_HOLDING_TIME
+    SPACE_HOLDING_TIME -> "-130"
 
     SPACE_REPEAT_DECAY -> TAPPING_RESOLUTION
 
@@ -659,19 +659,13 @@ digraph settings {
 
     COMPOSE_KEY_LINUX -> RALT
 
-    EMOJI_GENDER_SIGN_PRESET -> "'N'"
-
-    EMOJI_SKIN_TONE_PRESET -> "'N'"
-
-    EMOJI_HAIR_STYLE_PRESET -> "'N'"
-
     MOUSE_MOTION_DELAY -> NUMBER_0
 
     MOUSE_MOTION_ACCELERATION_EXPONENT -> NUMBER_1
 
     MOUSE_MOTION_TIME_TO_MAXIMUM_SPEED -> NUMBER_300
 
-    MOUSE_MOTION_MAXIMUM_SPEED -> NUMBER_600
+    MOUSE_MOTION_MAXIMUM_SPEED -> NUMBER_800
 
     MOUSE_SCROLL_DELAY -> NUMBER_0
 
@@ -696,13 +690,15 @@ digraph settings {
 
   "+50" -> TAPPING_RESOLUTION [color=red]
 
+  "-130" -> TAPPING_RESOLUTION [color=red]
+
   }
 
   subgraph values {
     graph [rank=same]
 
     
-      "'L'" [label="'L'", style=filled, fillcolor=cyan, shape=signature]
+      "'M'" [label="'M'", style=filled, fillcolor=cyan, shape=signature]
     
       "\"tap-preferred\"" [label="\"tap-preferred\"", style=filled, fillcolor=cyan, shape=signature]
     
@@ -712,7 +708,7 @@ digraph settings {
     
       "+50" [label="+50", style=filled, fillcolor=cyan, shape=signature]
     
-      "'N'" [label="'N'", style=filled, fillcolor=cyan, shape=signature]
+      "-130" [label="-130", style=filled, fillcolor=cyan, shape=signature]
     
 
     
@@ -730,7 +726,7 @@ digraph settings {
     
       NUMBER_300 [label="300", style=filled, fillcolor=yellow, shape=signature]
     
-      NUMBER_600 [label="600", style=filled, fillcolor=yellow, shape=signature]
+      NUMBER_800 [label="800", style=filled, fillcolor=yellow, shape=signature]
     
 
     
@@ -747,6 +743,8 @@ digraph settings {
       "-50" [label="-50", style=filled, fillcolor=salmon, shape=lpromoter]
     
       "+50" [label="+50", style=filled, fillcolor=salmon, shape=lpromoter]
+    
+      "-130" [label="-130", style=filled, fillcolor=salmon, shape=lpromoter]
     
   }
 }

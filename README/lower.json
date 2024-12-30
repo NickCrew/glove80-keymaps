@@ -1,0 +1,383 @@
+[
+  {
+    "name": "lower",
+    "css": "/* front legend */\n.keylabel10 div { \n    font-size: xx-small;\n    font-style: italic;\n    text-shadow: 1px 1px 2px #FFD600;\n}\n/* description */\ncenter h2 {\n    margin-top: 1em;\n    font-weight: bold;\n}\ncenter ul {\n    padding-left: 0;\n    margin-top: 1em;\n    padding-top: 1em;\n    font-size: smaller;\n}\ncenter ul li {\n    margin-top: 1ex;\n    list-style-type: none;\n}\ncenter ul li a {\n    font-weight: bold;\n}\ncenter .permalink {\n    font-size: x-small;\n}\ncenter em {\n    font-weight: normal;\n    font-style: normal;\n}"
+  },
+  [
+    {
+      "c": "#363636",
+      "p": "CHICKLET",
+      "a": 7,
+      "f": 9
+    },
+    "🔅",
+    {
+      "t": "#ffffff"
+    },
+    "🔆",
+    {
+      "c": "#BBDEFB",
+      "t": "#000000"
+    },
+    "⏮︎",
+    "⏭︎",
+    "⏯︎",
+    {
+      "x": 7,
+      "f": 4
+    },
+    "Mute\n\n\n\nSymbol",
+    "Vol ➖\n\n\n\nLight",
+    {
+      "n": true
+    },
+    "Vol ➕\n\n\n\nMouse",
+    {
+      "c": "#ccccccc",
+      "f": 3,
+      "fa": [
+        8
+      ]
+    },
+    "🌐",
+    {
+      "f": 7
+    },
+    "🔎"
+  ],
+  [
+    {
+      "c": "#cccccc",
+      "a": 5,
+      "f": 4
+    },
+    "+\n=",
+    {
+      "g": true,
+      "f": 3
+    },
+    "!\n1",
+    "@\n2",
+    "#\n3",
+    "$\n4",
+    {
+      "g": false,
+      "a": 7,
+      "f": 5
+    },
+    "{",
+    {
+      "a": 4,
+      "f": 4,
+      "w": 5,
+      "h": 4,
+      "d": true
+    },
+    "<center><h2>Lower Layer</h2</center>",
+    {
+      "a": 7,
+      "f": 5
+    },
+    "(",
+    {
+      "f": 3
+    },
+    "Insert",
+    {
+      "f": 5
+    },
+    "=",
+    {
+      "f": 7
+    },
+    "/",
+    "*",
+    {
+      "c": "#ccccccc",
+      "f": 2
+    },
+    "Mission control"
+  ],
+  [
+    {
+      "c": "#cccccc",
+      "a": 5,
+      "f": 4
+    },
+    "~\n`",
+    {
+      "g": true,
+      "a": 7,
+      "f": 3
+    },
+    "Shift <small>(sticky)</small>",
+    {
+      "c": "#FFCCBC",
+      "g": false,
+      "f": 7
+    },
+    "⇤\n\n\n\nAltGr",
+    {
+      "c": "#dcedc8",
+      "f": 9
+    },
+    "&uarr;",
+    {
+      "c": "#FFCCBC",
+      "f": 7
+    },
+    "⇞",
+    {
+      "c": "#cccccc",
+      "f": 5
+    },
+    "}",
+    {
+      "x": 5
+    },
+    ")",
+    {
+      "f": 4
+    },
+    "7",
+    "8\n\n\n\nAltGr",
+    "9",
+    {
+      "f": 7
+    },
+    "-",
+    {
+      "c": "#ccccccc",
+      "f": 3,
+      "fa": [
+        2
+      ]
+    },
+    "App windows"
+  ],
+  [
+    {
+      "c": "#cccccc",
+      "f": 3
+    },
+    "ESC",
+    {
+      "g": true,
+      "f": 3
+    },
+    "Ctrl\n\n\n\nWin",
+    {
+      "c": "#dcedc8",
+      "g": false,
+      "f": 9
+    },
+    "&larr;",
+    "&darr;",
+    {
+      "n": true
+    },
+    "&rarr;",
+    {
+      "c": "#cccccc",
+      "f": 5
+    },
+    "[",
+    {
+      "x": 5
+    },
+    "%",
+    {
+      "f": 4
+    },
+    "4\n\n\n\nShift",
+    {
+      "n": true
+    },
+    "5\n\n\n\nCtrl",
+    "6\n\n\n\nAlt",
+    {
+      "f": 7
+    },
+    "+\n\n\n\nWin",
+    {
+      "c": "#dcedc8",
+      "h": 2
+    },
+    "⇧"
+  ],
+  [
+    {
+      "c": "#cccccc",
+      "f": 4
+    },
+    "TAB",
+    {
+      "g": true,
+      "f": 3
+    },
+    "<small>Context</small> menu",
+    {
+      "c": "#FFCCBC",
+      "g": false,
+      "f": 7
+    },
+    "⇥",
+    {
+      "c": "#BBDEFB",
+      "f": 5,
+      "fa": [
+        9
+      ]
+    },
+    "↻",
+    {
+      "c": "#FFCCBC",
+      "f": 7
+    },
+    "⇟",
+    {
+      "c": "#cccccc",
+      "f": 5
+    },
+    "]\n\n\n\nAltGr",
+    {
+      "x": 5,
+      "f": 8
+    },
+    ",",
+    {
+      "f": 4
+    },
+    "1",
+    "2",
+    "3",
+    {
+      "f": 3,
+      "h": 2
+    },
+    "⏎"
+  ],
+  [
+    {
+      "y": -0.04999999999999982,
+      "x": 6.95,
+      "c": "#FFFF8D",
+      "g": true,
+      "p": "FLAT",
+      "f": 2,
+      "w": 1.1,
+      "h": 2.7,
+      "d": true
+    },
+    ""
+  ],
+  [
+    {
+      "y": -0.9500000000000002,
+      "c": "#757575",
+      "t": "#EEEEEE",
+      "g": false,
+      "p": "SPACE",
+      "f": 3
+    },
+    "Magic",
+    {
+      "c": "#cccccc",
+      "t": "#000000",
+      "g": true,
+      "p": "CHICKLET"
+    },
+    "Caps lock",
+    {
+      "g": false
+    },
+    "Scroll lock",
+    "Caps lock",
+    {
+      "c": "#D1C4E9"
+    },
+    "Emoji layer lock",
+    "<small>Number</small> layer lock",
+    {
+      "c": "#dcedc8"
+    },
+    "Typing layer lock",
+    {
+      "c": "#BBDEFB",
+      "p": ""
+    },
+    "<img src=\"https://openclipart.org/download/278214/fingerprint.svg\" width=\"36\" height=\"36\" />",
+    {
+      "x": 1
+    },
+    "<img src=\"https://openclipart.org/download/278214/fingerprint.svg\" width=\"36\" height=\"36\" />",
+    {
+      "c": "#dcedc8",
+      "p": "CHICKLET"
+    },
+    "Typing layer lock",
+    {
+      "c": "#D1C4E9"
+    },
+    "System layer lock",
+    {
+      "c": "#ccccccc",
+      "f": 5
+    },
+    "0",
+    {
+      "c": "#cccccc",
+      "f": 8
+    },
+    ".",
+    {
+      "f": 3
+    },
+    "Delete",
+    {
+      "x": 1,
+      "c": "#757575",
+      "t": "#EEEEEE",
+      "p": "SPACE"
+    },
+    "Magic"
+  ],
+  [
+    {
+      "x": 5,
+      "c": "#D1C4E9",
+      "t": "#000000",
+      "p": "CHICKLET"
+    },
+    "Cursor layer lock",
+    "<small>Function</small> layer lock",
+    {
+      "c": "#cccccc",
+      "t": "#EEEEEE",
+      "g": true,
+      "p": "SPACE",
+      "fa": [
+        9
+      ],
+      "n": true
+    },
+    "<img src=\"https://openclipart.org/download/278214/fingerprint.svg\" width=\"36\" height=\"36\" />",
+    {
+      "x": 1,
+      "n": true
+    },
+    "<img src=\"https://openclipart.org/download/278214/fingerprint.svg\" width=\"36\" height=\"36\" />",
+    {
+      "c": "#D1C4E9",
+      "t": "#000000",
+      "g": false,
+      "p": "CHICKLET",
+      "f": 3
+    },
+    "Mouse layer lock",
+    {
+      "f": 3
+    },
+    "Symbol layer lock"
+  ]
+]
