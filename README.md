@@ -12,12 +12,14 @@ Originally based on [Sanuku's Glove80 keymap][sanuku_glove80], featuring [home r
 
 ## Keymap
 
-Version 1.1 (2024-12-29)
+Version 38.1.1 (2024-12-29)
 - Changes:
    - Applied initial customizations
    - Forked from [version 38][v38] of  [Sanuku's Glove80 keymap][sanuku_glove80]
 - [Keymap][keymap]
+- [Release notes][rel]
 
+[rel]: https://github.com/NickCrew/glove80-keymaps/releases/tag/v38.1.1
 [v38]: https://github.com/sunaku/glove80-keymaps/releases/v38
 [keymap]: https://my.glove80.com/#/layout/user/35fd93d3-4c46-4001-8b16-388b9aaede27
 
@@ -119,6 +121,7 @@ with this keymap while maintaining an easy escape route to the factory default.
 Welcome to the *Glorious Wombat* keymap! 🧑‍🚀🚀✨  This introductory
 guide will orient you to the world of custom layouts, keymaps, and firmware. 💁
 
+## Guide
 
 ### Operating system
 
