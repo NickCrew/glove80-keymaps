@@ -89,6 +89,10 @@ Originally forked from [version 38][v38] of  [Sanuku's Glove80 keymap][sanuku_gl
 #### Cursor
 
 ![cursor](./README/cursor.png)
+
+#### Emoji
+
+![emoji](./README/emoji.png)
  
 
 ### Additional layers
@@ -96,7 +100,6 @@ Originally forked from [version 38][v38] of  [Sanuku's Glove80 keymap][sanuku_gl
 - [Mouse](./README/mouse.png) _- Mouse emulation (move, scroll, click, fwd/back buttons)_
 - [Function](./README/function.png) _- F keys (F1-F20) and media controls)_
 - [System](./README/system.png) _- Terminal, shell, and OS controls_
-- [Emoji](./README/emoji.png) _- [Emojis](#emoji) (unicode input)_
 - [Lower*](./README/lower.png) _- [Layer locking](#layer-access-keys)_
 - [Typing](./README/typing.png) _- Disable home row mods_
 - [Magic*](./README/magic.png) _- RGB, Bluetooth, and firmware_
