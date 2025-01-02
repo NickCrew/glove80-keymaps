@@ -86,7 +86,7 @@
       "h": 4,
       "d": true
     },
-    "<center><h2>System Layer</h2><p></p></center>\n\n\n\n\n\n\n\n\n<p>Glove80 Keyboard</p>\n<a href=\"https://github.com/NickCrew/zmk-config>NickCrew/zmk-config</a/>",
+    "<center><h2>System Layer</h2><p></p></center>\n\n\n\n\n\n\n\n\n<p>Glove80 Keyboard</p>\n<a href=\"https://github.com/NickCrew/glove80-keymaps\">NickCrew/glove80-keymaps</a/>",
     {
       "c": "#0284a6",
       "t": "#ffffff",
@@ -127,14 +127,14 @@
     {
       "c": "#757575",
       "t": "#ffffff",
+      "a": 7,
       "f": 3
     },
-    "⌥1\n\n\n\n\n\n\n\n\n\nFav 1"
+    "Help"
   ],
   [
     {
       "c": "#c26006",
-      "a": 7,
       "f": 4
     },
     "Sat. ▼",
@@ -190,14 +190,14 @@
     "⇧↑\n\n\n\nWin\n\n\n\n\n\nScroll Prompt",
     {
       "c": "#757575",
-      "f": 3
+      "a": 7,
+      "f": 2
     },
-    "⌥2\n\n\n\n\n\n\n\n\n\nFav 2"
+    "Settings"
   ],
   [
     {
       "c": "#a565a5",
-      "a": 7,
       "f": 4
     },
     "Spd. ▼",
@@ -260,27 +260,15 @@
     },
     "^L\n\n\n\n\n\n\n\n\n\nClear",
     {
-      "c": "#757575",
-      "fa": [
-        2,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        4
-      ]
+      "c": "#26755b",
+      "a": 7,
+      "f": 3
     },
-    "⌥3\n\n\n\n\n\n\n\n\n\nFav 3"
+    "Activity"
   ],
   [
     {
       "c": "#80653b",
-      "a": 7,
       "f": 4
     },
     "Effect  ▼",
@@ -337,22 +325,11 @@
     },
     "⇧↓\n\n\n\n\n\n\n\n\n\nScroll Prompt",
     {
-      "c": "#757575",
-      "fa": [
-        2,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        4
-      ]
+      "c": "#80653b",
+      "a": 7,
+      "f": 3
     },
-    "⌥4\n\n\n\n\n\n\n\n\n\nFav 4"
+    "Full screen shot"
   ],
   [
     {
@@ -362,7 +339,6 @@
       "t": "#000000",
       "g": true,
       "p": "FLAT",
-      "a": 7,
       "f": 2,
       "w": 1.1,
       "h": 2.7,
@@ -376,7 +352,6 @@
       "c": "#757575",
       "t": "#ffffff",
       "g": false,
-      "p": "",
       "f": 3
     },
     "Magic",
@@ -463,52 +438,37 @@
     },
     "Bright ➖",
     {
-      "t": "#ffffff",
-      "a": 5,
-      "fa": [
-        6,
-        2
-      ]
-    },
-    "⇪\nCaps",
-    {
-      "c": "#757575",
       "g": false,
-      "a": 4,
-      "fa": [
-        2,
-        2,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        4
-      ]
+      "f": 5
     },
-    "⌥5\n\n\n\n\n\n\n\n\n\nFav 5"
+    "Fn",
+    {
+      "c": "#80653b",
+      "t": "#ffffff",
+      "f": 3
+    },
+    "Select screen shot"
   ],
   [
     {
       "x": 5,
-      "a": 7,
+      "c": "#757575",
       "f": 6,
       "fa": [
         3
       ]
     },
-    "Caps lock\n\n\n\nSIGINT",
+    "Force touch\n\n\n\nSIGINT",
     {
+      "g": true,
       "f": 3
     },
     "Scroll lock\n\n\n\nSIGSTP",
     "Menu\n\n\n\nCTL+V",
     {
       "x": 1,
-      "t": "#EEEEEE"
+      "t": "#EEEEEE",
+      "g": false
     },
     "Unlock layer",
     {

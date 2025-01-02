@@ -66,6 +66,7 @@ task :pdf => layers_pdf
 
 layers_pdf_sequence = %w[
   base
+  combo
   lower
   magic
   cursor
@@ -75,7 +76,6 @@ layers_pdf_sequence = %w[
   symbol
   mouse
   system
-  typing
 ]
 
 layer_pngs = Dir["README/{#{layers_pdf_sequence.join(",")}}.png"]

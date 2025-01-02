@@ -10,13 +10,17 @@ characters:
 #     quarter:   { waning:  "🌗", waxing:  "🌓" }
 #     crescent:  { waning:  "🌘", waxing:  "🌒" }
 #     stars:     { sparkle: "✨", magic:   "🪄" }
-#   face:
-#     smile:     { up:      "🙂", down:    "🙃" }
-#     laugh:     { joy:     "😂", rofl:    "🤣" }
-#     eyes:      { star:    "🤩", heart:   "😍" }
-#     joke:      { wink:    "😉", tounge:  "😜" }
-#     fear:      { scared:  "😨", scream:  "😱" }
-#     surprise:  { shocked: "🤯", dizzy:   "😵" }
+  status:
+    xo:          { x:      "❌",  o:           "⭕"  }
+    exclamation: { single: "❗",  double:      " ‼️" }
+    question:    { single: "❓",  exclamation: "⁉️"  }
+  face:
+    smile:     { up:      "🙂", down:    "🙃" }
+    laugh:     { joy:     "😂", rofl:    "🤣" }
+    eyes:      { star:    "🤩", heart:   "😍" }
+    joke:      { wink:    "😉", tounge:  "😜" }
+    fear:      { scared:  "😨", scream:  "😱" }
+    surprise:  { shocked: "🤯", dizzy:   "😵" }
   gesture:
     attention: { snap:    "🫰", wave:    "👋" }
     approval:  { perfect: "👌", cool:    "😎" }
@@ -36,6 +40,9 @@ characters:
     copyright:  { normal: "©️", super: "©" }
     trademark:  { normal: "™️", super: "™" }
     registered: { normal: "®️", super: "®" }
+  misc:
+    locks:  { locked: "🔒", unlocked: "🔓" }
+    boxes:  { in:     "📥", out:      "📤" }
 
 
 #
@@ -60,6 +67,14 @@ codepoints:
   undo_arrow:    "↺"
   redo_arrow:    "↻"
 
+  dagger: "†"
+  dub_dagger: "‡"
+  chevron_left: "«"
+  chevron_right: "»"
+  infinity: "∞"
+  equals: "∑"
+
+
   # macOS Symbols
   cmd:       "⌘"
   opt:       "⌥"
@@ -79,11 +94,9 @@ codepoints:
   document: "📄"
   download: "📥"
   event:    "🗓️"
-  fire:     "🔥"
   folder:   "📁"
   gear:     "⚙️"
   gem:      "💎"
-  hazard:   "🚧"
   heart:    "️❤️"
   help:     "🛟"
   info:     "ℹ️"
@@ -107,7 +120,6 @@ codepoints:
   rocket:   "🚀"
   sparkles: "✨"
   star:     "🌟"
-  tada:     "🎉"
   tag:      "🏷️"
   team:     "🎽"
   temp:     "🌡️"
@@ -118,6 +130,28 @@ codepoints:
   upload:   "📤"
   wheel:    "☸️"
   zap:      "⚡"
+
+  fireworks:  "🎆"
+  fireworks2: "🎇"
+
+  # Gestures
+  shrug: "🤷"
+  bow:   "🙇"
+  facepalm: "🤦‍♂️"
+  handraise: "🙋‍♂️"
+  no: "🙅‍♀️"
+  ok: "🙆‍♀️"
+
+  # People
+  people:    "👥"
+  person:    "👤"
+  footsteps: "👣"
+
+  # Characters
+  unicorn:    "🦄"
+  wizard:     "🧙‍♂️"
+  ninja:      "🥷"
+  developer:  "👩‍💻"
 
   # Legal
   copyright:   "©️"
@@ -147,9 +181,23 @@ codepoints:
   
 
   # Status
+  tada:     "🎉"
   checkoff: "✅"
   100:      "💯"
-  warning:  "⚠️"
   x:        "❌"
-  question: "❓"
+  o:        "⭕"
+
+  # Trouble
+  sos:          "🆘"
+  question:     "❓"
+  exclamation:  "❗"
+  exclamation2: "‼️"
+  exclamation3: "⁉️"
+
+  # Danger
+  warning:      "⚠️"
+  hazard:       "🚧"
+  stopsign:     "🛑"
+  fire:         "🔥"
+  no_entry:     "⛔"
 

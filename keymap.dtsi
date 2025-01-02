@@ -170,8 +170,8 @@
 #define KEY_LH_C4R1 C_MUTE
 #define KEY_LH_C3R1 C_VOL_DN
 #define KEY_LH_C2R1 C_VOL_UP
-#define KEY_RH_C2R1 C_PP
-#define KEY_RH_C3R1 C_PREV
+#define KEY_RH_C2R1 C_PREV
+#define KEY_RH_C3R1 C_PP
 #define KEY_RH_C4R1 C_NEXT
 #define KEY_RH_C5R1 LEFT
 #define KEY_RH_C6R1 RIGHT
@@ -187,7 +187,7 @@
 #define KEY_RH_C4R2 N9
 #define KEY_RH_C5R2 N0
 #define KEY_RH_C6R2 MINUS
-#define KEY_LH_C6R3 FSLH
+#define KEY_LH_C6R3 CAPS
 #define KEY_LH_C5R3 Q
 #define KEY_LH_C4R3 W
 #define KEY_LH_C3R3 E
@@ -4257,6 +4257,132 @@ UNICODE_MORPH_MODS
 #endif
 ))>;
     };
+    UNICODE(emoji_dagger_macro, /* † */
+      #if OPERATING_SYSTEM == 'M'
+        UNICODE_SEQ_MACOS(&kp N2 &kp N0 &kp N2 &kp N0)
+      #elif OPERATING_SYSTEM == 'L'
+        UNICODE_SEQ_LINUX(&kp N2 &kp N0 &kp N2 &kp N0)
+      #elif OPERATING_SYSTEM == 'W'
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N2 &kp N0 &kp N2 &kp N0)
+      #endif
+    )
+    emoji_dagger: emoji_dagger {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&emoji_dagger_macro>, <&emoji_dagger_macro>;
+        mods = <(~(
+#ifdef WORLD_USE_COMPOSE_FOR_emoji_dagger
+COMPOSE_MORPH_MODS
+#else
+UNICODE_MORPH_MODS
+#endif
+))>;
+    };
+    UNICODE(emoji_dub_dagger_macro, /* ‡ */
+      #if OPERATING_SYSTEM == 'M'
+        UNICODE_SEQ_MACOS(&kp N2 &kp N0 &kp N2 &kp N1)
+      #elif OPERATING_SYSTEM == 'L'
+        UNICODE_SEQ_LINUX(&kp N2 &kp N0 &kp N2 &kp N1)
+      #elif OPERATING_SYSTEM == 'W'
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N2 &kp N0 &kp N2 &kp N1)
+      #endif
+    )
+    emoji_dub_dagger: emoji_dub_dagger {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&emoji_dub_dagger_macro>, <&emoji_dub_dagger_macro>;
+        mods = <(~(
+#ifdef WORLD_USE_COMPOSE_FOR_emoji_dub_dagger
+COMPOSE_MORPH_MODS
+#else
+UNICODE_MORPH_MODS
+#endif
+))>;
+    };
+    UNICODE(emoji_chevron_left_macro, /* « */
+      #if OPERATING_SYSTEM == 'M'
+        UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp A &kp B)
+      #elif OPERATING_SYSTEM == 'L'
+        UNICODE_SEQ_LINUX(&kp A &kp B)
+      #elif OPERATING_SYSTEM == 'W'
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp A &kp B)
+      #endif
+    )
+    emoji_chevron_left: emoji_chevron_left {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&emoji_chevron_left_macro>, <&emoji_chevron_left_macro>;
+        mods = <(~(
+#ifdef WORLD_USE_COMPOSE_FOR_emoji_chevron_left
+COMPOSE_MORPH_MODS
+#else
+UNICODE_MORPH_MODS
+#endif
+))>;
+    };
+    UNICODE(emoji_chevron_right_macro, /* » */
+      #if OPERATING_SYSTEM == 'M'
+        UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp B &kp B)
+      #elif OPERATING_SYSTEM == 'L'
+        UNICODE_SEQ_LINUX(&kp B &kp B)
+      #elif OPERATING_SYSTEM == 'W'
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp B &kp B)
+      #endif
+    )
+    emoji_chevron_right: emoji_chevron_right {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&emoji_chevron_right_macro>, <&emoji_chevron_right_macro>;
+        mods = <(~(
+#ifdef WORLD_USE_COMPOSE_FOR_emoji_chevron_right
+COMPOSE_MORPH_MODS
+#else
+UNICODE_MORPH_MODS
+#endif
+))>;
+    };
+    UNICODE(emoji_infinity_macro, /* ∞ */
+      #if OPERATING_SYSTEM == 'M'
+        UNICODE_SEQ_MACOS(&kp N2 &kp N2 &kp N1 &kp E)
+      #elif OPERATING_SYSTEM == 'L'
+        UNICODE_SEQ_LINUX(&kp N2 &kp N2 &kp N1 &kp E)
+      #elif OPERATING_SYSTEM == 'W'
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N2 &kp N2 &kp N1 &kp E)
+      #endif
+    )
+    emoji_infinity: emoji_infinity {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&emoji_infinity_macro>, <&emoji_infinity_macro>;
+        mods = <(~(
+#ifdef WORLD_USE_COMPOSE_FOR_emoji_infinity
+COMPOSE_MORPH_MODS
+#else
+UNICODE_MORPH_MODS
+#endif
+))>;
+    };
+    UNICODE(emoji_equals_macro, /* ∑ */
+      #if OPERATING_SYSTEM == 'M'
+        UNICODE_SEQ_MACOS(&kp N2 &kp N2 &kp N1 &kp N1)
+      #elif OPERATING_SYSTEM == 'L'
+        UNICODE_SEQ_LINUX(&kp N2 &kp N2 &kp N1 &kp N1)
+      #elif OPERATING_SYSTEM == 'W'
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N2 &kp N2 &kp N1 &kp N1)
+      #endif
+    )
+    emoji_equals: emoji_equals {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&emoji_equals_macro>, <&emoji_equals_macro>;
+        mods = <(~(
+#ifdef WORLD_USE_COMPOSE_FOR_emoji_equals
+COMPOSE_MORPH_MODS
+#else
+UNICODE_MORPH_MODS
+#endif
+))>;
+    };
     UNICODE(emoji_cmd_macro, /* ⌘ */
       #if OPERATING_SYSTEM == 'M'
         UNICODE_SEQ_MACOS(&kp N2 &kp N3 &kp N1 &kp N8)
@@ -4593,27 +4719,6 @@ UNICODE_MORPH_MODS
 #endif
 ))>;
     };
-    UNICODE(emoji_fire_macro, /* 🔥 */
-      #if OPERATING_SYSTEM == 'M'
-        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp D &kp D &kp D &kp N2 &kp N5)
-      #elif OPERATING_SYSTEM == 'L'
-        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N5 &kp N2 &kp N5)
-      #elif OPERATING_SYSTEM == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N5 &kp N2 &kp N5)
-      #endif
-    )
-    emoji_fire: emoji_fire {
-        compatible = "zmk,behavior-mod-morph";
-        #binding-cells = <0>;
-        bindings = <&emoji_fire_macro>, <&emoji_fire_macro>;
-        mods = <(~(
-#ifdef WORLD_USE_COMPOSE_FOR_emoji_fire
-COMPOSE_MORPH_MODS
-#else
-UNICODE_MORPH_MODS
-#endif
-))>;
-    };
     UNICODE(emoji_folder_macro, /* 📁 */
       #if OPERATING_SYSTEM == 'M'
         UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp D &kp D &kp C &kp C &kp N1)
@@ -4671,27 +4776,6 @@ UNICODE_MORPH_MODS
         bindings = <&emoji_gem_macro>, <&emoji_gem_macro>;
         mods = <(~(
 #ifdef WORLD_USE_COMPOSE_FOR_emoji_gem
-COMPOSE_MORPH_MODS
-#else
-UNICODE_MORPH_MODS
-#endif
-))>;
-    };
-    UNICODE(emoji_hazard_macro, /* 🚧 */
-      #if OPERATING_SYSTEM == 'M'
-        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp D &kp D &kp E &kp A &kp N7)
-      #elif OPERATING_SYSTEM == 'L'
-        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N6 &kp A &kp N7)
-      #elif OPERATING_SYSTEM == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N6 &kp A &kp N7)
-      #endif
-    )
-    emoji_hazard: emoji_hazard {
-        compatible = "zmk,behavior-mod-morph";
-        #binding-cells = <0>;
-        bindings = <&emoji_hazard_macro>, <&emoji_hazard_macro>;
-        mods = <(~(
-#ifdef WORLD_USE_COMPOSE_FOR_emoji_hazard
 COMPOSE_MORPH_MODS
 #else
 UNICODE_MORPH_MODS
@@ -5181,27 +5265,6 @@ UNICODE_MORPH_MODS
 #endif
 ))>;
     };
-    UNICODE(emoji_tada_macro, /* 🎉 */
-      #if OPERATING_SYSTEM == 'M'
-        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp C &kp D &kp F &kp N8 &kp N9)
-      #elif OPERATING_SYSTEM == 'L'
-        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N3 &kp N8 &kp N9)
-      #elif OPERATING_SYSTEM == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N3 &kp N8 &kp N9)
-      #endif
-    )
-    emoji_tada: emoji_tada {
-        compatible = "zmk,behavior-mod-morph";
-        #binding-cells = <0>;
-        bindings = <&emoji_tada_macro>, <&emoji_tada_macro>;
-        mods = <(~(
-#ifdef WORLD_USE_COMPOSE_FOR_emoji_tada
-COMPOSE_MORPH_MODS
-#else
-UNICODE_MORPH_MODS
-#endif
-))>;
-    };
     UNICODE(emoji_tag_macro, /* 🏷️ */
       #if OPERATING_SYSTEM == 'M'
         UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp C &kp D &kp F &kp F &kp N7), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_MACOS(&kp F &kp E &kp N0 &kp F)
@@ -5406,6 +5469,321 @@ UNICODE_MORPH_MODS
         bindings = <&emoji_zap_macro>, <&emoji_zap_macro>;
         mods = <(~(
 #ifdef WORLD_USE_COMPOSE_FOR_emoji_zap
+COMPOSE_MORPH_MODS
+#else
+UNICODE_MORPH_MODS
+#endif
+))>;
+    };
+    UNICODE(emoji_fireworks_macro, /* 🎆 */
+      #if OPERATING_SYSTEM == 'M'
+        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp C &kp D &kp F &kp N8 &kp N6)
+      #elif OPERATING_SYSTEM == 'L'
+        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N3 &kp N8 &kp N6)
+      #elif OPERATING_SYSTEM == 'W'
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N3 &kp N8 &kp N6)
+      #endif
+    )
+    emoji_fireworks: emoji_fireworks {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&emoji_fireworks_macro>, <&emoji_fireworks_macro>;
+        mods = <(~(
+#ifdef WORLD_USE_COMPOSE_FOR_emoji_fireworks
+COMPOSE_MORPH_MODS
+#else
+UNICODE_MORPH_MODS
+#endif
+))>;
+    };
+    UNICODE(emoji_fireworks2_macro, /* 🎇 */
+      #if OPERATING_SYSTEM == 'M'
+        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp C &kp D &kp F &kp N8 &kp N7)
+      #elif OPERATING_SYSTEM == 'L'
+        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N3 &kp N8 &kp N7)
+      #elif OPERATING_SYSTEM == 'W'
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N3 &kp N8 &kp N7)
+      #endif
+    )
+    emoji_fireworks2: emoji_fireworks2 {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&emoji_fireworks2_macro>, <&emoji_fireworks2_macro>;
+        mods = <(~(
+#ifdef WORLD_USE_COMPOSE_FOR_emoji_fireworks2
+COMPOSE_MORPH_MODS
+#else
+UNICODE_MORPH_MODS
+#endif
+))>;
+    };
+    UNICODE(emoji_shrug_macro, /* 🤷 */
+      #if OPERATING_SYSTEM == 'M'
+        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp E &kp D &kp D &kp N3 &kp N7)
+      #elif OPERATING_SYSTEM == 'L'
+        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N9 &kp N3 &kp N7)
+      #elif OPERATING_SYSTEM == 'W'
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N9 &kp N3 &kp N7)
+      #endif
+    )
+    emoji_shrug: emoji_shrug {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&emoji_shrug_macro>, <&emoji_shrug_macro>;
+        mods = <(~(
+#ifdef WORLD_USE_COMPOSE_FOR_emoji_shrug
+COMPOSE_MORPH_MODS
+#else
+UNICODE_MORPH_MODS
+#endif
+))>;
+    };
+    UNICODE(emoji_bow_macro, /* 🙇 */
+      #if OPERATING_SYSTEM == 'M'
+        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp D &kp D &kp E &kp N4 &kp N7)
+      #elif OPERATING_SYSTEM == 'L'
+        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N6 &kp N4 &kp N7)
+      #elif OPERATING_SYSTEM == 'W'
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N6 &kp N4 &kp N7)
+      #endif
+    )
+    emoji_bow: emoji_bow {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&emoji_bow_macro>, <&emoji_bow_macro>;
+        mods = <(~(
+#ifdef WORLD_USE_COMPOSE_FOR_emoji_bow
+COMPOSE_MORPH_MODS
+#else
+UNICODE_MORPH_MODS
+#endif
+))>;
+    };
+    UNICODE(emoji_facepalm_macro, /* 🤦‍♂️ */
+      #if OPERATING_SYSTEM == 'M'
+        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp E &kp D &kp D &kp N2 &kp N6), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_MACOS(&kp N2 &kp N0 &kp N0 &kp D), UNICODE_SEQ_MACOS(&kp N2 &kp N6 &kp N4 &kp N2), UNICODE_SEQ_MACOS(&kp F &kp E &kp N0 &kp F)
+      #elif OPERATING_SYSTEM == 'L'
+        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N9 &kp N2 &kp N6), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_LINUX(&kp N2 &kp N0 &kp N0 &kp D), UNICODE_SEQ_LINUX(&kp N2 &kp N6 &kp N4 &kp N2), UNICODE_SEQ_LINUX(&kp F &kp E &kp N0 &kp F)
+      #elif OPERATING_SYSTEM == 'W'
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N9 &kp N2 &kp N6), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_WINDOWS(&kp N0 &kp N2 &kp N0 &kp N0 &kp D), UNICODE_SEQ_WINDOWS(&kp N0 &kp N2 &kp N6 &kp N4 &kp N2), UNICODE_SEQ_WINDOWS(&kp N0 &kp F &kp E &kp N0 &kp F)
+      #endif
+    )
+    emoji_facepalm: emoji_facepalm {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&emoji_facepalm_macro>, <&emoji_facepalm_macro>;
+        mods = <(~(
+#ifdef WORLD_USE_COMPOSE_FOR_emoji_facepalm
+COMPOSE_MORPH_MODS
+#else
+UNICODE_MORPH_MODS
+#endif
+))>;
+    };
+    UNICODE(emoji_handraise_macro, /* 🙋‍♂️ */
+      #if OPERATING_SYSTEM == 'M'
+        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp D &kp D &kp E &kp N4 &kp B), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_MACOS(&kp N2 &kp N0 &kp N0 &kp D), UNICODE_SEQ_MACOS(&kp N2 &kp N6 &kp N4 &kp N2), UNICODE_SEQ_MACOS(&kp F &kp E &kp N0 &kp F)
+      #elif OPERATING_SYSTEM == 'L'
+        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N6 &kp N4 &kp B), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_LINUX(&kp N2 &kp N0 &kp N0 &kp D), UNICODE_SEQ_LINUX(&kp N2 &kp N6 &kp N4 &kp N2), UNICODE_SEQ_LINUX(&kp F &kp E &kp N0 &kp F)
+      #elif OPERATING_SYSTEM == 'W'
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N6 &kp N4 &kp B), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_WINDOWS(&kp N0 &kp N2 &kp N0 &kp N0 &kp D), UNICODE_SEQ_WINDOWS(&kp N0 &kp N2 &kp N6 &kp N4 &kp N2), UNICODE_SEQ_WINDOWS(&kp N0 &kp F &kp E &kp N0 &kp F)
+      #endif
+    )
+    emoji_handraise: emoji_handraise {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&emoji_handraise_macro>, <&emoji_handraise_macro>;
+        mods = <(~(
+#ifdef WORLD_USE_COMPOSE_FOR_emoji_handraise
+COMPOSE_MORPH_MODS
+#else
+UNICODE_MORPH_MODS
+#endif
+))>;
+    };
+    UNICODE(emoji_false_macro, /* 🙅‍♀️ */
+      #if OPERATING_SYSTEM == 'M'
+        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp D &kp D &kp E &kp N4 &kp N5), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_MACOS(&kp N2 &kp N0 &kp N0 &kp D), UNICODE_SEQ_MACOS(&kp N2 &kp N6 &kp N4 &kp N0), UNICODE_SEQ_MACOS(&kp F &kp E &kp N0 &kp F)
+      #elif OPERATING_SYSTEM == 'L'
+        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N6 &kp N4 &kp N5), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_LINUX(&kp N2 &kp N0 &kp N0 &kp D), UNICODE_SEQ_LINUX(&kp N2 &kp N6 &kp N4 &kp N0), UNICODE_SEQ_LINUX(&kp F &kp E &kp N0 &kp F)
+      #elif OPERATING_SYSTEM == 'W'
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N6 &kp N4 &kp N5), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_WINDOWS(&kp N0 &kp N2 &kp N0 &kp N0 &kp D), UNICODE_SEQ_WINDOWS(&kp N0 &kp N2 &kp N6 &kp N4 &kp N0), UNICODE_SEQ_WINDOWS(&kp N0 &kp F &kp E &kp N0 &kp F)
+      #endif
+    )
+    emoji_false: emoji_false {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&emoji_false_macro>, <&emoji_false_macro>;
+        mods = <(~(
+#ifdef WORLD_USE_COMPOSE_FOR_emoji_false
+COMPOSE_MORPH_MODS
+#else
+UNICODE_MORPH_MODS
+#endif
+))>;
+    };
+    UNICODE(emoji_ok_macro, /* 🙆‍♀️ */
+      #if OPERATING_SYSTEM == 'M'
+        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp D &kp D &kp E &kp N4 &kp N6), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_MACOS(&kp N2 &kp N0 &kp N0 &kp D), UNICODE_SEQ_MACOS(&kp N2 &kp N6 &kp N4 &kp N0), UNICODE_SEQ_MACOS(&kp F &kp E &kp N0 &kp F)
+      #elif OPERATING_SYSTEM == 'L'
+        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N6 &kp N4 &kp N6), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_LINUX(&kp N2 &kp N0 &kp N0 &kp D), UNICODE_SEQ_LINUX(&kp N2 &kp N6 &kp N4 &kp N0), UNICODE_SEQ_LINUX(&kp F &kp E &kp N0 &kp F)
+      #elif OPERATING_SYSTEM == 'W'
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N6 &kp N4 &kp N6), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_WINDOWS(&kp N0 &kp N2 &kp N0 &kp N0 &kp D), UNICODE_SEQ_WINDOWS(&kp N0 &kp N2 &kp N6 &kp N4 &kp N0), UNICODE_SEQ_WINDOWS(&kp N0 &kp F &kp E &kp N0 &kp F)
+      #endif
+    )
+    emoji_ok: emoji_ok {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&emoji_ok_macro>, <&emoji_ok_macro>;
+        mods = <(~(
+#ifdef WORLD_USE_COMPOSE_FOR_emoji_ok
+COMPOSE_MORPH_MODS
+#else
+UNICODE_MORPH_MODS
+#endif
+))>;
+    };
+    UNICODE(emoji_people_macro, /* 👥 */
+      #if OPERATING_SYSTEM == 'M'
+        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp D &kp D &kp C &kp N6 &kp N5)
+      #elif OPERATING_SYSTEM == 'L'
+        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N4 &kp N6 &kp N5)
+      #elif OPERATING_SYSTEM == 'W'
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N4 &kp N6 &kp N5)
+      #endif
+    )
+    emoji_people: emoji_people {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&emoji_people_macro>, <&emoji_people_macro>;
+        mods = <(~(
+#ifdef WORLD_USE_COMPOSE_FOR_emoji_people
+COMPOSE_MORPH_MODS
+#else
+UNICODE_MORPH_MODS
+#endif
+))>;
+    };
+    UNICODE(emoji_person_macro, /* 👤 */
+      #if OPERATING_SYSTEM == 'M'
+        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp D &kp D &kp C &kp N6 &kp N4)
+      #elif OPERATING_SYSTEM == 'L'
+        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N4 &kp N6 &kp N4)
+      #elif OPERATING_SYSTEM == 'W'
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N4 &kp N6 &kp N4)
+      #endif
+    )
+    emoji_person: emoji_person {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&emoji_person_macro>, <&emoji_person_macro>;
+        mods = <(~(
+#ifdef WORLD_USE_COMPOSE_FOR_emoji_person
+COMPOSE_MORPH_MODS
+#else
+UNICODE_MORPH_MODS
+#endif
+))>;
+    };
+    UNICODE(emoji_footsteps_macro, /* 👣 */
+      #if OPERATING_SYSTEM == 'M'
+        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp D &kp D &kp C &kp N6 &kp N3)
+      #elif OPERATING_SYSTEM == 'L'
+        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N4 &kp N6 &kp N3)
+      #elif OPERATING_SYSTEM == 'W'
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N4 &kp N6 &kp N3)
+      #endif
+    )
+    emoji_footsteps: emoji_footsteps {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&emoji_footsteps_macro>, <&emoji_footsteps_macro>;
+        mods = <(~(
+#ifdef WORLD_USE_COMPOSE_FOR_emoji_footsteps
+COMPOSE_MORPH_MODS
+#else
+UNICODE_MORPH_MODS
+#endif
+))>;
+    };
+    UNICODE(emoji_unicorn_macro, /* 🦄 */
+      #if OPERATING_SYSTEM == 'M'
+        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp E &kp D &kp D &kp N8 &kp N4)
+      #elif OPERATING_SYSTEM == 'L'
+        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N9 &kp N8 &kp N4)
+      #elif OPERATING_SYSTEM == 'W'
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N9 &kp N8 &kp N4)
+      #endif
+    )
+    emoji_unicorn: emoji_unicorn {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&emoji_unicorn_macro>, <&emoji_unicorn_macro>;
+        mods = <(~(
+#ifdef WORLD_USE_COMPOSE_FOR_emoji_unicorn
+COMPOSE_MORPH_MODS
+#else
+UNICODE_MORPH_MODS
+#endif
+))>;
+    };
+    UNICODE(emoji_wizard_macro, /* 🧙‍♂️ */
+      #if OPERATING_SYSTEM == 'M'
+        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp E &kp D &kp D &kp D &kp N9), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_MACOS(&kp N2 &kp N0 &kp N0 &kp D), UNICODE_SEQ_MACOS(&kp N2 &kp N6 &kp N4 &kp N2), UNICODE_SEQ_MACOS(&kp F &kp E &kp N0 &kp F)
+      #elif OPERATING_SYSTEM == 'L'
+        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N9 &kp D &kp N9), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_LINUX(&kp N2 &kp N0 &kp N0 &kp D), UNICODE_SEQ_LINUX(&kp N2 &kp N6 &kp N4 &kp N2), UNICODE_SEQ_LINUX(&kp F &kp E &kp N0 &kp F)
+      #elif OPERATING_SYSTEM == 'W'
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N9 &kp D &kp N9), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_WINDOWS(&kp N0 &kp N2 &kp N0 &kp N0 &kp D), UNICODE_SEQ_WINDOWS(&kp N0 &kp N2 &kp N6 &kp N4 &kp N2), UNICODE_SEQ_WINDOWS(&kp N0 &kp F &kp E &kp N0 &kp F)
+      #endif
+    )
+    emoji_wizard: emoji_wizard {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&emoji_wizard_macro>, <&emoji_wizard_macro>;
+        mods = <(~(
+#ifdef WORLD_USE_COMPOSE_FOR_emoji_wizard
+COMPOSE_MORPH_MODS
+#else
+UNICODE_MORPH_MODS
+#endif
+))>;
+    };
+    UNICODE(emoji_ninja_macro, /* 🥷 */
+      #if OPERATING_SYSTEM == 'M'
+        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp E &kp D &kp D &kp N7 &kp N7)
+      #elif OPERATING_SYSTEM == 'L'
+        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N9 &kp N7 &kp N7)
+      #elif OPERATING_SYSTEM == 'W'
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N9 &kp N7 &kp N7)
+      #endif
+    )
+    emoji_ninja: emoji_ninja {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&emoji_ninja_macro>, <&emoji_ninja_macro>;
+        mods = <(~(
+#ifdef WORLD_USE_COMPOSE_FOR_emoji_ninja
+COMPOSE_MORPH_MODS
+#else
+UNICODE_MORPH_MODS
+#endif
+))>;
+    };
+    UNICODE(emoji_developer_macro, /* 👩‍💻 */
+      #if OPERATING_SYSTEM == 'M'
+        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp D &kp D &kp C &kp N6 &kp N9), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_MACOS(&kp N2 &kp N0 &kp N0 &kp D), UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp D &kp D &kp C &kp B &kp B)
+      #elif OPERATING_SYSTEM == 'L'
+        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N4 &kp N6 &kp N9), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_LINUX(&kp N2 &kp N0 &kp N0 &kp D), UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N4 &kp B &kp B)
+      #elif OPERATING_SYSTEM == 'W'
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N4 &kp N6 &kp N9), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_WINDOWS(&kp N0 &kp N2 &kp N0 &kp N0 &kp D), UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N4 &kp B &kp B)
+      #endif
+    )
+    emoji_developer: emoji_developer {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&emoji_developer_macro>, <&emoji_developer_macro>;
+        mods = <(~(
+#ifdef WORLD_USE_COMPOSE_FOR_emoji_developer
 COMPOSE_MORPH_MODS
 #else
 UNICODE_MORPH_MODS
@@ -5832,6 +6210,27 @@ UNICODE_MORPH_MODS
 #endif
 ))>;
     };
+    UNICODE(emoji_tada_macro, /* 🎉 */
+      #if OPERATING_SYSTEM == 'M'
+        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp C &kp D &kp F &kp N8 &kp N9)
+      #elif OPERATING_SYSTEM == 'L'
+        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N3 &kp N8 &kp N9)
+      #elif OPERATING_SYSTEM == 'W'
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N3 &kp N8 &kp N9)
+      #endif
+    )
+    emoji_tada: emoji_tada {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&emoji_tada_macro>, <&emoji_tada_macro>;
+        mods = <(~(
+#ifdef WORLD_USE_COMPOSE_FOR_emoji_tada
+COMPOSE_MORPH_MODS
+#else
+UNICODE_MORPH_MODS
+#endif
+))>;
+    };
     UNICODE(emoji_checkoff_macro, /* ✅ */
       #if OPERATING_SYSTEM == 'M'
         UNICODE_SEQ_MACOS(&kp N2 &kp N7 &kp N0 &kp N5)
@@ -5874,27 +6273,6 @@ UNICODE_MORPH_MODS
 #endif
 ))>;
     };
-    UNICODE(emoji_warning_macro, /* ⚠️ */
-      #if OPERATING_SYSTEM == 'M'
-        UNICODE_SEQ_MACOS(&kp N2 &kp N6 &kp A &kp N0), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_MACOS(&kp F &kp E &kp N0 &kp F)
-      #elif OPERATING_SYSTEM == 'L'
-        UNICODE_SEQ_LINUX(&kp N2 &kp N6 &kp A &kp N0), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_LINUX(&kp F &kp E &kp N0 &kp F)
-      #elif OPERATING_SYSTEM == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N0 &kp N2 &kp N6 &kp A &kp N0), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_WINDOWS(&kp N0 &kp F &kp E &kp N0 &kp F)
-      #endif
-    )
-    emoji_warning: emoji_warning {
-        compatible = "zmk,behavior-mod-morph";
-        #binding-cells = <0>;
-        bindings = <&emoji_warning_macro>, <&emoji_warning_macro>;
-        mods = <(~(
-#ifdef WORLD_USE_COMPOSE_FOR_emoji_warning
-COMPOSE_MORPH_MODS
-#else
-UNICODE_MORPH_MODS
-#endif
-))>;
-    };
     UNICODE(emoji_x_macro, /* ❌ */
       #if OPERATING_SYSTEM == 'M'
         UNICODE_SEQ_MACOS(&kp N2 &kp N7 &kp N4 &kp C)
@@ -5910,6 +6288,48 @@ UNICODE_MORPH_MODS
         bindings = <&emoji_x_macro>, <&emoji_x_macro>;
         mods = <(~(
 #ifdef WORLD_USE_COMPOSE_FOR_emoji_x
+COMPOSE_MORPH_MODS
+#else
+UNICODE_MORPH_MODS
+#endif
+))>;
+    };
+    UNICODE(emoji_o_macro, /* ⭕ */
+      #if OPERATING_SYSTEM == 'M'
+        UNICODE_SEQ_MACOS(&kp N2 &kp B &kp N5 &kp N5)
+      #elif OPERATING_SYSTEM == 'L'
+        UNICODE_SEQ_LINUX(&kp N2 &kp B &kp N5 &kp N5)
+      #elif OPERATING_SYSTEM == 'W'
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N2 &kp B &kp N5 &kp N5)
+      #endif
+    )
+    emoji_o: emoji_o {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&emoji_o_macro>, <&emoji_o_macro>;
+        mods = <(~(
+#ifdef WORLD_USE_COMPOSE_FOR_emoji_o
+COMPOSE_MORPH_MODS
+#else
+UNICODE_MORPH_MODS
+#endif
+))>;
+    };
+    UNICODE(emoji_sos_macro, /* 🆘 */
+      #if OPERATING_SYSTEM == 'M'
+        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp C &kp D &kp D &kp N9 &kp N8)
+      #elif OPERATING_SYSTEM == 'L'
+        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N1 &kp N9 &kp N8)
+      #elif OPERATING_SYSTEM == 'W'
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N1 &kp N9 &kp N8)
+      #endif
+    )
+    emoji_sos: emoji_sos {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&emoji_sos_macro>, <&emoji_sos_macro>;
+        mods = <(~(
+#ifdef WORLD_USE_COMPOSE_FOR_emoji_sos
 COMPOSE_MORPH_MODS
 #else
 UNICODE_MORPH_MODS
@@ -5937,10 +6357,484 @@ UNICODE_MORPH_MODS
 #endif
 ))>;
     };
+    UNICODE(emoji_exclamation_macro, /* ❗ */
+      #if OPERATING_SYSTEM == 'M'
+        UNICODE_SEQ_MACOS(&kp N2 &kp N7 &kp N5 &kp N7)
+      #elif OPERATING_SYSTEM == 'L'
+        UNICODE_SEQ_LINUX(&kp N2 &kp N7 &kp N5 &kp N7)
+      #elif OPERATING_SYSTEM == 'W'
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N2 &kp N7 &kp N5 &kp N7)
+      #endif
+    )
+    emoji_exclamation: emoji_exclamation {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&emoji_exclamation_macro>, <&emoji_exclamation_macro>;
+        mods = <(~(
+#ifdef WORLD_USE_COMPOSE_FOR_emoji_exclamation
+COMPOSE_MORPH_MODS
+#else
+UNICODE_MORPH_MODS
+#endif
+))>;
+    };
+    UNICODE(emoji_exclamation2_macro, /* ‼️ */
+      #if OPERATING_SYSTEM == 'M'
+        UNICODE_SEQ_MACOS(&kp N2 &kp N0 &kp N3 &kp C), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_MACOS(&kp F &kp E &kp N0 &kp F)
+      #elif OPERATING_SYSTEM == 'L'
+        UNICODE_SEQ_LINUX(&kp N2 &kp N0 &kp N3 &kp C), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_LINUX(&kp F &kp E &kp N0 &kp F)
+      #elif OPERATING_SYSTEM == 'W'
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N2 &kp N0 &kp N3 &kp C), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_WINDOWS(&kp N0 &kp F &kp E &kp N0 &kp F)
+      #endif
+    )
+    emoji_exclamation2: emoji_exclamation2 {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&emoji_exclamation2_macro>, <&emoji_exclamation2_macro>;
+        mods = <(~(
+#ifdef WORLD_USE_COMPOSE_FOR_emoji_exclamation2
+COMPOSE_MORPH_MODS
+#else
+UNICODE_MORPH_MODS
+#endif
+))>;
+    };
+    UNICODE(emoji_exclamation3_macro, /* ⁉️ */
+      #if OPERATING_SYSTEM == 'M'
+        UNICODE_SEQ_MACOS(&kp N2 &kp N0 &kp N4 &kp N9), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_MACOS(&kp F &kp E &kp N0 &kp F)
+      #elif OPERATING_SYSTEM == 'L'
+        UNICODE_SEQ_LINUX(&kp N2 &kp N0 &kp N4 &kp N9), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_LINUX(&kp F &kp E &kp N0 &kp F)
+      #elif OPERATING_SYSTEM == 'W'
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N2 &kp N0 &kp N4 &kp N9), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_WINDOWS(&kp N0 &kp F &kp E &kp N0 &kp F)
+      #endif
+    )
+    emoji_exclamation3: emoji_exclamation3 {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&emoji_exclamation3_macro>, <&emoji_exclamation3_macro>;
+        mods = <(~(
+#ifdef WORLD_USE_COMPOSE_FOR_emoji_exclamation3
+COMPOSE_MORPH_MODS
+#else
+UNICODE_MORPH_MODS
+#endif
+))>;
+    };
+    UNICODE(emoji_warning_macro, /* ⚠️ */
+      #if OPERATING_SYSTEM == 'M'
+        UNICODE_SEQ_MACOS(&kp N2 &kp N6 &kp A &kp N0), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_MACOS(&kp F &kp E &kp N0 &kp F)
+      #elif OPERATING_SYSTEM == 'L'
+        UNICODE_SEQ_LINUX(&kp N2 &kp N6 &kp A &kp N0), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_LINUX(&kp F &kp E &kp N0 &kp F)
+      #elif OPERATING_SYSTEM == 'W'
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N2 &kp N6 &kp A &kp N0), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_WINDOWS(&kp N0 &kp F &kp E &kp N0 &kp F)
+      #endif
+    )
+    emoji_warning: emoji_warning {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&emoji_warning_macro>, <&emoji_warning_macro>;
+        mods = <(~(
+#ifdef WORLD_USE_COMPOSE_FOR_emoji_warning
+COMPOSE_MORPH_MODS
+#else
+UNICODE_MORPH_MODS
+#endif
+))>;
+    };
+    UNICODE(emoji_hazard_macro, /* 🚧 */
+      #if OPERATING_SYSTEM == 'M'
+        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp D &kp D &kp E &kp A &kp N7)
+      #elif OPERATING_SYSTEM == 'L'
+        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N6 &kp A &kp N7)
+      #elif OPERATING_SYSTEM == 'W'
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N6 &kp A &kp N7)
+      #endif
+    )
+    emoji_hazard: emoji_hazard {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&emoji_hazard_macro>, <&emoji_hazard_macro>;
+        mods = <(~(
+#ifdef WORLD_USE_COMPOSE_FOR_emoji_hazard
+COMPOSE_MORPH_MODS
+#else
+UNICODE_MORPH_MODS
+#endif
+))>;
+    };
+    UNICODE(emoji_stopsign_macro, /* 🛑 */
+      #if OPERATING_SYSTEM == 'M'
+        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp D &kp D &kp E &kp D &kp N1)
+      #elif OPERATING_SYSTEM == 'L'
+        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N6 &kp D &kp N1)
+      #elif OPERATING_SYSTEM == 'W'
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N6 &kp D &kp N1)
+      #endif
+    )
+    emoji_stopsign: emoji_stopsign {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&emoji_stopsign_macro>, <&emoji_stopsign_macro>;
+        mods = <(~(
+#ifdef WORLD_USE_COMPOSE_FOR_emoji_stopsign
+COMPOSE_MORPH_MODS
+#else
+UNICODE_MORPH_MODS
+#endif
+))>;
+    };
+    UNICODE(emoji_fire_macro, /* 🔥 */
+      #if OPERATING_SYSTEM == 'M'
+        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp D &kp D &kp D &kp N2 &kp N5)
+      #elif OPERATING_SYSTEM == 'L'
+        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N5 &kp N2 &kp N5)
+      #elif OPERATING_SYSTEM == 'W'
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N5 &kp N2 &kp N5)
+      #endif
+    )
+    emoji_fire: emoji_fire {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&emoji_fire_macro>, <&emoji_fire_macro>;
+        mods = <(~(
+#ifdef WORLD_USE_COMPOSE_FOR_emoji_fire
+COMPOSE_MORPH_MODS
+#else
+UNICODE_MORPH_MODS
+#endif
+))>;
+    };
+    UNICODE(emoji_no_entry_macro, /* ⛔ */
+      #if OPERATING_SYSTEM == 'M'
+        UNICODE_SEQ_MACOS(&kp N2 &kp N6 &kp D &kp N4)
+      #elif OPERATING_SYSTEM == 'L'
+        UNICODE_SEQ_LINUX(&kp N2 &kp N6 &kp D &kp N4)
+      #elif OPERATING_SYSTEM == 'W'
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N2 &kp N6 &kp D &kp N4)
+      #endif
+    )
+    emoji_no_entry: emoji_no_entry {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&emoji_no_entry_macro>, <&emoji_no_entry_macro>;
+        mods = <(~(
+#ifdef WORLD_USE_COMPOSE_FOR_emoji_no_entry
+COMPOSE_MORPH_MODS
+#else
+UNICODE_MORPH_MODS
+#endif
+))>;
+    };
 
     //
     // characters
     //
+    emoji_status_xo: emoji_status_xo {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&emoji_x>, <&emoji_o>;
+        mods = <MOD_LSFT>;
+    };
+    UNICODE(emoji_status_exclamation_double_macro, /*  ‼️ */
+      #if OPERATING_SYSTEM == 'M'
+        UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp N2 &kp N0), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_MACOS(&kp N2 &kp N0 &kp N3 &kp C), UNICODE_SEQ_MACOS(&kp F &kp E &kp N0 &kp F)
+      #elif OPERATING_SYSTEM == 'L'
+        UNICODE_SEQ_LINUX(&kp N2 &kp N0), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_LINUX(&kp N2 &kp N0 &kp N3 &kp C), UNICODE_SEQ_LINUX(&kp F &kp E &kp N0 &kp F)
+      #elif OPERATING_SYSTEM == 'W'
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N2 &kp N0), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_WINDOWS(&kp N0 &kp N2 &kp N0 &kp N3 &kp C), UNICODE_SEQ_WINDOWS(&kp N0 &kp F &kp E &kp N0 &kp F)
+      #endif
+    )
+    emoji_status_exclamation_double: emoji_status_exclamation_double {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&emoji_status_exclamation_double_macro>, <&emoji_status_exclamation_double_macro>;
+        mods = <(~(
+#ifdef WORLD_USE_COMPOSE_FOR_emoji_status_exclamation_double
+COMPOSE_MORPH_MODS
+#else
+UNICODE_MORPH_MODS
+#endif
+))>;
+    };
+    emoji_status_exclamation: emoji_status_exclamation {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&emoji_exclamation>, <&emoji_status_exclamation_double>;
+        mods = <MOD_LSFT>;
+    };
+    emoji_status_question: emoji_status_question {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&emoji_question>, <&emoji_exclamation3>;
+        mods = <MOD_LSFT>;
+    };
+    UNICODE(emoji_face_smile_up_macro, /* 🙂 */
+      #if OPERATING_SYSTEM == 'M'
+        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp D &kp D &kp E &kp N4 &kp N2)
+      #elif OPERATING_SYSTEM == 'L'
+        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N6 &kp N4 &kp N2)
+      #elif OPERATING_SYSTEM == 'W'
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N6 &kp N4 &kp N2)
+      #endif
+    )
+    emoji_face_smile_up: emoji_face_smile_up {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&emoji_face_smile_up_macro>, <&emoji_face_smile_up_macro>;
+        mods = <(~(
+#ifdef WORLD_USE_COMPOSE_FOR_emoji_face_smile_up
+COMPOSE_MORPH_MODS
+#else
+UNICODE_MORPH_MODS
+#endif
+))>;
+    };
+    UNICODE(emoji_face_smile_down_macro, /* 🙃 */
+      #if OPERATING_SYSTEM == 'M'
+        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp D &kp D &kp E &kp N4 &kp N3)
+      #elif OPERATING_SYSTEM == 'L'
+        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N6 &kp N4 &kp N3)
+      #elif OPERATING_SYSTEM == 'W'
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N6 &kp N4 &kp N3)
+      #endif
+    )
+    emoji_face_smile_down: emoji_face_smile_down {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&emoji_face_smile_down_macro>, <&emoji_face_smile_down_macro>;
+        mods = <(~(
+#ifdef WORLD_USE_COMPOSE_FOR_emoji_face_smile_down
+COMPOSE_MORPH_MODS
+#else
+UNICODE_MORPH_MODS
+#endif
+))>;
+    };
+    emoji_face_smile: emoji_face_smile {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&emoji_face_smile_up>, <&emoji_face_smile_down>;
+        mods = <MOD_LSFT>;
+    };
+    UNICODE(emoji_face_laugh_joy_macro, /* 😂 */
+      #if OPERATING_SYSTEM == 'M'
+        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp D &kp D &kp E &kp N0 &kp N2)
+      #elif OPERATING_SYSTEM == 'L'
+        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N6 &kp N0 &kp N2)
+      #elif OPERATING_SYSTEM == 'W'
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N6 &kp N0 &kp N2)
+      #endif
+    )
+    emoji_face_laugh_joy: emoji_face_laugh_joy {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&emoji_face_laugh_joy_macro>, <&emoji_face_laugh_joy_macro>;
+        mods = <(~(
+#ifdef WORLD_USE_COMPOSE_FOR_emoji_face_laugh_joy
+COMPOSE_MORPH_MODS
+#else
+UNICODE_MORPH_MODS
+#endif
+))>;
+    };
+    UNICODE(emoji_face_laugh_rofl_macro, /* 🤣 */
+      #if OPERATING_SYSTEM == 'M'
+        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp E &kp D &kp D &kp N2 &kp N3)
+      #elif OPERATING_SYSTEM == 'L'
+        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N9 &kp N2 &kp N3)
+      #elif OPERATING_SYSTEM == 'W'
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N9 &kp N2 &kp N3)
+      #endif
+    )
+    emoji_face_laugh_rofl: emoji_face_laugh_rofl {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&emoji_face_laugh_rofl_macro>, <&emoji_face_laugh_rofl_macro>;
+        mods = <(~(
+#ifdef WORLD_USE_COMPOSE_FOR_emoji_face_laugh_rofl
+COMPOSE_MORPH_MODS
+#else
+UNICODE_MORPH_MODS
+#endif
+))>;
+    };
+    emoji_face_laugh: emoji_face_laugh {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&emoji_face_laugh_joy>, <&emoji_face_laugh_rofl>;
+        mods = <MOD_LSFT>;
+    };
+    UNICODE(emoji_face_eyes_star_macro, /* 🤩 */
+      #if OPERATING_SYSTEM == 'M'
+        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp E &kp D &kp D &kp N2 &kp N9)
+      #elif OPERATING_SYSTEM == 'L'
+        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N9 &kp N2 &kp N9)
+      #elif OPERATING_SYSTEM == 'W'
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N9 &kp N2 &kp N9)
+      #endif
+    )
+    emoji_face_eyes_star: emoji_face_eyes_star {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&emoji_face_eyes_star_macro>, <&emoji_face_eyes_star_macro>;
+        mods = <(~(
+#ifdef WORLD_USE_COMPOSE_FOR_emoji_face_eyes_star
+COMPOSE_MORPH_MODS
+#else
+UNICODE_MORPH_MODS
+#endif
+))>;
+    };
+    UNICODE(emoji_face_eyes_heart_macro, /* 😍 */
+      #if OPERATING_SYSTEM == 'M'
+        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp D &kp D &kp E &kp N0 &kp D)
+      #elif OPERATING_SYSTEM == 'L'
+        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N6 &kp N0 &kp D)
+      #elif OPERATING_SYSTEM == 'W'
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N6 &kp N0 &kp D)
+      #endif
+    )
+    emoji_face_eyes_heart: emoji_face_eyes_heart {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&emoji_face_eyes_heart_macro>, <&emoji_face_eyes_heart_macro>;
+        mods = <(~(
+#ifdef WORLD_USE_COMPOSE_FOR_emoji_face_eyes_heart
+COMPOSE_MORPH_MODS
+#else
+UNICODE_MORPH_MODS
+#endif
+))>;
+    };
+    emoji_face_eyes: emoji_face_eyes {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&emoji_face_eyes_star>, <&emoji_face_eyes_heart>;
+        mods = <MOD_LSFT>;
+    };
+    UNICODE(emoji_face_joke_wink_macro, /* 😉 */
+      #if OPERATING_SYSTEM == 'M'
+        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp D &kp D &kp E &kp N0 &kp N9)
+      #elif OPERATING_SYSTEM == 'L'
+        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N6 &kp N0 &kp N9)
+      #elif OPERATING_SYSTEM == 'W'
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N6 &kp N0 &kp N9)
+      #endif
+    )
+    emoji_face_joke_wink: emoji_face_joke_wink {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&emoji_face_joke_wink_macro>, <&emoji_face_joke_wink_macro>;
+        mods = <(~(
+#ifdef WORLD_USE_COMPOSE_FOR_emoji_face_joke_wink
+COMPOSE_MORPH_MODS
+#else
+UNICODE_MORPH_MODS
+#endif
+))>;
+    };
+    UNICODE(emoji_face_joke_tounge_macro, /* 😜 */
+      #if OPERATING_SYSTEM == 'M'
+        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp D &kp D &kp E &kp N1 &kp C)
+      #elif OPERATING_SYSTEM == 'L'
+        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N6 &kp N1 &kp C)
+      #elif OPERATING_SYSTEM == 'W'
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N6 &kp N1 &kp C)
+      #endif
+    )
+    emoji_face_joke_tounge: emoji_face_joke_tounge {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&emoji_face_joke_tounge_macro>, <&emoji_face_joke_tounge_macro>;
+        mods = <(~(
+#ifdef WORLD_USE_COMPOSE_FOR_emoji_face_joke_tounge
+COMPOSE_MORPH_MODS
+#else
+UNICODE_MORPH_MODS
+#endif
+))>;
+    };
+    emoji_face_joke: emoji_face_joke {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&emoji_face_joke_wink>, <&emoji_face_joke_tounge>;
+        mods = <MOD_LSFT>;
+    };
+    UNICODE(emoji_face_fear_scared_macro, /* 😨 */
+      #if OPERATING_SYSTEM == 'M'
+        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp D &kp D &kp E &kp N2 &kp N8)
+      #elif OPERATING_SYSTEM == 'L'
+        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N6 &kp N2 &kp N8)
+      #elif OPERATING_SYSTEM == 'W'
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N6 &kp N2 &kp N8)
+      #endif
+    )
+    emoji_face_fear_scared: emoji_face_fear_scared {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&emoji_face_fear_scared_macro>, <&emoji_face_fear_scared_macro>;
+        mods = <(~(
+#ifdef WORLD_USE_COMPOSE_FOR_emoji_face_fear_scared
+COMPOSE_MORPH_MODS
+#else
+UNICODE_MORPH_MODS
+#endif
+))>;
+    };
+    UNICODE(emoji_face_fear_scream_macro, /* 😱 */
+      #if OPERATING_SYSTEM == 'M'
+        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp D &kp D &kp E &kp N3 &kp N1)
+      #elif OPERATING_SYSTEM == 'L'
+        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N6 &kp N3 &kp N1)
+      #elif OPERATING_SYSTEM == 'W'
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N6 &kp N3 &kp N1)
+      #endif
+    )
+    emoji_face_fear_scream: emoji_face_fear_scream {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&emoji_face_fear_scream_macro>, <&emoji_face_fear_scream_macro>;
+        mods = <(~(
+#ifdef WORLD_USE_COMPOSE_FOR_emoji_face_fear_scream
+COMPOSE_MORPH_MODS
+#else
+UNICODE_MORPH_MODS
+#endif
+))>;
+    };
+    emoji_face_fear: emoji_face_fear {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&emoji_face_fear_scared>, <&emoji_face_fear_scream>;
+        mods = <MOD_LSFT>;
+    };
+    UNICODE(emoji_face_surprise_dizzy_macro, /* 😵 */
+      #if OPERATING_SYSTEM == 'M'
+        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp D &kp D &kp E &kp N3 &kp N5)
+      #elif OPERATING_SYSTEM == 'L'
+        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N6 &kp N3 &kp N5)
+      #elif OPERATING_SYSTEM == 'W'
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N6 &kp N3 &kp N5)
+      #endif
+    )
+    emoji_face_surprise_dizzy: emoji_face_surprise_dizzy {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&emoji_face_surprise_dizzy_macro>, <&emoji_face_surprise_dizzy_macro>;
+        mods = <(~(
+#ifdef WORLD_USE_COMPOSE_FOR_emoji_face_surprise_dizzy
+COMPOSE_MORPH_MODS
+#else
+UNICODE_MORPH_MODS
+#endif
+))>;
+    };
+    emoji_face_surprise: emoji_face_surprise {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&emoji_explode>, <&emoji_face_surprise_dizzy>;
+        mods = <MOD_LSFT>;
+    };
     UNICODE(emoji_gesture_attention_wave_macro, /* 👋 */
       #if OPERATING_SYSTEM == 'M'
         UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp D &kp D &kp C &kp N4 &kp B)
@@ -6203,6 +7097,39 @@ UNICODE_MORPH_MODS
         compatible = "zmk,behavior-mod-morph";
         #binding-cells = <0>;
         bindings = <&emoji_registered>, <&emoji_registered2>;
+        mods = <MOD_LSFT>;
+    };
+    UNICODE(emoji_misc_locks_unlocked_macro, /* 🔓 */
+      #if OPERATING_SYSTEM == 'M'
+        UNICODE_SEQ_MACOS(&kp D &kp N8 &kp N3 &kp D &kp D &kp D &kp N1 &kp N3)
+      #elif OPERATING_SYSTEM == 'L'
+        UNICODE_SEQ_LINUX(&kp N1 &kp F &kp N5 &kp N1 &kp N3)
+      #elif OPERATING_SYSTEM == 'W'
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N5 &kp N1 &kp N3)
+      #endif
+    )
+    emoji_misc_locks_unlocked: emoji_misc_locks_unlocked {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&emoji_misc_locks_unlocked_macro>, <&emoji_misc_locks_unlocked_macro>;
+        mods = <(~(
+#ifdef WORLD_USE_COMPOSE_FOR_emoji_misc_locks_unlocked
+COMPOSE_MORPH_MODS
+#else
+UNICODE_MORPH_MODS
+#endif
+))>;
+    };
+    emoji_misc_locks: emoji_misc_locks {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&emoji_lock>, <&emoji_misc_locks_unlocked>;
+        mods = <MOD_LSFT>;
+    };
+    emoji_misc_boxes: emoji_misc_boxes {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&emoji_download>, <&emoji_upload>;
         mods = <MOD_LSFT>;
     };
 };

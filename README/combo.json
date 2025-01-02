@@ -1,0 +1,386 @@
+[
+  {
+    "name": "combo",
+    "css": "/* front legend */\n.keylabel10 div { \n    font-size: xx-small;\n    font-style: italic;\n    text-shadow: 1px 1px 2px #FFD600;\n}\n/* description */\ncenter h2 {\n    margin-top: 1em;\n}\ncenter ul {\n    padding-left: 0;\n    margin-top: 1em;\n    padding-top: 1em;\n    font-size: smaller;\n}\ncenter ul li {\n    margin-top: 1ex;\n    list-style-type: none;\n}\ncenter ul li a {\n    font-weight: bold;\n}\ncenter .permalink {\n    font-size: x-small;\n}\ncenter em {\n    font-weight: normal;\n    font-style: normal;\n}"
+  },
+  [
+    {
+      "g": true,
+      "p": "CHICKLET",
+      "a": 7
+    },
+    "F1",
+    "F2",
+    "F3",
+    "F4",
+    "F5",
+    {
+      "x": 7,
+      "t": "#EEEEEE"
+    },
+    "Reset",
+    {
+      "t": "#000000"
+    },
+    "F7",
+    "F8",
+    "F9",
+    {
+      "t": "#EEEEEE"
+    },
+    "Boot loader"
+  ],
+  [
+    {
+      "t": "#000000",
+      "a": 5
+    },
+    "|\n\\",
+    "!\n1",
+    "@\n2",
+    "#\n3",
+    "$\n4",
+    "%\n5",
+    {
+      "g": false,
+      "a": 4,
+      "f": 4,
+      "w": 5,
+      "h": 4,
+      "d": true
+    },
+    "<center><h2>Combo Layer</h2><p>MoErgo Glove80 keyboard</p><ul><li><a href='https://github.com/manna-harbour/miryoku'>Miryoku</a> layers & home row mods</li><li><a href='https://engram.dev'>Engram</a><a href='https://github.com/sunaku/engrammer'><em>&middot;mer</em></a> keyboard layout</li><li>See <a href='https://is.gd/sunaku_glove80'>is.gd/sunaku_glove80</a></li></ul></center>",
+    {
+      "g": true,
+      "a": 5,
+      "f": 3
+    },
+    "^\n6",
+    "&\n7",
+    "*\n8",
+    "(\n9",
+    ")\n0",
+    "+\n="
+  ],
+  [
+    {
+      "fa": [
+        1
+      ]
+    },
+    "Caps lock\nCaps word",
+    {
+      "a": 7,
+      "f": 3
+    },
+    "Mouse accel 0",
+    {
+      "c": "#ffecb3",
+      "g": false,
+      "f": 4
+    },
+    "^⌥⇧",
+    {
+      "f": 6
+    },
+    "^⇧",
+    "^⌥",
+    {
+      "c": "#cccccc",
+      "g": true,
+      "f": 5,
+      "fa": [
+        3
+      ]
+    },
+    "Mouse button 4",
+    {
+      "x": 5,
+      "f": 3
+    },
+    "Scroll lock",
+    {
+      "c": "#e1bee7",
+      "g": false,
+      "f": 8
+    },
+    "⇧",
+    {
+      "c": "#ffecb3",
+      "f": 7
+    },
+    "⌘",
+    {
+      "c": "#BBDEFB"
+    },
+    "⌥",
+    {
+      "c": "#dcedc8",
+      "f": 8
+    },
+    "^",
+    {
+      "c": "#cccccc",
+      "g": true,
+      "f": 5,
+      "fa": [
+        3
+      ]
+    },
+    "MB4"
+  ],
+  [
+    {
+      "c": "#D1C4E9",
+      "g": false,
+      "p": "",
+      "f": 3
+    },
+    "<img src=\"https://openclipart.org/download/278214/fingerprint.svg\" width=\"36\" height=\"36\" />",
+    {
+      "c": "#cccccc",
+      "g": true,
+      "p": "CHICKLET",
+      "f": 9
+    },
+    "↩",
+    {
+      "c": "#BBDEFB",
+      "g": false,
+      "f": 4
+    },
+    "⌘⌥⇧",
+    {
+      "f": 5
+    },
+    "⌘⇧",
+    {
+      "n": true
+    },
+    "⌘⌥",
+    {
+      "c": "#cccccc",
+      "g": true,
+      "f": 9
+    },
+    "↪",
+    {
+      "x": 5,
+      "g": false,
+      "f": 4
+    },
+    "F16",
+    "F17\n\n\n\nShift",
+    {
+      "c": "#ccccccc"
+    },
+    "F18\n\n\n\nCtrl",
+    {
+      "c": "#cccccc"
+    },
+    "F19\n\n\n\nAlt",
+    "F20\n\n\n\nWin",
+    {
+      "g": true,
+      "f": 3
+    },
+    "Z"
+  ],
+  [
+    "Shift",
+    "Mouse accel 1",
+    {
+      "c": "#e1bee7",
+      "g": false,
+      "f": 4
+    },
+    "⌥⇧",
+    {
+      "c": "#dcedc8",
+      "f": 5
+    },
+    "⌘⇧^",
+    {
+      "f": 4
+    },
+    "⌘⌥^",
+    {
+      "c": "#cccccc",
+      "t": "#ffffff",
+      "g": true,
+      "a": 5,
+      "f": 3,
+      "fa": [
+        8,
+        7
+      ]
+    },
+    "<small>Button</small>\n5",
+    {
+      "x": 5,
+      "t": "#000000",
+      "a": 7,
+      "f": 9
+    },
+    "↓",
+    {
+      "f": 3
+    },
+    "⇧TAB",
+    {
+      "fa": [
+        4
+      ]
+    },
+    "⌘⇧ TAB",
+    {
+      "f": 4
+    },
+    "⌥⇧ TAB",
+    "^",
+    {
+      "f": 5,
+      "fa": [
+        3
+      ]
+    },
+    "MB5"
+  ],
+  [
+    {
+      "y": -0.04999999999999982,
+      "x": 6.95,
+      "c": "#FFFF8D",
+      "p": "FLAT",
+      "f": 2,
+      "w": 1.1,
+      "h": 2.7,
+      "d": true
+    },
+    ""
+  ],
+  [
+    {
+      "y": -0.9500000000000002,
+      "c": "#757575",
+      "t": "#EEEEEE",
+      "f": 3
+    },
+    "Magic",
+    {
+      "c": "#cccccc",
+      "t": "#000000",
+      "p": "CHICKLET"
+    },
+    "Home",
+    "Page up",
+    "Page down",
+    "End",
+    {
+      "c": "#BBDEFB",
+      "t": "#4c4c4c",
+      "g": false,
+      "f": 4
+    },
+    "⌥TAB",
+    {
+      "t": "#000000"
+    },
+    "^⇧ TAB\n\n\n\nMB4",
+    {
+      "c": "#cccccc",
+      "t": "#000000\n\n\n#4c4c4c\n\n\n\n\n#4c4c4c",
+      "g": true,
+      "a": 4,
+      "f": 5,
+      "fa": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        3,
+        0,
+        7
+      ]
+    },
+    "\n\n\n5\nMB 5\n\n\n\n<small>Fwd</small>\n\n↪",
+    {
+      "x": 1,
+      "t": "#000000",
+      "f": 3,
+      "fa": [
+        9
+      ]
+    },
+    "&lArr;",
+    {
+      "c": "#dcedc8",
+      "g": false,
+      "a": 7,
+      "f": 4
+    },
+    "^⇧ TAB",
+    "^TAB\n\n\n\nSystem",
+    {
+      "c": "#cccccc",
+      "g": true,
+      "a": 5,
+      "f": 3
+    },
+    "<\n(",
+    "{\n[",
+    "}\n]",
+    {
+      "a": 7
+    },
+    "Right click",
+    {
+      "c": "#757575",
+      "t": "#ffffff"
+    },
+    "Magic"
+  ],
+  [
+    {
+      "x": 5,
+      "c": "#e1bee7",
+      "t": "#4c4c4c",
+      "g": false,
+      "f": 4,
+      "n": true
+    },
+    "TAB",
+    {
+      "f": 3
+    },
+    "⇧TAB",
+    {
+      "c": "#cccccc",
+      "t": "#EEEEEE",
+      "g": true
+    },
+    "Lower",
+    {
+      "x": 1,
+      "c": "#757575"
+    },
+    "Unlock layer",
+    {
+      "c": "#ffecb3",
+      "t": "#000000",
+      "g": false,
+      "f": 4,
+      "n": true
+    },
+    "⌘⇧ TAB",
+    {
+      "f": 3,
+      "n": true
+    },
+    "⌘TAB\n\n\n\nSymbol"
+  ]
+]
